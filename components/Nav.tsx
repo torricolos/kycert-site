@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Mark from './Mark';
 import Icon from './Icon';
 
-const WA = 'https://wa.me/5511977656630?text=Olá%2C+gostaria+de+agendar+uma+demo+da+kycert.';
+const WA = 'https://wa.me/5511937359748?text=Olá%2C+gostaria+de+agendar+uma+demo+da+kycert.';
 
 export type NavItem = { label: string; href: string };
 type Props = { items: NavItem[]; current?: string };
