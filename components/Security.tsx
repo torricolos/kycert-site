@@ -5,15 +5,13 @@ type Cert = { t: string; d: string; icon: 'shield' | 'file' | 'lock' | 'clock' }
 
 export default function Security() {
   const items: Cert[] = [
-    { t: 'BCB Resolução 4.658',     d: 'Política de segurança cibernética para instituições autorizadas. Reportes, contingência, monitoramento.', icon: 'shield' },
-    { t: 'Lei 9.613/98 + COAF',     d: 'Prevenção à lavagem de dinheiro. Workflow de comunicações obrigatórias. Documentação de auditoria.', icon: 'file' },
-    { t: 'LGPD · Lei 13.709/18',    d: 'Operadores de dados. DPO designado. Encarregado disponível. Direitos do titular automatizados.', icon: 'lock' },
-    { t: 'CVM 35 · suitability',    d: 'Cadastro de cliente e categorização de investidor. Integrado ao fluxo de onboarding.', icon: 'file' },
-    { t: 'ISO 27001 · em andamento',d: 'Certificação prevista para Q4 de 2026. Controles de segurança da informação já implementados.', icon: 'shield' },
-    { t: 'SOC 2 Type II · roadmap', d: 'Auditoria independente de controles operacionais. Planejada para 2027.', icon: 'clock' },
+    { t: 'BCB Resolução 4.658',  d: 'Política de segurança cibernética para instituições autorizadas. Reportes, contingência, monitoramento.', icon: 'shield' },
+    { t: 'Lei 9.613/98 + COAF',  d: 'Prevenção à lavagem de dinheiro. Workflow de comunicações obrigatórias. Documentação de auditoria.', icon: 'file' },
+    { t: 'LGPD · Lei 13.709/18', d: 'Operadores de dados. DPO designado. Encarregado disponível. Direitos do titular automatizados.', icon: 'lock' },
+    { t: 'CVM 35 · suitability',  d: 'Cadastro de cliente e categorização de investidor. Integrado ao fluxo de onboarding.', icon: 'file' },
   ];
   return (
-    <Section id="seguranca" pad="120px 32px" bg="var(--text-primary)">
+    <Section id="seguranca" pad="var(--pad-section)" bg="var(--text-primary)">
       <div style={{ color: 'var(--text-inverse)' }}>
         <div style={{ maxWidth: 760 }}>
           <Eyebrow color="rgba(247,248,250,0.5)">Conformidade & segurança</Eyebrow>
@@ -35,7 +33,7 @@ export default function Security() {
           </p>
         </div>
 
-        <div style={{ marginTop: 56, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+        <div style={{ marginTop: 56, display: 'grid', gridTemplateColumns: 'var(--cols-2)', gap: 16 }}>
           {items.map((c) => (
             <div key={c.t} style={{
               padding: 24, borderRadius: 'var(--radius-lg)',
@@ -58,30 +56,6 @@ export default function Security() {
               </p>
             </div>
           ))}
-        </div>
-
-        <div style={{
-          marginTop: 28, padding: '18px 24px',
-          borderRadius: 'var(--radius-lg)',
-          background: 'rgba(247,248,250,0.04)',
-          border: '1px solid rgba(247,248,250,0.08)',
-          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-          gap: 24, flexWrap: 'wrap',
-        }}>
-          <div>
-            <div style={{ fontSize: 'var(--text-md)', fontWeight: 600 }}>Quer ver a documentação?</div>
-            <div style={{ marginTop: 4, fontSize: 'var(--text-sm)', color: 'rgba(247,248,250,0.6)' }}>
-              Política de segurança, DPA e questionário de fornecedor disponíveis sob NDA.
-            </div>
-          </div>
-          <a href="#contato" style={{
-            padding: '10px 18px', borderRadius: 'var(--radius-md)',
-            background: 'var(--surface-app)', color: 'var(--text-primary)',
-            fontSize: 'var(--text-sm)', fontWeight: 600,
-            display: 'inline-flex', alignItems: 'center', gap: 6,
-          }}>
-            Solicitar documentação<Icon name="arrow" size={14} strokeWidth={2} />
-          </a>
         </div>
       </div>
     </Section>

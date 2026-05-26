@@ -2,7 +2,7 @@ import Section, { Eyebrow } from './Section';
 
 export default function Problem() {
   return (
-    <Section id="problema" pad="120px 32px" bg="var(--surface-app)">
+    <Section id="problema" pad="var(--pad-section)" bg="var(--surface-app)">
       <div style={{ maxWidth: 820 }}>
         <Eyebrow>O problema</Eyebrow>
         <h2 style={{
@@ -16,7 +16,7 @@ export default function Problem() {
             Validar um cliente regulado, não.
           </span>
         </h2>
-        <div style={{ marginTop: 36, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 40 }}>
+        <div style={{ marginTop: 36, display: 'grid', gridTemplateColumns: 'var(--cols-2)', gap: 40 }}>
           <p style={{ margin: 0, fontSize: 'var(--text-lg)', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
             Em qualquer empresa que precisa validar o cliente antes de operar, o processo se repete:
             documentos circulam por email, sistemas isolados, planilhas e times sobrecarregados.
@@ -29,7 +29,7 @@ export default function Problem() {
           </p>
         </div>
         <div role="list" aria-label="Custo do onboarding manual" style={{
-          marginTop: 64, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0,
+          marginTop: 64, display: 'grid', gridTemplateColumns: 'var(--cols-3)', gap: 0,
           borderTop: '1px solid var(--border-default)',
           borderBottom: '1px solid var(--border-default)',
         }}>

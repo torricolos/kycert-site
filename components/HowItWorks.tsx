@@ -30,7 +30,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <Section id="produto" pad="120px 32px">
+    <Section id="produto" pad="var(--pad-section)">
       <div style={{ textAlign: 'center', maxWidth: 760, margin: '0 auto 80px' }}>
         <Eyebrow>Como funciona</Eyebrow>
         <h2 style={{
@@ -56,8 +56,8 @@ export default function HowItWorks() {
 
       <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 80 }}>
         {steps.map((s, i) => (
-          <li key={s.n} style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: 64, alignItems: 'center' }}>
-            <div style={{ order: i % 2 === 1 ? 2 : 1 }}>
+          <li key={s.n} style={{ display: 'grid', gridTemplateColumns: 'var(--cols-step)', gap: 64, alignItems: 'center' }}>
+            <div className="step-order" style={{ order: i % 2 === 1 ? 2 : 1 }}>
               <div style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', letterSpacing: '0.14em', color: 'var(--text-tertiary)', marginBottom: 14 }}>
                 {s.n}
               </div>
@@ -73,7 +73,7 @@ export default function HowItWorks() {
                 {s.d}
               </p>
             </div>
-            <div style={{ order: i % 2 === 1 ? 1 : 2 }}>{s.preview}</div>
+            <div className="step-order" style={{ order: i % 2 === 1 ? 1 : 2 }}>{s.preview}</div>
           </li>
         ))}
       </ol>

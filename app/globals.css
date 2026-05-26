@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+/* ─── Responsive grid tokens ─────────────────────────────── */
+:root {
+  --cols-4:      repeat(4, 1fr);
+  --cols-3:      repeat(3, 1fr);
+  --cols-2:      repeat(2, 1fr);
+  --cols-step:   1fr 1.1fr;
+  --cols-footer: 1fr;
+  --pad-section: 120px 32px;
+  --pad-hero:    80px 32px 96px;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --cols-4: repeat(2, 1fr);
+    --cols-3: repeat(2, 1fr);
+    --pad-section: 80px 24px;
+    --pad-hero: 60px 24px 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --cols-4:    repeat(2, 1fr);
+    --cols-3:    1fr;
+    --cols-2:    1fr;
+    --cols-step: 1fr;
+    --pad-section: 60px 20px;
+    --pad-hero:    48px 20px 64px;
+  }
+  .nav-links    { display: none !important; }
+  .nav-hamburger { display: inline-flex !important; }
+  .step-order   { order: unset !important; }
+  .hide-mobile  { display: none !important; }
+}
+
+/* ─── Design tokens ───────────────────────────────────────── */
 :root,
 :root[data-theme="light"] {
   --surface-app:        #F7F8FA;
@@ -66,20 +102,6 @@
 
   --duration-fast: 100ms;
   --ease-default:  cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-:root[data-theme="dark"] {
-  --surface-app:    #0D1117;
-  --surface-canvas: #161B22;
-  --surface-sunken: #0A0E14;
-  --text-primary:   #F0F4F8;
-  --text-secondary: #9CA3AD;
-  --text-tertiary:  #6B7280;
-  --text-inverse:   #0E1116;
-  --border-default: rgba(240,244,248,0.08);
-  --border-strong:  rgba(240,244,248,0.16);
-  --border-subtle:  rgba(240,244,248,0.04);
-  --brand-primary:  #F0F4F8;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

@@ -2,7 +2,8 @@ type IconName =
   | 'arrow' | 'arrowSm' | 'check' | 'chevDown' | 'chevRight'
   | 'plus' | 'minus' | 'shield' | 'sparkles' | 'lock' | 'clock'
   | 'users' | 'palette' | 'box' | 'file' | 'target' | 'moon' | 'sun'
-  | 'bank' | 'globe' | 'coins' | 'handshake' | 'chart';
+  | 'bank' | 'globe' | 'coins' | 'handshake' | 'chart'
+  | 'menu' | 'x';
 
 const PATHS: Record<IconName, string> = {
   arrow:    'M5 12h14M12 5l7 7-7 7',
@@ -28,6 +29,8 @@ const PATHS: Record<IconName, string> = {
   coins:    'M9 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM15 22a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM15 17a5 5 0 0 1-5-5M9 7a5 5 0 0 1 5 5',
   handshake:'M11 17l2 2a1 1 0 1 0 1.4-1.4M16.5 14.5l4 4a1 1 0 1 0 1.4-1.4l-4-4M3 9l3-3 4 4-3 3a2 2 0 0 1-3 0 2 2 0 0 1 0-3zM13 7l3-3 4 4-3 3-4-4z',
   chart:    'M3 3v18h18M7 16l4-4 4 4 5-5',
+  menu:     'M3 6h18M3 12h18M3 18h18',
+  x:        'M18 6 6 18M6 6l12 12',
 };
 
 type Props = {
