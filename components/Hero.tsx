@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <Section pad="var(--pad-hero)">
       <div style={{ maxWidth: 1000 }}>
-        <Eyebrow>Plataforma de validação · v1</Eyebrow>
+        <Eyebrow>Plataforma de validação</Eyebrow>
         <h1 style={{
           margin: '24px 0 0', fontFamily: 'var(--font-sans)',
           fontSize: 'clamp(40px, 6vw, 76px)',

@@ -8,7 +8,6 @@ import Footer from '@/components/Footer';
 
 export default function Page() {
   const navItems = [
-    { label: 'O Problema',  href: '#problema' },
     { label: 'Como funciona', href: '#produto' },
     { label: 'Segurança',   href: '#seguranca' },
   ];
