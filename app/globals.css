@@ -1,49 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-:root {
-  /* Surfaces */
+:root,
+:root[data-theme="light"] {
   --surface-app:        #F7F8FA;
   --surface-canvas:     #FFFFFF;
   --surface-raised:     #FFFFFF;
   --surface-sunken:     #F1F3F5;
   --surface-overlay:    rgba(14,17,22,0.45);
 
-  /* Text */
   --text-primary:       #0E1116;
   --text-secondary:     #5C636A;
   --text-tertiary:      #8B9098;
   --text-disabled:      #C2C7CC;
   --text-inverse:       #FFFFFF;
 
-  /* Borders */
   --border-default:     rgba(14,17,22,0.07);
   --border-strong:      rgba(14,17,22,0.14);
   --border-subtle:      rgba(14,17,22,0.04);
 
-  /* Brand */
   --brand-primary:        #0E1116;
   --brand-primary-hover:  #1F2329;
   --brand-on-primary:     #FFFFFF;
   --brand-accent-spark:   #D97757;
   --brand-accent-signal:  #1F8A5B;
 
-  /* Typography */
+  --status-success:       #1F8A5B;
+  --status-success-bg:    #ECF7F0;
+  --status-success-border:#D2E9DC;
+  --status-warning:       #C97A35;
+  --status-warning-bg:    #FBF3E6;
+  --status-warning-border:#F0DEBE;
+  --status-danger:        #C04A3F;
+  --status-danger-bg:     #FBEDEA;
+  --status-danger-border: #F0CFC8;
+  --status-info:          #2A5F7F;
+  --status-info-bg:       #EAF1F5;
+
+  --module-cadastro:    #2A5F7F;
+  --module-compliance:  #1F8A5B;
+  --module-marketing:   #D97757;
+  --module-ai:          #3D4047;
+
+  --shadow-lg:  0 16px 32px -10px rgba(14,17,22,0.08), 0 6px 12px -3px rgba(14,17,22,0.04);
+
   --font-sans:  'Inter Tight', system-ui, -apple-system, sans-serif;
   --font-serif: 'Instrument Serif', Georgia, serif;
   --font-mono:  'JetBrains Mono', ui-monospace, monospace;
 
-  /* Radii */
-  --radius-xs:   4px;
+  --text-2xs: 11px;
+  --text-xs:  12px;
+  --text-sm:  13px;
+  --text-md:  14px;
+  --text-lg:  16px;
+  --text-xl:  18px;
+  --text-2xl: 22px;
+  --text-3xl: 28px;
+  --text-4xl: 36px;
+
   --radius-sm:   6px;
   --radius-md:   8px;
   --radius-lg:   12px;
   --radius-xl:   16px;
   --radius-2xl:  20px;
   --radius-full: 999px;
+
+  --duration-fast: 100ms;
+  --ease-default:  cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:root[data-theme="dark"] {
+  --surface-app:    #0D1117;
+  --surface-canvas: #161B22;
+  --surface-sunken: #0A0E14;
+  --text-primary:   #F0F4F8;
+  --text-secondary: #9CA3AD;
+  --text-tertiary:  #6B7280;
+  --text-inverse:   #0E1116;
+  --border-default: rgba(240,244,248,0.08);
+  --border-strong:  rgba(240,244,248,0.16);
+  --border-subtle:  rgba(240,244,248,0.04);
+  --brand-primary:  #F0F4F8;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--surface-app);
@@ -58,12 +100,3 @@ body {
 button { font-family: inherit; }
 img, svg { display: block; }
 a { color: var(--text-primary); text-decoration: none; }
-
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb {
-  background: var(--border-strong);
-  border-radius: 999px;
-  border: 2px solid var(--surface-app);
-}
-::-webkit-scrollbar-thumb:hover { background: var(--text-tertiary); }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Fundo com canto arredondado -->
+  <rect width="32" height="32" rx="7" fill="#0E1116"/>
+  <!-- "k" em branco -->
+  <text
+    x="5" y="25"
+    font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif"
+    font-weight="800"
+    font-size="23"
+    fill="#FFFFFF"
+    letter-spacing="-1"
+  >k</text>
+  <!-- ponto verde Signal -->
+  <circle cx="26.5" cy="21.5" r="3.5" fill="#1F8A5B"/>
+</svg>

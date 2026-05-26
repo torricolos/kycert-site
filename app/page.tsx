@@ -1,15 +1,27 @@
+import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
-import PlatformList from '@/components/PlatformList';
-import UploadTips from '@/components/UploadTips';
+import Problem from '@/components/Problem';
+import HowItWorks from '@/components/HowItWorks';
+import Security from '@/components/Security';
+import FinalCta from '@/components/FinalCta';
+import Footer from '@/components/Footer';
 
 export default function Page() {
+  const navItems = [
+    { label: 'Produto',   href: '#produto' },
+    { label: 'Segurança', href: '#seguranca' },
+  ];
   return (
     <>
-      <Hero />
-      <main style={{ maxWidth: 1200, margin: '0 auto', padding: '0 32px 120px' }}>
-        <PlatformList />
-        <UploadTips />
+      <Nav items={navItems} current="Produto" />
+      <main id="top">
+        <Hero />
+        <Problem />
+        <HowItWorks />
+        <Security />
+        <FinalCta />
       </main>
+      <Footer />
     </>
   );
 }
