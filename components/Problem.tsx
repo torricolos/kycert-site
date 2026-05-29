@@ -34,9 +34,9 @@ export default function Problem() {
           borderBottom: '1px solid var(--border-default)',
         }}>
           {[
-            { v: '3–7 dias', l: 'pra validar um cliente PJ na média do mercado' },
-            { v: '32%', l: 'dos clientes desistem no cadastro tradicional' },
-            { v: 'R$ 480', l: 'custo médio por cadastro analisado manualmente' },
+            { v: 'até 7 dias', l: 'para validar um cliente PJ na média do mercado' },
+            { v: 'mais de 30%', l: 'dos clientes desistem no cadastro tradicional' },
+            { v: 'R$ 480', l: 'custo médio estimado por cadastro analisado manualmente' },
           ].map((s, i) => (
             <div key={i} role="listitem" style={{
               padding: '40px 24px',

@@ -8,7 +8,7 @@ export default function Security() {
     { t: 'BCB Resolução 4.658',  d: 'Política de segurança cibernética para instituições autorizadas. Reportes, contingência, monitoramento.', icon: 'shield' },
     { t: 'Lei 9.613/98 + COAF',  d: 'Prevenção à lavagem de dinheiro. Workflow de comunicações obrigatórias. Documentação de auditoria.', icon: 'file' },
     { t: 'LGPD · Lei 13.709/18', d: 'Operadores de dados. DPO designado. Encarregado disponível. Direitos do titular automatizados.', icon: 'lock' },
-    { t: 'CVM 35 · suitability',  d: 'Cadastro de cliente e categorização de investidor. Integrado ao fluxo de onboarding.', icon: 'file' },
+    { t: 'CVM Resolução 35 · câmbio',  d: 'Cadastro obrigatório de clientes de câmbio. Identificação, qualificação e documentação do cliente conforme regulação BCB.', icon: 'file' },
   ];
   return (
     <Section id="seguranca" pad="var(--pad-section)" bg="var(--text-primary)">

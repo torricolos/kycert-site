@@ -23,7 +23,7 @@ export default function HowItWorks() {
     },
     {
       n: '04',
-      t: 'Cliente certificado, pronto pra operar',
+      t: 'Cliente certificado, pronto para operar',
       d: 'Ficha completa, audit log assinado e integrações com seu sistema operacional. Renovação automática a cada 365 dias — você não esquece, ele também não.',
       preview: <ApprovedCard />,
     },

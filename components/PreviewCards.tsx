@@ -10,7 +10,7 @@ type Props = {
 export function InviteCard({
   recipient = 'Maria Silva',
   from = 'Sua Empresa',
-  message = 'Maria, abra seu cadastro pra começar a operar com a gente.',
+  message = 'Maria, abra seu cadastro para começar a operar com a gente.',
 }: Props) {
   return (
     <PreviewFrame>
@@ -117,7 +117,7 @@ export function ComplianceCard({ checks }: { checks?: Check[] }) {
   );
 }
 
-export function ApprovedCard({ headline = 'Maria está certificada\ne pronta pra operar.' }: { headline?: string }) {
+export function ApprovedCard({ headline = 'Maria está certificada\ne pronta para operar.' }: { headline?: string }) {
   return (
     <PreviewFrame dotColor="var(--status-success)">
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 0 12px' }}>
@@ -130,7 +130,7 @@ export function ApprovedCard({ headline = 'Maria está certificada\ne pronta pra
       </div>
       <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8, fontSize: 11 }}>
         {([
-          ['Tempo total', '3 min 24 s'],
+          ['Tempo total', '1 min 48 s'],
           ['Score de risco', '38 · médio'],
           ['Documentos', '14 anexados'],
           ['Próxima revisão', 'Em 365 dias'],
