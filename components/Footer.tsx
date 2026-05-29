@@ -44,14 +44,7 @@ export default function Footer() {
               Legal
             </div>
             {legalLinks.map((l) => (
-              <a key={l.href} href={l.href} style={{
-                fontSize: 'var(--text-sm)', color: 'var(--text-secondary)',
-                fontWeight: 500,
-                transition: 'color 100ms',
-              }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-secondary)')}
-              >
+              <a key={l.href} href={l.href} className="footer-legal-link">
                 {l.label}
               </a>
             ))}

@@ -122,3 +122,11 @@ body {
 button { font-family: inherit; }
 img, svg { display: block; }
 a { color: var(--text-primary); text-decoration: none; }
+
+.footer-legal-link {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.footer-legal-link:hover { color: var(--text-primary); }
