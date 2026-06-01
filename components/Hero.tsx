@@ -1,7 +1,7 @@
 import Section, { Eyebrow } from './Section';
 import Icon from './Icon';
 
-const WA = 'https://wa.me/5511937359748?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.';
+const WA = 'https://wa.me/5511977656630?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.';
 
 export default function Hero() {
   const stats = [
