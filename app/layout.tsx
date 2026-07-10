@@ -4,32 +4,31 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://kycert.com.br'),
   title: {
-    default: 'KYCERT · Validação de clientes PF e PJ em minutos | Onboarding e KYC para mercados regulados',
-    template: '%s · KYCERT',
+    default: 'kycert · Onboarding, KYC/KYB e trilha auditável para instituições reguladas',
+    template: '%s · kycert',
   },
   description:
-    'Plataforma completa de onboarding, KYC e validação de clientes PF e PJ em minutos. Bureau de dados, compliance, AML e auditoria em uma única solução white-label para mercados regulados.',
+    'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
   keywords: [
-    'validação de clientes', 'KYC PF PJ', 'onboarding digital',
-    'bureau de dados', 'compliance', 'AML', 'COAF', 'BCB', 'LGPD',
-    'KYCERT', 'mercado regulado', 'câmbio', 'fintech',
+    'KYC', 'KYB', 'onboarding digital', 'trilha auditável', 'compliance',
+    'PLD/FT', 'COAF', 'BCB', 'LGPD', 'kycert', 'mercado regulado', 'câmbio', 'PSAV', 'fintech',
   ],
-  authors: [{ name: 'KYCERT Tecnologia' }],
+  authors: [{ name: 'kycert Tecnologia' }],
   robots: { index: true, follow: true },
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
     url: '/',
-    siteName: 'KYCERT',
-    title: 'KYCERT · Validação completa de PF e PJ em minutos',
+    siteName: 'kycert',
+    title: 'kycert · Onboarding, KYC/KYB e trilha auditável para instituições reguladas',
     description:
-      'Mais que bureau. Plataforma de onboarding, KYC e validação de clientes para mercados regulados.',
+      'Convite, verificação, decisão e evidência — reunidos num único registro pronto para a fiscalização.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'KYCERT · Validação de clientes em minutos',
-    description: 'Onboarding, KYC e bureau em uma plataforma para mercados regulados.',
+    title: 'kycert · Onboarding, KYC/KYB e trilha auditável',
+    description: 'Onboarding, verificação e trilha auditável para instituições reguladas.',
   },
   icons: {
     icon: '/images/favicon.svg',
@@ -39,17 +38,17 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'KYCERT',
+  name: 'kycert',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description:
-    'Plataforma de onboarding, KYC e validação de clientes PF e PJ em minutos para mercados regulados.',
+    'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil.',
   url: 'https://kycert.com.br/',
   inLanguage: 'pt-BR',
   offers: { '@type': 'Offer', priceCurrency: 'BRL' },
   publisher: {
     '@type': 'Organization',
-    name: 'KYCERT Tecnologia',
+    name: 'kycert Tecnologia',
     url: 'https://kycert.com.br/',
   },
 };

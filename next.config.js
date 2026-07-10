@@ -1,3 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { reactStrictMode: true };
+const nextConfig = {
+  reactStrictMode: true,
+  async redirects() {
+    return [
+      { source: '/glossario', destination: '/faq#glossario', permanent: true },
+    ];
+  },
+};
 module.exports = nextConfig;
