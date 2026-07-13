@@ -33,7 +33,7 @@ const BODY_HTML = `
   <div class="split" style="align-items:start">
     <div class="split-copy">
       <span class="eyebrow">Quick start</span>
-      <h3 style="margin-top:12px">Primeiro resultado em minutos.</h3>
+      <h3 style="margin-top:12px">Da chave de teste ao primeiro resultado.</h3>
       <p>Gere uma chave <code style="font-family:var(--font-mono);font-size:13px">sk_test_</code> no dashboard, escolha um template e dispare um run com o documento do cliente. O resultado chega no seu webhook.</p>
       <div class="flist">
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Autenticação por API key</b><p>Header <code style="font-family:var(--font-mono);font-size:12.5px">x-api-key</code>, com escopos por chave e ambiente sandbox.</p></div></div>

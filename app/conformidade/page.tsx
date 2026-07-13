@@ -76,7 +76,7 @@ const BODY_HTML = `
     <div class="cmap-row" data-seg="psav">
       <div class="top"><div><div class="law">Lei 14.478/2022 · Res. BCB 519, 520 e 521/2025</div><div class="fr">Ativos virtuais (PSAV)</div></div><div class="tags"><span class="tg">PSAV</span></div></div>
       <div class="cmap-cols">
-        <div><div class="cl">O que pede</div><p>Avaliação de risco do cliente documentada, além de autorização e funcionamento. Vigência em 02/02/2026; pedido de autorização até 20/10/2026.</p></div>
+        <div><div class="cl">O que pede</div><p>Avaliação de risco do cliente documentada, além de autorização e funcionamento. Vigência em 02/02/2026; pedido de autorização até 30/10/2026.</p></div>
         <div><div class="cl">Onde a kycert entra</div><p>Onboarding com avaliação de risco registrada a cada cliente.</p></div>
         <div class="ev"><div class="cl"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Evidência</div><p>Dossiê de Risco com score, apontamentos e decisão, exportável.</p></div>
       </div>

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime     = 'edge'
-export const alt         = 'KYCERT — Compliance completo em minutos, não em dias.'
+export const alt         = 'KYCERT — Comprove cada cliente, cada decisão.'
 export const size        = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -50,8 +50,8 @@ export default function Image() {
             lineHeight: 1.05,
             letterSpacing: '-2px',
           }}>
-            Compliance completo<br />
-            <span style={{ color: '#1F8A5B' }}>em minutos, não em dias.</span>
+            Comprove cada cliente,<br />
+            <span style={{ color: '#1F8A5B' }}>cada decisão.</span>
           </div>
           <div style={{
             fontFamily: 'system-ui, sans-serif',

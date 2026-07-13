@@ -29,7 +29,7 @@ const BODY_HTML = `
   <div style="max-width:760px">
     <span class="eyebrow reveal">Dossiê de risco do cliente</span>
     <h1 class="reveal reveal-d1" style="margin:20px 0">O veredito de risco no topo. <span class="em">A evidência logo abaixo.</span></h1>
-    <p class="lead reveal reveal-d2" style="max-width:60ch">Toda a verificação de um cliente em uma tela: score de risco, apontamentos com evidência, estrutura societária e as fontes consultadas. O analista entende a situação em segundos e decide com segurança.</p>
+    <p class="lead reveal reveal-d2" style="max-width:60ch">Toda a verificação de um cliente em uma tela: score de risco, apontamentos com evidência, estrutura societária e as fontes consultadas. O analista vê a situação completa em uma tela e decide com segurança.</p>
     <div class="cta reveal reveal-d3"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="#tour" class="btn btn-ghost btn-lg">Ver por dentro</a></div>
   </div>
 </div>
@@ -241,7 +241,7 @@ const BODY_HTML = `
     <span class="eyebrow on-dark reveal">Por que importa</span>
     <h2 class="serif reveal reveal-d1" style="color:#fff">Decisão segura, com a prova já montada.</h2>
     <div class="pcards">
-      <div class="pcard reveal reveal-d1"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v9l6 3"/><circle cx="12" cy="12" r="9"/></svg></div><div class="q">Análise em segundos</div><div class="a">O score e os apontamentos colocam o analista direto no que precisa de decisão.</div></div>
+      <div class="pcard reveal reveal-d1"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v9l6 3"/><circle cx="12" cy="12" r="9"/></svg></div><div class="q">Direto à decisão</div><div class="a">O score e os apontamentos colocam o analista direto no que precisa de decisão.</div></div>
       <div class="pcard reveal reveal-d2"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div class="q">Segurança na decisão</div><div class="a">Cada apontamento vem com fonte, período e correspondência para confirmar ou descartar.</div></div>
       <div class="pcard reveal reveal-d3"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v4H4z"/><path d="M6 8v12h12V8"/></svg></div><div class="q">Trilha pronta</div><div class="a">A decisão e a evidência ficam registradas e exportáveis para o regulador.</div></div>
     </div>

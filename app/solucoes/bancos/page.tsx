@@ -121,7 +121,7 @@ const BODY_HTML = `
       <div class="split-copy reveal">
         <span class="eyebrow on-dark">Feita para escala</span>
         <h3 style="margin-top:14px;color:#fff">A verificação <span class="serif" style="color:var(--signal-on-dark)">dentro do seu fluxo.</span></h3>
-        <p style="color:#aab1b9">Dispare uma verificação a partir do seu app de abertura de conta, receba o dossiê estruturado em segundos e siga com a decisão no seu motor. A trilha fica registrada na kycert e disponível para o compliance.</p>
+        <p style="color:#aab1b9">Dispare uma verificação a partir do seu app de abertura de conta, receba o dossiê estruturado na resposta e siga com a decisão no seu motor. A trilha fica registrada na kycert e disponível para o compliance.</p>
         <div class="flist">
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b style="color:#fff">API REST e webhooks</b><p style="color:#99a1aa">Consultas disparadas pelo seu app, com aviso de mudança de status.</p></div></div>
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b style="color:#fff">PF e PJ no mesmo contrato</b><p style="color:#99a1aa">KYC, KYB e enquadramento de risco numa só integração.</p></div></div>
@@ -137,7 +137,7 @@ const BODY_HTML = `
         "documento": "***.***.***-12",
         "fontes": ["receita","sancoes","pep"] }'</span>
 
-<span class="c"># resposta em segundos</span>
+<span class="c"># resposta</span>
 { <span class="s">"status"</span>: <span class="s">"concluida"</span>,
   <span class="s">"risco"</span>: <span class="s">"baixo"</span>,
   <span class="s">"decisao"</span>: <span class="s">"aprovar"</span> }</pre>
