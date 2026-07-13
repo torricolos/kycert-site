@@ -35,7 +35,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <p>A abertura digital convive com documento adulterado e identidade de terceiro. Sem verificação de identidade forte no cadastro, a conta fraudada nasce dentro da base e só aparece depois, quando o prejuízo já aconteceu.</p>
 <h2>Conta PJ exige KYB de verdade</h2>
 <p>Cliente pessoa jurídica não se resume ao CNPJ. É preciso recuperar o quadro societário e chegar ao beneficiário final, verificando cada entidade da cadeia. Feito manualmente, isso vira gargalo ou atalho que deixa risco passar.</p>
-<h2>Risco precisa de leitura, não só de velocidade</h2>
+<h2>A leitura de risco precisa acompanhar a velocidade</h2>
 <p>Conceder conta e crédito rápido sem enquadrar o risco do cliente troca exposição regulatória e inadimplência por agilidade. O enquadramento pela política da instituição precisa acontecer dentro do fluxo, automaticamente.</p>
 <h2>Onde a kycert entra</h2>
 <p>A kycert junta KYC de PF, KYB de PJ com beneficiário final e enquadramento de risco num onboarding único, conectado ao seu core por API. Cada cliente entra verificado e cada decisão fica registrada numa trilha auditável.</p>

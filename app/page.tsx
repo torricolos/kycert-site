@@ -606,7 +606,7 @@ const HOME_BODY = `
         <p class="sub">Histórico vivo de consultas, status de risco e a trilha por trás de cada decisão, prontos para auditoria.</p>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Risco classificado por cliente, em tempo real</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Cada linha abre a trilha assinada que a originou</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Cada linha abre a trilha completa que a originou</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Filtros por status, período e responsável</li>
         </ul>
       </div>
@@ -617,7 +617,7 @@ const HOME_BODY = `
         <div class="row"><span class="t">13:58</span><span class="who"><b>Compliance Ltda</b><span class="id">CNPJ ··.···.···/0001-99</span></span><span class="st rev2">Em revisão</span></div>
         <div class="row"><span class="t">13:51</span><span class="who"><b>Maria Santos</b><span class="id">CPF ···.···.456-78</span></span><span class="st blk">PEP · bloqueio</span></div>
         <div class="row"><span class="t">13:47</span><span class="who"><b>Atlas Pagamentos Ltda</b><span class="id">CNPJ ··.···.···/0001-22</span></span><span class="st ok">Aprovado</span></div>
-        <div class="pf"><span>atualizado há 8s</span><span class="audit"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>cada linha gera trilha assinada</span></div>
+        <div class="pf"><span>atualizado há 8s</span><span class="audit"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>cada linha gera trilha de auditoria</span></div>
       </div>
     </div>
   </div>
@@ -893,7 +893,7 @@ const HOME_BODY = `
     <div class="split">
       <div class="split-copy">
         <span class="eyebrow on-dark">Integração</span>
-        <h3 style="color:#fff">Conecta ao seu core, <span class="serif" style="color:var(--green-l)">não vira ilha.</span></h3>
+        <h3 style="color:#fff">Conecta ao seu core, <span class="serif" style="color:var(--green-l)">de ponta a ponta.</span></h3>
         <p style="color:#aab1b9">A trilha foi pensada para se ligar ao seu sistema de cadastro e ao seu motor de risco. Dispare uma verificação, receba o resultado estruturado e mantenha a evidência do seu lado. O escopo é definido na demo técnica.</p>
         <div class="flist">
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b style="color:#fff">API REST</b><p style="color:#99a1aa">Dispare consultas e receba o dossiê em JSON.</p></div></div>
@@ -962,7 +962,7 @@ const HOME_BODY = `
     <h2 style="margin-top:24px">A próxima auditoria começa<br>no <span class="serif">cadastro de hoje</span>.</h2>
     <p>Mostramos a plataforma com o seu caso — PSAV, câmbio ou o segmento que precisa provar PLD.</p>
     <div class="ctarow">
-      <button class="btn btn-white">Agendar demo · 30 min<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      <a class="btn btn-white" href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0">Agendar demo · 30 min<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>

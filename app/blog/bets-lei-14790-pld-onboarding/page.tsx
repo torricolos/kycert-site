@@ -30,7 +30,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <div class="art-eyebrow">Apostas · Bets</div>
 <h1>Apostas de quota fixa: o KYC que a regulamentação passou a exigir</h1>
 <div class="art-meta"><span>Apostas / Bets</span><span>18/06/2026</span><span>7 min de leitura</span></div>
-<p class="lead-p">Com a Lei 14.790/2023 e a regulamentação da Secretaria de Prêmios e Apostas (Portarias SPA/MF 722/2024 e 827/2024), a operação de apostas no Brasil passou a ter deveres formais de identificação do apostador e de prevenção à lavagem de dinheiro. O cadastro deixou de ser cortesia e virou requisito de autorização.</p>
+<p class="lead-p">Com a Lei 14.790/2023 e a regulamentação da Secretaria de Prêmios e Apostas (Portarias SPA/MF 722/2024 e 827/2024), a operação de apostas no Brasil passou a ter deveres formais de identificação do apostador e de prevenção à lavagem de dinheiro. O cadastro passou a ser requisito de autorização.</p>
 <h2>Quem aposta precisa ser identificado</h2>
 <p>A regulamentação exige que cada apostador seja identificado no cadastro, com validação de CPF, verificação de idade e confirmação biométrica facial (Portaria SPA/MF 722/2024), antes da primeira aposta. A conta gráfica é nominal e intransferível, o que torna a verificação de identidade um passo obrigatório do onboarding, não um detalhe operacional.</p>
 <h2>O PLD/FT passou a valer para apostas</h2>
