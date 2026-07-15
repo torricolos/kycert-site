@@ -13,7 +13,7 @@
   --text-primary:#0E1116; --text-secondary:#545B63; --text-tertiary:#8B9098; --text-inverse:#FFFFFF;
   --text-link:#1F8A5B;
   /* borders */
-  --border-default:rgba(14,17,22,.08); --border-strong:rgba(14,17,22,.14); --border-on-dark:rgba(255,255,255,.10);
+  --border-default:rgba(14,17,22,.12); --border-strong:rgba(14,17,22,.18); --border-on-dark:rgba(255,255,255,.13);
   /* brand */
   --brand:#0E1116; --brand-hover:#23282E; --on-brand:#FFFFFF;
   /* signal / status */
@@ -98,7 +98,7 @@ h2.serif{font-family:var(--font-serif);font-weight:600;font-size:clamp(30px,3.6v
 /* ---------- nav ---------- */
 nav.site{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.78);backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
 nav.site.scrolled{border-color:var(--border-default);box-shadow:var(--sh-sm)}
-nav.site .inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:24px}
+nav.site .inner{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:24px}
 .brand{font-weight:700;font-size:21px;letter-spacing:-.03em;display:inline-flex;align-items:center}
 .brand .sig{color:var(--signal)}
 .nav-links{display:flex;gap:2px;align-items:center}

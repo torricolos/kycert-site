@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   },
 };
 
+const EXTRA_STYLE = `
+  @media (max-width:640px){.dossie-grid-2{grid-template-columns:1fr !important}}
+`;
+
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span style="color:var(--text-secondary)">Dossiê de exemplo</span></div></nav>
 
@@ -74,7 +78,7 @@ const BODY_HTML = `
 <section style="padding:48px 0 40px"><div class="wrap">
   <span class="eyebrow reveal">Apontamentos</span>
   <h2 class="reveal reveal-d1" style="margin:14px 0 0">A evidência vem junto do alerta.</h2>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px" class="reveal">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px" class="reveal dossie-grid-2">
     <div style="border:1px solid #E7C9C4;border-left:3px solid #C0392B;border-radius:var(--r-lg);background:#FCF1EF;padding:20px 22px">
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px"><span style="font-size:11px;font-weight:600;color:#C0392B;background:#FBE6E3;padding:3px 9px;border-radius:var(--r-full)">Ativo</span><b style="font-size:16px">Crime Financeiro</b><span style="margin-left:auto;font-family:var(--font-mono);font-size:12px;font-weight:700;color:#C0392B">91% match</span></div>
       <dl style="display:grid;grid-template-columns:1fr auto;gap:9px 16px;margin:0;font-size:13px"><dt style="color:var(--text-tertiary)">Fonte / Lista</dt><dd style="margin:0;font-weight:600;text-align:right">OFAC · SDN</dd><dt style="color:var(--text-tertiary)">Sócio</dt><dd style="margin:0;font-weight:600;text-align:right">Heitor A. Brandão</dd><dt style="color:var(--text-tertiary)">Desde</dt><dd style="margin:0;font-weight:600;text-align:right">12/03/2021</dd></dl>
@@ -85,7 +89,7 @@ const BODY_HTML = `
     </div>
   </div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;align-items:start" class="reveal">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;align-items:start" class="reveal dossie-grid-2">
     <div class="ui-card">
       <div class="ui-head"><span class="t"><span class="live-dot"></span> Estrutura societária</span><span class="badge" style="color:var(--warning);background:var(--warning-bg);border-color:var(--warning-bd)">2 apontamentos</span></div>
       <div class="ui-row"><span class="lbl"><b>Brick Lane Hospitalidade LTDA</b><br><small style="color:var(--text-tertiary);font-family:var(--font-mono);font-size:11px">empresa analisada</small></span><span class="st">Nada consta</span></div>
@@ -130,6 +134,7 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+      <style dangerouslySetInnerHTML={{ __html: EXTRA_STYLE }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />
