@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD/FT para seguradoras sob a SUSEP | kycert',
+  title: 'KYC e PLD/FT para seguradoras sob a SUSEP',
   description:
     'Identificação do segurado, contratante PJ e beneficiário final, com avaliação de risco e trilha auditável sob a supervisão da SUSEP.',
   alternates: { canonical: '/solucoes/seguradoras' },

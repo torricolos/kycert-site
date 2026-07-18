@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Mapa de normas e conformidade regulatória | kycert',
+  title: 'Mapa de normas e conformidade regulatória',
   description:
     'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets — o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
   alternates: { canonical: '/conformidade' },

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Segurança e proteção de dados | kycert',
+  title: 'Segurança e proteção de dados',
   description:
     'Como a kycert protege os dados dos seus clientes: LGPD desde o desenho, criptografia, controle de acesso e trilha de auditoria.',
   alternates: { canonical: '/seguranca' },

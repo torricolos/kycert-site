@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'FAQ e glossário — KYC, PLD/FT e compliance | kycert',
+  title: 'FAQ e glossário — KYC, PLD/FT e compliance',
   description:
     'Respostas diretas às dúvidas sobre a kycert e um glossário de KYC, KYB, PLD/FT e verificação de identidade para times de compliance de instituições reguladas.',
   alternates: { canonical: '/faq' },

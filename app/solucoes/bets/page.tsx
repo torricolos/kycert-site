@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD para casas de apostas (Bets) · Lei 14.790/2023 | kycert',
+  title: 'KYC e PLD para casas de apostas (Bets) · Lei 14.790/2023',
   description:
     'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   alternates: { canonical: '/solucoes/bets' },

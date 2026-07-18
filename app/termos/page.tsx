@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Termos de Uso | kycert',
+  title: 'Termos de Uso',
   description: 'Termos de uso da plataforma kycert.',
   alternates: { canonical: '/termos' },
   openGraph: {

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Beneficiário final (UBO): o que o KYB exige e como mapear | kycert',
+  title: 'Beneficiário final (UBO): o que o KYB exige e como mapear',
   description:
     'O que é o beneficiário final, por que identificá-lo é obrigação de KYB e como mapear a cadeia societária até a pessoa natural que controla a empresa.',
   alternates: { canonical: '/blog/beneficiario-final-ubo-kyb' },

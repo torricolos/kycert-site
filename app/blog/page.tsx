@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Blog — compliance, KYC e regulação | kycert',
+  title: 'Blog — compliance, KYC e regulação',
   description:
     'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
   alternates: { canonical: '/blog' },

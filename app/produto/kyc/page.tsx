@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Verificação de pessoa física (KYC) com trilha auditável | kycert',
+  title: 'Verificação de pessoa física (KYC) com trilha auditável',
   description:
     'KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco — cada checagem registrada como evidência para a fiscalização.',
   alternates: { canonical: '/produto/kyc' },

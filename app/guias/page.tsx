@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Guias e materiais de compliance | kycert',
+  title: 'Guias e materiais de compliance',
   description:
     'Checklist de prontidão para fiscalização e modelo de dossiê anonimizado para times de compliance de instituições reguladas.',
   alternates: { canonical: '/guias' },

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978 | kycert',
+  title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978',
   description:
     'Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.',
   alternates: { canonical: '/blog/cooperativas-credito-3978-associados' },

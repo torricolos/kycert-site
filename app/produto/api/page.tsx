@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'API de KYC/KYB e webhooks | kycert',
+  title: 'API de KYC/KYB e webhooks',
   description:
     'Integre a trilha de verificação ao seu fluxo com a API da kycert e receba atualizações de status por webhook em tempo real.',
   alternates: { canonical: '/produto/api' },

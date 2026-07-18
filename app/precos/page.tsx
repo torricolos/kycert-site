@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Preços | kycert',
+  title: 'Preços',
   description:
     'A kycert cobra por créditos de verificação, com plataforma white-label inclusa. Fale com o time para um plano dimensionado ao seu volume.',
   alternates: { canonical: '/precos' },

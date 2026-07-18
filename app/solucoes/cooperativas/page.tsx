@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD/FT para cooperativas de crédito · Circular BCB 3.978 | kycert',
+  title: 'KYC e PLD/FT para cooperativas de crédito · Circular BCB 3.978',
   description:
     'Verificação e monitoramento do quadro de associados sob a Circular BCB 3.978/2020, com trilha auditável para o Banco Central.',
   alternates: { canonical: '/solucoes/cooperativas' },

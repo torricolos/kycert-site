@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Consórcios e gestoras: onboarding sob BCB e CVM | kycert',
+  title: 'Consórcios e gestoras: onboarding sob BCB e CVM',
   description:
     'Administradoras de consórcio (BCB) e gestoras de recursos (CVM) respondem a deveres de identificação e PLD/FT. Veja como estruturar o cadastro do investidor e do consorciado.',
   alternates: { canonical: '/blog/consorcios-mercado-capitais-onboarding' },

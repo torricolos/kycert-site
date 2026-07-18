@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Reverificação periódica e monitoramento contínuo | kycert',
+  title: 'Reverificação periódica e monitoramento contínuo',
   description:
     'Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.',
   alternates: { canonical: '/produto/monitoramento' },

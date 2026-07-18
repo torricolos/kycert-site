@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Solução de KYC e onboarding para corretoras de câmbio | kycert',
+  title: 'Solução de KYC e onboarding para corretoras de câmbio',
   description:
     'As dores do onboarding de câmbio e como a kycert resolve: cadastro de PJ, quadro societário, PLD/FT e trilha auditável para corretoras e DTVMs.',
   alternates: { canonical: '/solucoes/cambio' },

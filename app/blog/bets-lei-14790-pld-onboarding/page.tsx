@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets | kycert',
+  title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets',
   description:
     'A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.',
   alternates: { canonical: '/blog/bets-lei-14790-pld-onboarding' },

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Privacidade & LGPD | kycert',
+  title: 'Privacidade & LGPD',
   description: 'Política de privacidade e tratamento de dados pessoais da kycert conforme a LGPD.',
   alternates: { canonical: '/privacidade' },
   openGraph: {

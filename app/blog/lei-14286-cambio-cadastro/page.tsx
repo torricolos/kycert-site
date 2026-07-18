@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Lei 14.286/2021 e Res. BCB 277/2022: cadastro de cliente no câmbio | kycert',
+  title: 'Lei 14.286/2021 e Res. BCB 277/2022: cadastro de cliente no câmbio',
   description:
     'O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.',
   alternates: { canonical: '/blog/lei-14286-cambio-cadastro' },

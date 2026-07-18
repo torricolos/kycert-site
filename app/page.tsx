@@ -3,7 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'kycert · home',
+  title: { absolute: 'kycert · Onboarding e trilha auditável para instituições reguladas' },
   description:
     'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
   alternates: { canonical: '/' },
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'kycert',
     locale: 'pt_BR',
-    title: 'kycert · home',
+    title: 'kycert · Onboarding e trilha auditável para instituições reguladas',
     description:
       'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
     url: '/',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'kycert · home',
+    title: 'kycert · Onboarding e trilha auditável para instituições reguladas',
     description:
       'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
     images: ['https://kycert.com.br/opengraph-image'],

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'OCR de documentos e cadastro sem digitação | kycert',
+  title: 'OCR de documentos e cadastro sem digitação',
   description:
     'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',
   alternates: { canonical: '/produto/ocr' },

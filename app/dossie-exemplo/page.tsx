@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Dossiê de risco de exemplo | kycert',
+  title: 'Dossiê de risco de exemplo',
   description:
     'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes consultadas e decisão registrada.',
   alternates: { canonical: '/dossie-exemplo' },

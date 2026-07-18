@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Abertura de conta em fintech: KYC, KYB e risco em escala | kycert',
+  title: 'Abertura de conta em fintech: KYC, KYB e risco em escala',
   description:
     'Instituições de pagamento abrem conta em minutos e respondem por cada cliente em PLD/FT. Veja como verificar PF e PJ sem travar o onboarding.',
   alternates: { canonical: '/blog/abertura-conta-fintech-kyb-escala' },

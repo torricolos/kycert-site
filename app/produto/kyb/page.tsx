@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Verificação de pessoa jurídica e beneficiário final (KYB/UBO) | kycert',
+  title: 'Verificação de pessoa jurídica e beneficiário final (KYB/UBO)',
   description:
     'KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios — a cadeia inteira registrada como evidência.',
   alternates: { canonical: '/produto/kyb' },

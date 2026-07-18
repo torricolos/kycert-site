@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Dossiê de Risco — veredito, evidência e decisão registrada | kycert',
+  title: 'Dossiê de Risco — veredito, evidência e decisão registrada',
   description:
     'O risco de cada cliente consolidado num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e a decisão registrada com autor, data e PDF.',
   alternates: { canonical: '/produto/dossie-de-risco' },

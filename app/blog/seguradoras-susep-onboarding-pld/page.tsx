@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP | kycert',
+  title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP',
   description:
     'Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.',
   alternates: { canonical: '/blog/seguradoras-susep-onboarding-pld' },

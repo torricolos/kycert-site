@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Checklist de prontidão para fiscalização de PLD/FT | kycert',
+  title: 'Checklist de prontidão para fiscalização de PLD/FT',
   description:
     'Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.',
   alternates: { canonical: '/blog/checklist-prontidao-fiscalizacao' },

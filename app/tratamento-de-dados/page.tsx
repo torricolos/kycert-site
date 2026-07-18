@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Tratamento de Dados | kycert',
+  title: 'Tratamento de Dados',
   description: 'Anexo de tratamento de dados pessoais da kycert: papéis, finalidades e segurança.',
   alternates: { canonical: '/tratamento-de-dados' },
   openGraph: {

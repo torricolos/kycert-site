@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e avaliação de risco para PSAV sob a Resolução BCB 520 | kycert',
+  title: 'KYC e avaliação de risco para PSAV sob a Resolução BCB 520',
   description:
     'As dores das prestadoras de ativos virtuais sob o novo regime do BCB e como a kycert resolve: KYC, sanções, PEP e trilha de PLD/FT auditável.',
   alternates: { canonical: '/solucoes/psav' },

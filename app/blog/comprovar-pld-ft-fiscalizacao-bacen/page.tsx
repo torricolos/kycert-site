@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Fiscalização do BACEN: como comprovar PLD/FT na prática | kycert',
+  title: 'Fiscalização do BACEN: como comprovar PLD/FT na prática',
   description:
     'Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo — pergunta como você decidiu. Veja o que precisa estar registrado.',
   alternates: { canonical: '/blog/comprovar-pld-ft-fiscalizacao-bacen' },

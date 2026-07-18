@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC, KYB e onboarding para bancos e fintechs | kycert',
+  title: 'KYC, KYB e onboarding para bancos e fintechs',
   description:
     'As dores de abertura de conta e crédito em escala e como a kycert resolve: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',
   alternates: { canonical: '/solucoes/bancos' },

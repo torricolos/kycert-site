@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -61,8 +62,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18330789484"
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18330789484');`}
+        </Script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          id="hs-script-loader"
+          src="//js.hs-scripts.com/51689422.js"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }

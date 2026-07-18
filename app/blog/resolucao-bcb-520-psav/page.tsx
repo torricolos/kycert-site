@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Resolução BCB 520/2025 para PSAV: avaliação de risco na prática | kycert',
+  title: 'Resolução BCB 520/2025 para PSAV: avaliação de risco na prática',
   description:
     'O que a Resolução BCB 520/2025 exige das PSAVs em avaliação de risco e como registrar essa avaliação como evidência auditável antes do prazo de outubro de 2026.',
   alternates: { canonical: '/blog/resolucao-bcb-520-psav' },
