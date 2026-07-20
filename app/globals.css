@@ -512,6 +512,34 @@ footer .bottom .mono{font-family:var(--font-mono);display:inline-flex;align-item
   .tour-step.rev .tour-media{order:0}
 }
 
+/* ---------- audit log panel (histórico de consultas, portado do home) ---------- */
+.panel{border-radius:var(--r-xl);overflow:hidden;background:var(--brand);color:#fff;border:1px solid var(--border-on-dark);box-shadow:var(--sh-xl)}
+.panel .ph{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border-on-dark)}
+.panel .ph .ttl{font-weight:600;font-size:14px;display:flex;align-items:center;gap:10px}
+.panel .ph .live{font-family:var(--font-mono);font-size:11px;color:var(--signal-on-dark);display:flex;align-items:center;gap:7px}
+.panel .ph .live .d{width:6px;height:6px;border-radius:50%;background:var(--signal-on-dark);animation:ping 2.4s infinite}
+.filterbar{display:flex;gap:8px;padding:13px 20px;border-bottom:1px solid rgba(255,255,255,.08);align-items:center;flex-wrap:wrap}
+.gpill{font-family:var(--font-mono);font-size:11.5px;padding:7px 13px;border-radius:var(--r-full);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#C7CAD1;display:flex;gap:7px}
+.gpill.on{background:rgba(63,190,136,.16);border-color:rgba(63,190,136,.4);color:#7FE3B5}
+.gpill .x{opacity:.5}
+.panel .row{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;padding:14px 20px;border-bottom:1px solid rgba(255,255,255,.06);font-size:13px}
+.panel .row:last-child{border-bottom:none}
+.panel .row .t{font-family:var(--font-mono);font-size:11px;color:#8f97a1}
+.panel .row .who b{font-weight:600;font-size:13.5px;display:block;color:#fff}
+.panel .row .who .id{font-family:var(--font-mono);font-size:11px;color:#8f97a1;margin-top:2px}
+.st{font-family:var(--font-mono);font-size:11px;font-weight:500;padding:4px 11px;border-radius:var(--r-full);display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.st::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.st.ok{color:#5FD39B;background:rgba(63,190,136,.14)}
+.st.rev2{color:#E6B45C;background:rgba(230,180,92,.14)}
+.st.blk{color:#E88A7D;background:rgba(232,138,125,.14)}
+.panel .pf{padding:13px 20px;display:flex;justify-content:space-between;align-items:center;font-family:var(--font-mono);font-size:11px;color:#8f97a1;flex-wrap:wrap;gap:8px}
+.panel .pf .audit{color:var(--signal-on-dark);display:flex;gap:6px;align-items:center}
+@media(max-width:560px){.panel .row{grid-template-columns:1fr auto;grid-template-areas:"who st" "t t"}.panel .row .t{grid-area:t}.panel .row .who{grid-area:who}.panel .row .st{grid-area:st;justify-self:start}}
+
+/* ---------- deadline chip (prazo regulatório no hero) ---------- */
+.deadline-chip{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:12.5px;color:var(--warning);background:var(--warning-bg);border:1px solid var(--warning-bd);border-radius:var(--r-full);padding:7px 15px;margin-bottom:22px}
+.deadline-chip .d{width:6px;height:6px;border-radius:50%;background:var(--warning);flex:none}
+
 /* ---------- responsive ---------- */
 @media(max-width:1000px){
   .stats{grid-template-columns:repeat(2,1fr)}

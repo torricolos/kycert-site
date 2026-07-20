@@ -73,6 +73,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config', 'AW-18330789484');`}
         </Script>
+        <Script id="wa-conversion" strategy="afterInteractive">
+          {`document.addEventListener('click', function (e) {
+            var a = e.target.closest && e.target.closest('a[href*="api.whatsapp.com"], a[href*="wa.me"]');
+            if (a && typeof gtag === 'function') {
+              gtag('event', 'conversion', { 'send_to': 'AW-18330789484/917pCOzorNMcEOzM5qRE' });
+            }
+          });`}
+        </Script>
       </head>
       <body>
         {children}

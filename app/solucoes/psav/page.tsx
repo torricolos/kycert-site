@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
@@ -30,6 +31,7 @@ const BODY_HTML = `
   <div class="hero-grid">
     <div>
       <span class="seg-pill reveal"><span class="dot"></span>Para PSAV / cripto</span>
+      <div class="deadline-chip reveal"><span class="d"></span>Pedido de autorização ao BCB: até 30/10/2026</div>
       <h1 class="reveal reveal-d1">Você virou instituição supervisionada. <span class="em">O onboarding precisa acompanhar.</span></h1>
       <p class="lead reveal reveal-d2">Com a entrada das prestadoras de ativos virtuais sob autorização e supervisão do Banco Central, o cadastro de cliente passou a ter deveres de PLD/FT. A kycert registra cadastro, risco e decisão de cada cliente numa trilha auditável.</p>
       <div class="cta reveal reveal-d3"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div>
@@ -52,6 +54,30 @@ const BODY_HTML = `
   <span class="marquee-lab" style="margin:0">Base regulatória</span>
   <span class="stag"><span class="gd"></span>Lei 14.478/2022</span><span class="stag"><span class="gd"></span>Res. BCB 519/2025</span><span class="stag"><span class="gd"></span>Res. BCB 520/2025</span><span class="stag"><span class="gd"></span>Res. BCB 521/2025</span><span class="stag"><span class="gd"></span>Lei 9.613/98</span><span class="stag"><span class="gd"></span>LGPD</span>
 </div></div>
+
+<!-- CONVERSÃO -->
+<section class="sec-soft" id="fale-conosco">
+  <div class="wrap sec-head">
+    <span class="eyebrow reveal">Fale com a gente</span>
+    <h2 class="reveal reveal-d1">Fale com quem entende a exigência.</h2>
+    <p class="sec-lead reveal reveal-d2">Conte onde a sua operação está com a autorização e a gente volta com um plano objetivo para o seu onboarding.</p>
+    <div class="split reveal" style="margin-top:44px;align-items:start">
+      <div class="split-media">
+        <div class="hs-form-frame" data-region="na1" data-form-id="a7e73094-edbe-4163-9a44-4fb1b7b18f22" data-portal-id="51689422"></div>
+      </div>
+      <div class="split-copy">
+        <div class="regcard" style="align-items:flex-start">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+          <div>
+            <h3>Prefere falar agora?</h3>
+            <p>Conversa de diagnóstico de 15 minutos direto pelo WhatsApp, sem formulário.</p>
+            <a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+vim+pela+p%C3%A1gina+de+PSAV+e+queria+a+conversa+de+diagn%C3%B3stico+de+15+minutos.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:14px">Conversa de diagnóstico · 15 min</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- AS DORES -->
 <section>
@@ -147,6 +173,7 @@ export default function Page() {
     <>
       <Nav active="solucoes" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <Script id="hs-form-embed" src="https://js.hsforms.net/forms/embed/51689422.js" strategy="afterInteractive" />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />
