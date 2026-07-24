@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD para consórcios e gestoras · BCB e CVM | kycert',
+  title: 'KYC e PLD para consórcios e gestoras · BCB e CVM',
   description:
     'Cadastro do consorciado e do investidor, com verificação, avaliação de risco e trilha auditável sob a regulação do BCB e da CVM.',
   alternates: { canonical: '/solucoes/mercado-capitais' },
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://kycert.com.br/"},{"@type":"ListItem","position":2,"name":"Soluções"},{"@type":"ListItem","position":3,"name":"Consórcios & mercado de capitais"}]}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Consórcios & mercado de capitais"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span>Soluções</span><span class="sep">/</span><span style="color:var(--text-secondary)">Consórcios & mercado de capitais</span></div></nav>
@@ -41,7 +43,7 @@ export default function Page() {
   return (
     <>
       <Nav active="solucoes" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

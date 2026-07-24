@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'OCR de documentos e cadastro sem digitação | kycert',
+  title: 'OCR de documentos e cadastro sem digitação',
   description:
     'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',
   alternates: { canonical: '/produto/ocr' },
@@ -21,7 +22,9 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert — Cadastro & documentos · OCR","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.","offers":{"@type":"Offer","priceCurrency":"BRL"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://kycert.com.br/"},{"@type":"ListItem","position":2,"name":"Produtos"},{"@type":"ListItem","position":3,"name":"Cadastro & documentos · OCR"}]}]`;
+const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert — Cadastro & documentos · OCR","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.","offers":{"@type":"Offer","priceCurrency":"BRL"}}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Cadastro & documentos · OCR"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span>Produtos</span><span class="sep">/</span><span style="color:var(--text-secondary)">Cadastro & documentos · OCR</span></div></nav>
@@ -73,6 +76,8 @@ export default function Page() {
     <>
       <Nav active="produtos" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

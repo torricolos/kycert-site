@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets | kycert',
+  title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets',
   description:
     'A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.',
   alternates: { canonical: '/blog/bets-lei-14790-pld-onboarding' },
@@ -24,6 +25,8 @@ export const metadata: Metadata = {
 };
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","description":"A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Apostas / Bets"}];
 
 const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">Apostas / Bets</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
@@ -47,6 +50,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />

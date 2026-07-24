@@ -17,6 +17,7 @@ const ROUTES = [
   '/solucoes/mercado-capitais',
   '/solucoes/seguradoras',
   '/solucoes/bets',
+  '/lp-pld-ft',
   '/blog',
   '/blog/consorcios-mercado-capitais-onboarding',
   '/blog/abertura-conta-fintech-kyb-escala',

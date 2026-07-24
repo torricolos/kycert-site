@@ -3,7 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'kycert · home',
+  title: { absolute: 'kycert · Onboarding e trilha auditável para instituições reguladas' },
   description:
     'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
   alternates: { canonical: '/' },
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'kycert',
     locale: 'pt_BR',
-    title: 'kycert · home',
+    title: 'kycert · Onboarding e trilha auditável para instituições reguladas',
     description:
       'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
     url: '/',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'kycert · home',
+    title: 'kycert · Onboarding e trilha auditável para instituições reguladas',
     description:
       'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
     images: ['https://kycert.com.br/opengraph-image'],
@@ -36,7 +36,7 @@ const HOME_STYLE = `
   :root{
     --ink:#0E1116;--ink-2:#15191f;--paper:#FFFFFF;--paper-2:#FAFAFB;--green:#1F8A5B;--green-l:#27A870;--green-d:#166644;
     --ink-muted:#3A3D45;--ink-subtle:#6B6E78;--paper-dim:#E7E7EB;--paper-muted:#9A9DA8;
-    --bd:rgba(14,17,22,.09);--bd-2:rgba(14,17,22,.14);--bd-dark:rgba(255,255,255,.12);
+    --bd:rgba(14,17,22,.13);--bd-2:rgba(14,17,22,.19);--bd-dark:rgba(255,255,255,.14);
     --sans:'Inter Tight',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;--mono:'JetBrains Mono',ui-monospace,monospace;
     --sh-sm:0 1px 2px rgba(14,17,22,.05);
     --sh-md:0 8px 20px -8px rgba(14,17,22,.10),0 2px 6px rgba(14,17,22,.04);
@@ -77,7 +77,7 @@ const HOME_STYLE = `
   /* ---- nav ---- */
   nav.site{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.82);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
   nav.site.scrolled{border-color:var(--bd);box-shadow:var(--sh-sm)}
-  nav.site .inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:24px}
+  nav.site .inner{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;gap:24px}
   .brand{font-weight:800;font-size:21px;letter-spacing:-.03em;display:inline-flex;align-items:center}
   .brand .sig{color:var(--green)}
   .nav-cta{display:flex;align-items:center;gap:14px}
@@ -540,6 +540,47 @@ const HOME_STYLE = `
   @media(max-width:980px){.uc-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.uc-grid{grid-template-columns:1fr}}
 
+  .h2-italic{font-size:42px}
+  .ph-split{padding:34px 20px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+  .glass-field .ph{overflow:hidden;white-space:nowrap}
+  .kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .kpi{min-width:0}
+
+  /* ---- responsivo: seções que colapsavam espremidas ---- */
+  @media(max-width:980px){
+    .dproof{grid-template-columns:1fr;gap:36px;margin-top:56px;padding-top:44px}
+    .bexp{flex-direction:column;height:auto}
+    .bexp .bpanel,.bexp:hover .bpanel,.bexp .bpanel:hover{flex:none}
+    .bpanel{padding:22px;justify-content:flex-start}
+    .bpanel .bic{position:static;margin-bottom:14px;width:38px;height:38px}
+    .bpanel .bdesc,.bpanel:hover .bdesc{max-height:none;opacity:1;margin-top:10px}
+    .bpanel .bsnip{white-space:normal;width:auto}
+  }
+  @media(max-width:760px){
+    .ph-split{grid-template-columns:1fr;gap:26px;padding:26px 16px}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 20px}
+    .brand{font-size:20px}
+    .nav-drawer.open{padding:18px 20px 60px}
+    .heroA{padding:48px 0 44px}
+    .heroA h1{font-size:40px}
+    .heroA .lead{font-size:16px}
+    .sec{padding:56px 0}
+    .sec-head h2{font-size:30px}
+    .h2-italic{font-size:31px}
+    .darkflow{padding:58px 0}
+    .darkflow h2{font-size:29px}
+    .cta h2{font-size:34px}
+    .faq summary{font-size:17px}
+    .filterbar{flex-wrap:wrap}
+    .panel .row{grid-template-columns:46px 1fr auto;padding:12px 14px}
+    .screen-main{padding:18px 16px}
+    .rows .r{flex-wrap:wrap}
+    .sc-tab{font-size:13px;padding:8px 13px}
+  }
+  @media(max-width:400px){.kpi{padding:11px 10px}.kpi .v{font-size:17px}}
+
   .hidden{display:none!important}
   /* reveal ao rolar — com rede de segurança no JS (nunca trava em branco) */
   .rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.2,.6,.2,1),transform .6s cubic-bezier(.2,.6,.2,1)}
@@ -573,7 +614,7 @@ const HOME_BODY = `
 <section class="sec" style="background:var(--paper-2);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)">
   <div class="wrap">
     <span class="eyebrow">O problema</span>
-    <h2 style="font-family:var(--serif);font-style:italic;font-weight:400;color:var(--ink);font-size:42px;letter-spacing:-.02em;line-height:1.08;margin-top:14px;max-width:18ch">Aprovar o cliente é a parte fácil.</h2>
+    <h2 class="h2-italic" style="font-family:var(--serif);font-style:italic;font-weight:400;color:var(--ink);letter-spacing:-.02em;line-height:1.08;margin-top:14px;max-width:18ch">Aprovar o cliente é a parte fácil.</h2>
     <p class="sec-lead">O difícil chega meses depois: provar quem aprovou, quando e com qual evidência. Quando isso mora em e-mail, planilha e na memória de quem analisou, a operação trava para reconstruir o que já tinha sido decidido — e o risco regulatório some de vista.</p>
     <div class="pcards">
       <div class="pcard"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><div class="q">A evidência sumiu</div><div class="a">O documento que sustentava a aprovação ficou em outro sistema, fora da decisão que ele justificava.</div></div>
@@ -770,7 +811,7 @@ const HOME_BODY = `
     <div class="sc-panel" data-panel="mobile">
       <div class="browser" style="background:var(--surface-app)">
         <div class="browser-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">onboarding.suaempresa.com.br</span></div>
-        <div style="padding:34px 20px;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center">
+        <div class="ph-split">
           <div class="phone">
             <div class="ph-top"></div>
             <div class="ph-body">

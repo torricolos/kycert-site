@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD para casas de apostas (Bets) · Lei 14.790/2023 | kycert',
+  title: 'KYC e PLD para casas de apostas (Bets) · Lei 14.790/2023',
   description:
     'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   alternates: { canonical: '/solucoes/bets' },
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://kycert.com.br/"},{"@type":"ListItem","position":2,"name":"Soluções"},{"@type":"ListItem","position":3,"name":"Apostas / Bets"}]}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Apostas / Bets"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span>Soluções</span><span class="sep">/</span><span style="color:var(--text-secondary)">Apostas / Bets</span></div></nav>
@@ -41,7 +43,7 @@ export default function Page() {
   return (
     <>
       <Nav active="solucoes" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

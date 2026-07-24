@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Mapa de normas e conformidade regulatória | kycert',
+  title: 'Mapa de normas e conformidade regulatória',
   description:
     'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets — o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
   alternates: { canonical: '/conformidade' },
@@ -42,7 +43,8 @@ const EXTRA_STYLE = `
 @media(max-width:760px){.cmap-cols{grid-template-columns:1fr}.cmap-cols > div{border-right:none;border-bottom:1px solid var(--border-default)}.cmap-cols > div:last-child{border-bottom:none}}
 `;
 
-const JSONLD = `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://kycert.com.br/"},{"@type":"ListItem","position":2,"name":"Conformidade"}]}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Conformidade"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span style="color:var(--text-secondary)">Conformidade</span></div></nav>
@@ -154,7 +156,7 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: EXTRA_STYLE }} />
       <Nav active="conformidade" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

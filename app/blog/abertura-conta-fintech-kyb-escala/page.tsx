@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Abertura de conta em fintech: KYC, KYB e risco em escala | kycert',
+  title: 'Abertura de conta em fintech: KYC, KYB e risco em escala',
   description:
     'Instituições de pagamento abrem conta em minutos e respondem por cada cliente em PLD/FT. Veja como verificar PF e PJ sem travar o onboarding.',
   alternates: { canonical: '/blog/abertura-conta-fintech-kyb-escala' },
@@ -24,6 +25,8 @@ export const metadata: Metadata = {
 };
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Abertura de conta em escala, com o risco enquadrado","description":"Instituições de pagamento abrem conta em minutos e respondem por cada cliente em PLD/FT. Veja como verificar PF e PJ sem travar o onboarding.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Bancos & fintechs"}];
 
 const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">Bancos & fintechs</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
@@ -47,6 +50,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />

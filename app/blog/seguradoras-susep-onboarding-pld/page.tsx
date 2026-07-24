@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP | kycert',
+  title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP',
   description:
     'Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.',
   alternates: { canonical: '/blog/seguradoras-susep-onboarding-pld' },
@@ -24,6 +25,8 @@ export const metadata: Metadata = {
 };
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Seguros: identificação do segurado e PLD sob a SUSEP","description":"Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Seguradoras"}];
 
 const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">Seguradoras</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
@@ -45,6 +48,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />

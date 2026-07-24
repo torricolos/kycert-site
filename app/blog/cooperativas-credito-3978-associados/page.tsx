@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978 | kycert',
+  title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978',
   description:
     'Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.',
   alternates: { canonical: '/blog/cooperativas-credito-3978-associados' },
@@ -24,6 +25,8 @@ export const metadata: Metadata = {
 };
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Cooperativas de crédito: o PLD/FT do quadro de associados","description":"Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Cooperativas"}];
 
 const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">Cooperativas</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
@@ -45,6 +48,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />

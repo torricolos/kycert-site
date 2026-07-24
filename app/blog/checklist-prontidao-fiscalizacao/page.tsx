@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Checklist de prontidão para fiscalização de PLD/FT | kycert',
+  title: 'Checklist de prontidão para fiscalização de PLD/FT',
   description:
     'Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.',
   alternates: { canonical: '/blog/checklist-prontidao-fiscalizacao' },
@@ -27,6 +28,8 @@ export const metadata: Metadata = {
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Checklist de prontidão para fiscalização de PLD/FT","description":"Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
 
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"PLD/FT"}];
+
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">PLD/FT</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
@@ -44,6 +47,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />

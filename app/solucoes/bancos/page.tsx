@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC, KYB e onboarding para bancos e fintechs | kycert',
+  title: 'KYC, KYB e onboarding para bancos e fintechs',
   description:
     'As dores de abertura de conta e crédito em escala e como a kycert resolve: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',
   alternates: { canonical: '/solucoes/bancos' },
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://kycert.com.br/"},{"@type":"ListItem","position":2,"name":"Soluções"},{"@type":"ListItem","position":3,"name":"Bancos & fintechs"}]}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Bancos & fintechs"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span>Soluções</span><span class="sep">/</span><span style="color:var(--text-secondary)">Bancos & fintechs</span></div></nav>
@@ -160,7 +162,7 @@ export default function Page() {
   return (
     <>
       <Nav active="solucoes" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

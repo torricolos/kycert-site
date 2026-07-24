@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Lei 14.286/2021 e Res. BCB 277/2022: cadastro de cliente no câmbio | kycert',
+  title: 'Lei 14.286/2021 e Res. BCB 277/2022: cadastro de cliente no câmbio',
   description:
     'O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.',
   alternates: { canonical: '/blog/lei-14286-cambio-cadastro' },
@@ -27,6 +28,8 @@ export const metadata: Metadata = {
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Câmbio: o que a Lei 14.286/2021 e a Res. BCB 277/2022 exigem no cadastro do cliente","description":"O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
 
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Câmbio"}];
+
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">Câmbio</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
@@ -44,6 +47,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
