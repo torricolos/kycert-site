@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
       'Checklist de prontidão para fiscalização e modelo de dossiê anonimizado para times de compliance de instituições reguladas.',
   },
 };
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Guias e materiais"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span style="color:var(--text-secondary)">Guias e materiais</span></div></nav>
@@ -64,6 +67,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

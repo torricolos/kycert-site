@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
       'Integre a trilha de verificação ao seu fluxo com a API da kycert e receba atualizações de status por webhook em tempo real.',
   },
 };
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"API & webhooks"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span>Produtos</span><span class="sep">/</span><span style="color:var(--text-secondary)">API & webhooks</span></div></nav>
@@ -73,6 +76,8 @@ export default function Page() {
   return (
     <>
       <Nav active="produtos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -37,6 +38,8 @@ const EXTRA_STYLE = `
 .pricing thead th.featured .pn{color:var(--signal)}
 .pp-badge{display:inline-block;font-family:var(--font-mono);font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--signal);background:var(--signal-bg);border:1px solid var(--signal-bd);border-radius:999px;padding:2px 8px;margin-bottom:9px}
 `;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Preços"}];
 
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span style="color:var(--text-secondary)">Preços</span></div></nav>
@@ -83,6 +86,8 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: EXTRA_STYLE }} />
       <Nav active="precos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />

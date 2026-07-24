@@ -54,6 +54,8 @@ const structuredData = {
   },
 };
 
+const isProd = process.env.VERCEL_ENV === 'production';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
@@ -62,33 +64,46 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18330789484"
-          strategy="afterInteractive"
-        />
-        <Script id="google-tag" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-18330789484');`}
-        </Script>
-        <Script id="wa-conversion" strategy="afterInteractive">
-          {`document.addEventListener('click', function (e) {
-            var a = e.target.closest && e.target.closest('a[href*="api.whatsapp.com"], a[href*="wa.me"]');
-            if (a && typeof gtag === 'function') {
-              gtag('event', 'conversion', { 'send_to': 'AW-18330789484/917pCOzorNMcEOzM5qRE' });
-            }
-          });`}
-        </Script>
+        {isProd && (
+          <>
+            <Script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=AW-18330789484"
+              strategy="afterInteractive"
+            />
+            <Script id="google-tag" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18330789484');`}
+            </Script>
+            <Script id="wa-conversion" strategy="afterInteractive">
+              {`document.addEventListener('click', function (e) {
+                var a = e.target.closest && e.target.closest('a[href*="api.whatsapp.com"], a[href*="wa.me"]');
+                if (a && typeof gtag === 'function') {
+                  gtag('event', 'conversion', { 'send_to': 'AW-18330789484/917pCOzorNMcEOzM5qRE' });
+                }
+              });`}
+            </Script>
+            <Script id="ms-clarity" strategy="afterInteractive">
+              {`(function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "xr20fxmto1");`}
+            </Script>
+          </>
+        )}
       </head>
       <body>
         {children}
-        <Script
-          id="hs-script-loader"
-          src="//js.hs-scripts.com/51689422.js"
-          strategy="afterInteractive"
-        />
+        {isProd && (
+          <Script
+            id="hs-script-loader"
+            src="//js.hs-scripts.com/51689422.js"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );

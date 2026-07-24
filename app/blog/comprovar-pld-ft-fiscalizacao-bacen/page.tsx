@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -27,6 +28,8 @@ export const metadata: Metadata = {
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede","description":"Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo — pergunta como você decidiu. Veja o que precisa estar registrado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
 
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"PLD/FT"}];
+
 const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">PLD/FT</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
@@ -44,6 +47,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />

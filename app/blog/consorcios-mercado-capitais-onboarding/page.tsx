@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -25,6 +26,8 @@ export const metadata: Metadata = {
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Consórcios e gestoras: o onboarding que BCB e CVM cobram","description":"Administradoras de consórcio (BCB) e gestoras de recursos (CVM) respondem a deveres de identificação e PLD/FT. Veja como estruturar o cadastro do investidor e do consorciado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
 
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Mercado de capitais"}];
+
 const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><a href="/blog">Blog</a><span class="sep">/</span><span style="color:var(--text-secondary)">Mercado de capitais</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
 <div class="art-eyebrow">Consórcios & mercado de capitais</div>
@@ -45,6 +48,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />

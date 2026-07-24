@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -24,6 +25,8 @@ export const metadata: Metadata = {
 };
 
 const JSONLD = `{"@context":"https://schema.org","@type":"Blog","name":"Blog kycert","inLanguage":"pt-BR","blogPost":[{"@type":"BlogPosting","headline":"Consórcios e gestoras: o onboarding que BCB e CVM cobram","url":"https://kycert.com.br/blog/consorcios-mercado-capitais-onboarding"},{"@type":"BlogPosting","headline":"Abertura de conta em fintech: KYC, KYB e risco em escala","url":"https://kycert.com.br/blog/abertura-conta-fintech-kyb-escala"},{"@type":"BlogPosting","headline":"Cooperativas de crédito: o PLD/FT do quadro de associados","url":"https://kycert.com.br/blog/cooperativas-credito-3978-associados"},{"@type":"BlogPosting","headline":"Seguros: identificação do segurado e PLD sob a SUSEP","url":"https://kycert.com.br/blog/seguradoras-susep-onboarding-pld"},{"@type":"BlogPosting","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","url":"https://kycert.com.br/blog/bets-lei-14790-pld-onboarding"},{"@type":"BlogPosting","headline":"Resolução BCB 520/2025: o que muda para PSAV e como comprovar a avaliação de risco","url":"https://kycert.com.br/blog/resolucao-bcb-520-psav"},{"@type":"BlogPosting","headline":"Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede","url":"https://kycert.com.br/blog/comprovar-pld-ft-fiscalizacao-bacen"},{"@type":"BlogPosting","headline":"Beneficiário final (UBO): obrigações de KYB e como mapear a cadeia societária","url":"https://kycert.com.br/blog/beneficiario-final-ubo-kyb"},{"@type":"BlogPosting","headline":"Checklist de prontidão para fiscalização de PLD/FT","url":"https://kycert.com.br/blog/checklist-prontidao-fiscalizacao"},{"@type":"BlogPosting","headline":"Câmbio: o que a Lei 14.286/2021 e a Res. BCB 277/2022 exigem no cadastro do cliente","url":"https://kycert.com.br/blog/lei-14286-cambio-cadastro"}]}`;
+
+const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog"}];
 
 const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span style="color:var(--text-secondary)">Blog</span></div></nav>
 <section style="padding:48px 0 80px"><div class="wrap sec-head">
@@ -49,6 +52,8 @@ export default function Page() {
   return (
     <>
       <Nav active="recursos" />
+
+      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
