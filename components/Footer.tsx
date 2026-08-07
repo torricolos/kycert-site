@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="foot-legal">
-          A kycert não substitui assessoria jurídica nem dispensa os demais deveres regulatórios previstos na legislação vigente. kycert tecnologia ltda · CNPJ 59.959.589/0001-00 · São Paulo · Brasil · Privacidade & LGPD.
+          A kycert não substitui assessoria jurídica nem dispensa os demais deveres regulatórios previstos na legislação vigente. KYCERT DESENVOLVIMENTO LTDA · CNPJ 68.453.721/0001-90 · São Paulo · Brasil · Privacidade & LGPD.
         </div>
 
         <div className="bottom">

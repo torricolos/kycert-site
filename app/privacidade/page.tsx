@@ -26,7 +26,7 @@ const BODY_HTML = `
 <div class="art-eyebrow">Legal</div><h1>Política de Privacidade e LGPD da kycert</h1>
 <div class="art-meta"><span>Última atualização: 27 de maio de 2026</span></div>
 <p>Esta Política de Privacidade explica como a kycert coleta, utiliza, armazena, compartilha e protege dados pessoais no contexto de sua plataforma tecnológica, incluindo painel web, APIs, integrações, consultas, validações, fluxos de onboarding digital, análise documental, apoio a KYC/KYB, prevenção a fraudes e automação de processos de compliance.</p>
-<p>A plataforma kycert é operada por MATHEUS MENEZES PARENTE OLIVEIRA LTDA, inscrita no CNPJ nº 59.959.589/0001-00, doravante denominada simplesmente "kycert".</p>
+<p>A plataforma kycert é operada por KYCERT DESENVOLVIMENTO LTDA, inscrita no CNPJ nº 68.453.721/0001-90, doravante denominada simplesmente "kycert".</p>
 <p>Esta Política deve ser lida em conjunto com os Termos de Uso da kycert e com eventuais contratos, propostas comerciais, ordens de serviço ou documentos complementares aplicáveis.</p>
 <h2>1. Quem somos e papéis no tratamento de dados</h2>
 <p>1.1. A kycert é uma plataforma tecnológica voltada ao apoio em validação cadastral, verificação de identidade, análise documental, KYC, KYB, onboarding digital, prevenção a fraudes, automação de fluxos de compliance e consultas ou validações por fontes internas e/ou terceiros.</p>

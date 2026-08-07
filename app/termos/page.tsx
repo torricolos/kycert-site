@@ -26,7 +26,7 @@ const BODY_HTML = `
 <div class="art-eyebrow">Legal</div><h1>Termos de Uso da Plataforma kycert</h1>
 <div class="art-meta"><span>Última atualização: 27 de maio de 2026</span></div>
 <p>Estes Termos de Uso regulam o acesso e a utilização da plataforma kycert, incluindo seu painel web, APIs, integrações, funcionalidades, recursos, relatórios, consultas e demais serviços disponibilizados.</p>
-<p>A plataforma kycert é operada por MATHEUS MENEZES PARENTE OLIVEIRA LTDA, inscrita no CNPJ nº 59.959.589/0001-00, doravante denominada simplesmente "kycert".</p>
+<p>A plataforma kycert é operada por KYCERT DESENVOLVIMENTO LTDA, inscrita no CNPJ nº 68.453.721/0001-90, doravante denominada simplesmente "kycert".</p>
 <p>Ao acessar, contratar ou utilizar a plataforma kycert, o cliente, usuário ou representante autorizado declara que leu, compreendeu e concorda com estes Termos de Uso.</p>
 <h2>1. Definições</h2>
 <p>1.1. Para fins destes Termos de Uso:</p>
