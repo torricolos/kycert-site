@@ -29,6 +29,7 @@ const ROUTES = [
   '/blog/beneficiario-final-ubo-kyb',
   '/blog/checklist-prontidao-fiscalizacao',
   '/blog/lei-14286-cambio-cadastro',
+  '/links',
   '/faq',
   '/guias',
   '/conformidade',
