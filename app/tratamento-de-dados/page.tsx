@@ -26,7 +26,7 @@ const BODY_HTML = `
 <div class="art-eyebrow">Legal</div><h1>Anexo de Tratamento de Dados Pessoais da kycert</h1>
 <div class="art-meta"><span>Última atualização: 27 de maio de 2026</span></div>
 <p>Este Anexo complementa os Termos de Uso da Plataforma kycert e se aplica quando a kycert tratar dados pessoais em nome do Cliente para execução dos serviços contratados.</p>
-<p>A plataforma kycert é operada por MATHEUS MENEZES PARENTE OLIVEIRA LTDA, inscrita no CNPJ nº 59.959.589/0001-00, doravante denominada simplesmente "kycert".</p>
+<p>A plataforma kycert é operada por KYCERT DESENVOLVIMENTO LTDA, inscrita no CNPJ nº 68.453.721/0001-90, doravante denominada simplesmente "kycert".</p>
 <h2>1. Papéis das partes</h2>
 <p>1.1. Para os dados pessoais inseridos, enviados, consultados ou integrados pelo Cliente na plataforma, o Cliente atua como controlador, responsável por definir as finalidades, bases legais e critérios de uso dos dados.</p>
 <p>1.2. A kycert atua como operadora desses dados, tratando-os conforme as instruções do Cliente, os Termos de Uso, a Política de Privacidade e LGPD, esta contratação e as funcionalidades utilizadas na plataforma.</p>
