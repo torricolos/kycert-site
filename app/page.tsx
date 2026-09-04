@@ -594,7 +594,7 @@ const HOME_BODY = `
   <div class="wrap in">
     <div class="seal-top"><span class="gd"></span>Camada de validação · conformidade com a LGPD</div>
     <h1><span class="rot" id="rotA">Comprove</span> cada cliente,<br>cada decisão.</h1>
-    <p class="lead">Onboarding, verificação e trilha de prova em um só lugar — cada decisão registrada como evidência, pronta para a auditoria e para o que o regulador pedir.</p>
+    <p class="lead">Onboarding, verificação e trilha de prova em um só lugar: cada decisão registrada como evidência, pronta para a auditoria e para o que o regulador pedir.</p>
     <div class="glass-field">
       <span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
       <span class="ph"><span id="typeA">12.345.678/0001-90</span><span class="cur"></span></span>
@@ -615,7 +615,7 @@ const HOME_BODY = `
   <div class="wrap">
     <span class="eyebrow">O problema</span>
     <h2 class="h2-italic" style="font-family:var(--serif);font-style:italic;font-weight:400;color:var(--ink);letter-spacing:-.02em;line-height:1.08;margin-top:14px;max-width:18ch">Aprovar o cliente é a parte fácil.</h2>
-    <p class="sec-lead">O difícil chega meses depois: provar quem aprovou, quando e com qual evidência. Quando isso mora em e-mail, planilha e na memória de quem analisou, a operação trava para reconstruir o que já tinha sido decidido — e o risco regulatório some de vista.</p>
+    <p class="sec-lead">O difícil chega meses depois: provar quem aprovou, quando e com qual evidência. Quando isso mora em e-mail, planilha e na memória de quem analisou, a operação trava para reconstruir o que já tinha sido decidido, e o risco regulatório some de vista.</p>
     <div class="pcards">
       <div class="pcard"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><div class="q">A evidência sumiu</div><div class="a">O documento que sustentava a aprovação ficou em outro sistema, fora da decisão que ele justificava.</div></div>
       <div class="pcard"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><div class="q">Falta o autor</div><div class="a">Sem quem aprovou, em que data e por qual critério, a decisão não se sustenta numa fiscalização.</div></div>
@@ -671,14 +671,14 @@ const HOME_BODY = `
   <div class="sec-head" style="max-width:none">
     <span class="eyebrow">Produtos</span>
     <h2>Quatro frentes de verificação,<br>uma plataforma.</h2>
-    <p class="sub">Do cadastro do cliente à decisão de risco — cada produto resolve uma etapa e alimenta a mesma trilha auditável.</p>
+    <p class="sub">Do cadastro do cliente à decisão de risco: cada produto resolve uma etapa e alimenta a mesma trilha auditável.</p>
   </div>
   <div class="prods"><a class="prod" href="/produto/kyc">
       <span class="parr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       <span class="picon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
       <h3>Verificação de pessoa física</h3>
       <div class="tags"><span class="ptag">KYC</span><span class="ptag">Sanções</span><span class="ptag">PEP</span></div>
-      <p>Identidade, situação na Receita, sanções, PEP e antecedentes — verificados no onboarding, em uma consulta.</p>
+      <p>Identidade, situação na Receita, sanções, PEP e antecedentes, verificados no onboarding, em uma consulta.</p>
     </a><a class="prod" href="/produto/kyb">
       <span class="parr"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       <span class="picon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span>
@@ -696,7 +696,7 @@ const HOME_BODY = `
       <span class="picon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></span>
       <h3>Cadastro &amp; análise de documentos</h3>
       <div class="tags"><span class="ptag">OCR</span><span class="ptag">White-label</span></div>
-      <p>Convite com a sua marca, captura de documento pela câmera e leitura por OCR — o cadastro chega completo e padronizado.</p>
+      <p>Convite com a sua marca, captura de documento pela câmera e leitura por OCR: o cadastro chega completo e padronizado.</p>
     </a></div>
   <div id="plataforma" style="margin-top:54px;padding-top:46px;border-top:1px solid var(--bd)">
     <span class="eyebrow">O onboarding, ponta a ponta</span>
@@ -988,9 +988,9 @@ const HOME_BODY = `
     <h2>O que o compliance pergunta<br>antes de marcar a demo.</h2>
   </div>
   <div class="faq">
-    <details open><summary>A kycert substitui o meu bureau?<span class="pl">+</span></summary><p>Não. O bureau resolve uma consulta; a kycert registra o cliente inteiro e organiza a trilha — convite, captura, verificações, risco e decisão — como evidência auditável. As consultas a fontes acontecem dentro desse fluxo.</p></details>
+    <details open><summary>A kycert substitui o meu bureau?<span class="pl">+</span></summary><p>Não. O bureau resolve uma consulta; a kycert registra o cliente inteiro e organiza a trilha (convite, captura, verificações, risco e decisão) como evidência auditável. As consultas a fontes acontecem dentro desse fluxo.</p></details>
     <details><summary>Quem decide a aprovação?<span class="pl">+</span></summary><p>O seu time. A plataforma cruza as fontes e enquadra o risco pelas regras que você define, e leva à análise humana só o que precisa de decisão. Quem aprova é o seu compliance, e isso fica registrado com autor, data e justificativa.</p></details>
-    <details><summary>Vocês integram com o meu sistema?<span class="pl">+</span></summary><p>A trilha conecta ao seu core e ao seu motor de risco por API e webhooks. O escopo de integração é definido conforme a sua operação — tratamos disso na demo técnica.</p></details>
+    <details><summary>Vocês integram com o meu sistema?<span class="pl">+</span></summary><p>A trilha conecta ao seu core e ao seu motor de risco por API e webhooks. O escopo de integração é definido conforme a sua operação; tratamos disso na demo técnica.</p></details>
     <details><summary>Como isso ajuda numa fiscalização?<span class="pl">+</span></summary><p>Cada etapa nasce registrada. Quando o regulador pede a trilha de um cliente, a resposta já está montada: você apresenta o histórico com autor, data e evidência, em vez de reconstruir a partir de e-mails e planilhas.</p></details>
     <details><summary>Atende PF e PJ?<span class="pl">+</span></summary><p>Os dois. PF com identidade, sanções, PEP e antecedentes; PJ com situação cadastral, quadro societário e beneficiário final, verificando cada entidade da estrutura.</p></details>
   </div>
@@ -1001,7 +1001,7 @@ const HOME_BODY = `
   <div class="wrap in">
     <span class="eyebrow dark" style="display:inline-flex;justify-content:center">kycert</span>
     <h2 style="margin-top:24px">A próxima auditoria começa<br>no <span class="serif">cadastro de hoje</span>.</h2>
-    <p>Mostramos a plataforma com o seu caso — PSAV, câmbio ou o segmento que precisa provar PLD.</p>
+    <p>Mostramos a plataforma com o seu caso: PSAV, câmbio ou o segmento que precisa provar PLD.</p>
     <div class="ctarow">
       <a class="btn btn-white" href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0">Agendar demo · 30 min<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
     </div>

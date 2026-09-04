@@ -7,18 +7,18 @@ import SiteInteractions from '@/components/SiteInteractions';
 export const metadata: Metadata = {
   title: 'Mapa de normas e conformidade regulatória',
   description:
-    'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets — o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
+    'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets: o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
   alternates: { canonical: '/conformidade' },
   openGraph: {
     title: 'Mapa de normas e conformidade regulatória | kycert',
     description:
-      'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets — o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
+      'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets: o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
     url: '/conformidade',
   },
   twitter: {
     title: 'Mapa de normas e conformidade regulatória | kycert',
     description:
-      'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets — o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
+      'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets: o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
   },
 };
 
@@ -52,7 +52,7 @@ const BODY_HTML = `
 <section style="padding:48px 0 80px"><div class="wrap sec-head" style="max-width:none">
   <span class="eyebrow reveal">Conformidade</span>
   <h2 class="reveal reveal-d1" style="margin-top:14px;max-width:22ch">O que a regulação pede, e onde a kycert entra.</h2>
-  <p class="sec-lead reveal reveal-d2">Escolha o seu segmento para ver só as normas que se aplicam — e, em cada uma, o que ela exige, onde a kycert atua e qual evidência fica registrada.</p>
+  <p class="sec-lead reveal reveal-d2">Escolha o seu segmento para ver só as normas que se aplicam, e, em cada uma, o que ela exige, onde a kycert atua e qual evidência fica registrada.</p>
 
   <div class="cseg reveal reveal-d2">
     <button class="active" data-seg="todos">Todos</button>

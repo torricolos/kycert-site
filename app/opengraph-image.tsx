@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime     = 'edge'
-export const alt         = 'KYCERT — Comprove cada cliente, cada decisão.'
+export const alt         = 'KYCERT: comprove cada cliente, cada decisão.'
 export const size        = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -59,7 +59,7 @@ export default function Image() {
             color: 'rgba(255,255,255,0.5)',
             lineHeight: 1.4,
           }}>
-            Onboarding, KYC e bureau para mercados regulados — BCB · LGPD · COAF
+            Onboarding, KYC e bureau para mercados regulados: BCB · LGPD · COAF
           </div>
         </div>
       </div>

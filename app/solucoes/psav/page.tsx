@@ -86,11 +86,11 @@ const BODY_HTML = `
   <div class="wrap sec-head">
     <span class="eyebrow reveal">O dia a dia hoje</span>
     <h2 class="reveal reveal-d1">A pressão que veio com a supervisão.</h2>
-    <p class="sec-lead reveal reveal-d2">Operações que cresceram rápido agora precisam de um processo formal de KYC e PLD/FT — sem perder a velocidade que o cliente cripto espera.</p>
+    <p class="sec-lead reveal reveal-d2">Operações que cresceram rápido agora precisam de um processo formal de KYC e PLD/FT, sem perder a velocidade que o cliente cripto espera.</p>
     <div class="pain-grid">
       <div class="pain reveal reveal-d1">
         <div class="ph"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></span><h3>KYC informal virou exigência</h3></div>
-        <p>O onboarding que rodava no improviso precisa agora documentar identidade, sanções, PEP e avaliação de risco — com prova para o supervisor.</p>
+        <p>O onboarding que rodava no improviso precisa agora documentar identidade, sanções, PEP e avaliação de risco, com prova para o supervisor.</p>
         <div class="cost"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg> processo formal exigido pela Res. 520</div>
       </div>
       <div class="pain reveal reveal-d2">
@@ -126,7 +126,7 @@ const BODY_HTML = `
       <div class="solrow reveal">
         <div class="from"><div class="l"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:#C0392B;display:inline-block"></span>A dor</div><p>Volume alto de PF que abandona cadastro lento.</p></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-        <div class="to"><div class="l"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg> Na kycert</div><p><b>Verificação em bloco, no celular.</b> Mais de 70 fontes numa consulta, com captura por OCR e leitura na hora — rápido para o cliente, completo para você.</p></div>
+        <div class="to"><div class="l"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg> Na kycert</div><p><b>Verificação em bloco, no celular.</b> Mais de 70 fontes numa consulta, com captura por OCR e leitura na hora: rápido para o cliente, completo para você.</p></div>
       </div>
       <div class="solrow reveal">
         <div class="from"><div class="l"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:#C0392B;display:inline-block"></span>A dor</div><p>Exposição internacional: sanção OFAC que pode passar no cadastro.</p></div>
@@ -136,7 +136,7 @@ const BODY_HTML = `
       <div class="solrow reveal">
         <div class="from"><div class="l"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:#C0392B;display:inline-block"></span>A dor</div><p>Avaliação de risco que a Res. 520 exige, mas sem registro.</p></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-        <div class="to"><div class="l"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg> Na kycert</div><p><b>Avaliação de risco documentada.</b> O enquadramento de cada cliente fica gravado com critério, autor e data — pronto para apresentar ao BCB.</p></div>
+        <div class="to"><div class="l"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg> Na kycert</div><p><b>Avaliação de risco documentada.</b> O enquadramento de cada cliente fica gravado com critério, autor e data, pronto para apresentar ao BCB.</p></div>
       </div>
     </div>
   </div>

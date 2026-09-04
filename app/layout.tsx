@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'kycert',
     title: 'kycert · Onboarding, KYC/KYB e trilha auditável para instituições reguladas',
     description:
-      'Convite, verificação, decisão e evidência — reunidos num único registro pronto para a fiscalização.',
+      'Convite, verificação, decisão e evidência, reunidos num único registro pronto para a fiscalização.',
   },
   twitter: {
     card: 'summary_large_image',

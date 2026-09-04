@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert — Monitoramento","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.","offers":{"@type":"Offer","priceCurrency":"BRL"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Monitoramento","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.","offers":{"@type":"Offer","priceCurrency":"BRL"}}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Monitoramento"}];
 
@@ -31,7 +31,7 @@ const BODY_HTML = `
 <section style="padding:44px 0 16px"><div class="wrap-narrow">
 <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin-bottom:16px">Reverificação e monitoramento</div>
 <h1 style="font-family:var(--font-serif);font-weight:600;font-size:clamp(32px,4.6vw,52px);line-height:1.06;letter-spacing:-.02em">Reverificação periódica e renovação sem retrabalho.</h1>
-<p style="font-size:19px;color:var(--text-secondary);line-height:1.55;margin:22px 0 28px;max-width:60ch">A obrigação não termina na aprovação. A kycert agenda a reverificação dos clientes, roda novo screening de Sanções e PEP e avisa quando algo muda — para que a sua base permaneça em conformidade ao longo do tempo.</p>
+<p style="font-size:19px;color:var(--text-secondary);line-height:1.55;margin:22px 0 28px;max-width:60ch">A obrigação não termina na aprovação. A kycert agenda a reverificação dos clientes, roda novo screening de Sanções e PEP e avisa quando algo muda, para que a sua base permaneça em conformidade ao longo do tempo.</p>
 <div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div>
 </div></section>
 <section style="padding:8px 0 8px"><div class="wrap">
@@ -39,7 +39,7 @@ const BODY_HTML = `
     <div class="split-copy">
       <span class="eyebrow">Ciclo de renovação</span>
       <h3 style="margin-top:14px">A base inteira no prazo, <span class="serif">sem lembrete manual.</span></h3>
-      <p>A kycert controla o vencimento de cada cadastro, refaz o screening no prazo e avisa quando o perfil de risco muda — cada reverificação registrada no dossiê, com data e resultado.</p>
+      <p>A kycert controla o vencimento de cada cadastro, refaz o screening no prazo e avisa quando o perfil de risco muda: cada reverificação registrada no dossiê, com data e resultado.</p>
       <div class="flist">
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Periodicidade por perfil</b><p>Cada tipo de cliente com o seu prazo de reverificação.</p></div></div>
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Re-screening automático</b><p>Sanções e PEP consultadas de novo a cada ciclo.</p></div></div>

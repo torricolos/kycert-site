@@ -33,7 +33,7 @@ const BODY_HTML = `
     <div>
       <span class="seg-pill reveal"><span class="dot"></span>Para bancos &amp; fintechs</span>
       <h1 class="reveal reveal-d1">Conta aberta em escala, <span class="em">com o risco enquadrado.</span></h1>
-      <p class="lead reveal reveal-d2">Instituições de pagamento e crédito abrem conta e concedem crédito em escala — e respondem por cada cliente em PLD/FT. A kycert junta KYC de PF, KYB de PJ e enquadramento de risco num onboarding único, com a evidência registrada.</p>
+      <p class="lead reveal reveal-d2">Instituições de pagamento e crédito abrem conta e concedem crédito em escala, e respondem por cada cliente em PLD/FT. A kycert junta KYC de PF, KYB de PJ e enquadramento de risco num onboarding único, com a evidência registrada.</p>
       <div class="cta reveal reveal-d3"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div>
       <div class="micro reveal reveal-d4"><span><span class="dot"></span>KYC + KYB</span><span><span class="dot"></span>Enquadramento de risco</span><span><span class="dot"></span>API</span></div>
     </div>
@@ -69,7 +69,7 @@ const BODY_HTML = `
       </div>
       <div class="pain reveal reveal-d2">
         <div class="ph"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span><h3>KYB de PJ é trabalho manual</h3></div>
-        <p>Cliente PJ exige quadro societário e beneficiário final. Feito a cada cliente na mão, vira gargalo — ou vira atalho que deixa o risco passar.</p>
+        <p>Cliente PJ exige quadro societário e beneficiário final. Feito a cada cliente na mão, vira gargalo ou vira atalho que deixa o risco passar.</p>
         <div class="cost"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg> KYB lento trava a conta PJ</div>
       </div>
       <div class="pain reveal reveal-d3">
