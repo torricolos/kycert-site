@@ -41,7 +41,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <h2>O ponto sensível: volume e velocidade</h2>
 <p>Casas de apostas operam com alto volume de cadastros e clientes que esperam acesso imediato. O desafio é verificar identidade, idade, sanções e PEP no mesmo passo, sem transformar o onboarding numa barreira que afasta o apostador legítimo.</p>
 <h2>Onde a kycert entra</h2>
-<p>A kycert verifica o apostador no cadastro — documento por OCR, idade, sanções e PEP — e registra cada etapa como evidência auditável; a confirmação biométrica facial está no roadmap. Quando a SPA/MF ou o COAF pedirem a trilha de um cliente, o histórico já está montado, com autor, data e critério da decisão.</p>
+<p>A kycert verifica o apostador no cadastro (documento por OCR, idade, sanções e PEP) e registra cada etapa como evidência auditável; a confirmação biométrica facial está no roadmap. Quando a SPA/MF ou o COAF pedirem a trilha de um cliente, o histórico já está montado, com autor, data e critério da decisão.</p>
 <div class="art-cta"><p>Veja o onboarding de apostadores com trilha auditável.</p><div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div></div>
 <div class="readalso"><h4>Leia também</h4><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a><a href="/blog/checklist-prontidao-fiscalizacao">Checklist de prontidão para fiscalização →</a></div>
 </article></section>`;

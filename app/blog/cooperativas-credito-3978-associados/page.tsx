@@ -35,7 +35,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <div class="art-meta"><span>Cooperativas</span><span>22/06/2026</span><span>6 min de leitura</span></div>
 <p class="lead-p">Cooperativas de crédito integram o Sistema Financeiro Nacional e respondem à Circular BCB 3.978/2020 como qualquer instituição autorizada. Identificar, qualificar e monitorar o associado é dever contínuo, não evento de adesão.</p>
 <h2>O associado é cliente para fins de PLD</h2>
-<p>A entrada de um associado equivale, para fins de prevenção, à abertura de relacionamento financeiro. Exige identificação, verificação contra listas restritivas e avaliação de risco — com a mesma documentação cobrada de bancos.</p>
+<p>A entrada de um associado equivale, para fins de prevenção, à abertura de relacionamento financeiro. Exige identificação, verificação contra listas restritivas e avaliação de risco, com a mesma documentação cobrada de bancos.</p>
 <h2>Monitorar não é só admitir</h2>
 <p>A Circular 3.978 pede monitoramento ao longo do relacionamento. O cadastro do associado precisa ser revisto periodicamente e reverificado quando vence, sem depender de controle manual em planilha.</p>
 <h2>Onde a kycert entra</h2>

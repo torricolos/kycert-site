@@ -33,7 +33,7 @@ const BODY_HTML = `
     <div>
       <span class="seg-pill reveal"><span class="dot"></span>Para corretoras de câmbio</span>
       <h1 class="reveal reveal-d1">O cliente de câmbio entra para operar. <span class="em">A evidência fica registrada.</span></h1>
-      <p class="lead reveal reveal-d2">Corretoras e DTVMs precisam identificar, qualificar e monitorar cada cliente conforme a regulação do BCB — e comprovar como fizeram. A kycert reúne cadastro, verificações e decisão num fluxo único, do convite à trilha auditável.</p>
+      <p class="lead reveal reveal-d2">Corretoras e DTVMs precisam identificar, qualificar e monitorar cada cliente conforme a regulação do BCB, e comprovar como fizeram. A kycert reúne cadastro, verificações e decisão num fluxo único, do convite à trilha auditável.</p>
       <div class="cta reveal reveal-d3"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div>
       <div class="micro reveal reveal-d4"><span><span class="dot"></span>PF e PJ</span><span><span class="dot"></span>Quadro societário</span><span><span class="dot"></span>Renovação</span></div>
     </div>
@@ -100,7 +100,7 @@ const BODY_HTML = `
       <div class="solrow reveal">
         <div class="from"><div class="l"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:#C0392B;display:inline-block"></span>A dor</div><p>Documento indo e voltando por e-mail e WhatsApp, com o cliente desistindo no caminho.</p></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-        <div class="to"><div class="l"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg> Na kycert</div><p><b>Convite white-label guiado no celular.</b> O cliente captura o documento pela câmera, com leitura por OCR e validação na hora — sem troca de arquivos solta.</p></div>
+        <div class="to"><div class="l"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg> Na kycert</div><p><b>Convite white-label guiado no celular.</b> O cliente captura o documento pela câmera, com leitura por OCR e validação na hora, sem troca de arquivos solta.</p></div>
       </div>
       <div class="solrow reveal">
         <div class="from"><div class="l"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:#C0392B;display:inline-block"></span>A dor</div><p>Trilha de PLD/FT espalhada entre sistema, e-mail e pasta, reconstruída a cada fiscalização.</p></div>
@@ -135,7 +135,7 @@ const BODY_HTML = `
   <div class="wrap sec-head">
     <span class="eyebrow on-dark reveal">O resultado</span>
     <h2 class="serif reveal reveal-d1" style="color:#fff">Seu time analisa risco em vez de procurar documento.</h2>
-    <p class="sec-lead reveal reveal-d2">O cadastro chega completo e padronizado, o risco já vem enquadrado pela sua política e só a exceção sobe para decisão humana — que fica registrada.</p>
+    <p class="sec-lead reveal reveal-d2">O cadastro chega completo e padronizado, o risco já vem enquadrado pela sua política e só a exceção sobe para decisão humana, que fica registrada.</p>
     <div class="pcards">
       <div class="pcard reveal reveal-d1"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h12"/></svg></div><div class="q">Menos retrabalho</div><div class="a">O cadastro chega completo, sem ida e volta de documento.</div></div>
       <div class="pcard reveal reveal-d2"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4l4 4-4 4"/><path d="M20 8H8a4 4 0 0 0-4 4v8"/></svg></div><div class="q">Menos desistência</div><div class="a">Fluxo guiado no celular reduz o abandono no onboarding.</div></div>

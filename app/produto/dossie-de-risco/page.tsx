@@ -5,18 +5,18 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Dossiê de Risco — veredito, evidência e decisão registrada',
+  title: 'Dossiê de Risco: veredito, evidência e decisão registrada',
   description:
     'O risco de cada cliente consolidado num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e a decisão registrada com autor, data e PDF.',
   alternates: { canonical: '/produto/dossie-de-risco' },
   openGraph: {
-    title: 'Dossiê de Risco — veredito, evidência e decisão registrada | kycert',
+    title: 'Dossiê de Risco: veredito, evidência e decisão registrada | kycert',
     description:
       'O risco de cada cliente consolidado num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e a decisão registrada com autor, data e PDF.',
     url: '/produto/dossie-de-risco',
   },
   twitter: {
-    title: 'Dossiê de Risco — veredito, evidência e decisão registrada | kycert',
+    title: 'Dossiê de Risco: veredito, evidência e decisão registrada | kycert',
     description:
       'O risco de cada cliente consolidado num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e a decisão registrada com autor, data e PDF.',
   },
@@ -94,9 +94,9 @@ const BODY_HTML = `
       <div class="tour-copy reveal">
         <div class="tour-num">01 · Score de risco</div>
         <h3>Um veredito <span class="serif">no topo da tela.</span></h3>
-        <p>O score resume a situação do cliente num rótulo claro — em ordem, atenção ou impeditivo. O analista começa pela conclusão e só desce ao detalhe quando precisa.</p>
+        <p>O score resume a situação do cliente num rótulo claro: em ordem, atenção ou impeditivo. O analista começa pela conclusão e só desce ao detalhe quando precisa.</p>
         <div class="flist">
-          <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Classificação clara</b><p>Em ordem, atenção ou impeditivo — sem número solto para interpretar.</p></div></div>
+          <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Classificação clara</b><p>Em ordem, atenção ou impeditivo, sem número solto para interpretar.</p></div></div>
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Fatores determinantes</b><p>O que puxou o risco para cima fica listado, com link para a seção.</p></div></div>
         </div>
       </div>
@@ -146,7 +146,7 @@ const BODY_HTML = `
       <div class="tour-copy reveal">
         <div class="tour-num">03 · Apontamentos com evidência</div>
         <h3>O alerta vem <span class="serif">com a prova junto.</span></h3>
-        <p>Cada apontamento mostra a lista, a fonte, o período e o grau de correspondência — com o nome consultado ao lado do registro encontrado. O analista confirma ou descarta sem sair da tela.</p>
+        <p>Cada apontamento mostra a lista, a fonte, o período e o grau de correspondência, com o nome consultado ao lado do registro encontrado. O analista confirma ou descarta sem sair da tela.</p>
         <div class="flist">
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Fonte e período</b><p>De onde veio o registro e desde quando está em aberto.</p></div></div>
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Grau de correspondência</b><p>Só entra como apontamento o que passa do limiar; homônimo fica fora da decisão.</p></div></div>

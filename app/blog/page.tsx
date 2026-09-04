@@ -5,20 +5,20 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Blog — compliance, KYC e regulação',
+  title: 'Blog: compliance, KYC e regulação',
   description:
     'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
   alternates: { canonical: '/blog' },
   openGraph: {
     type: 'website',
-    title: 'Blog — compliance, KYC e regulação | kycert',
+    title: 'Blog: compliance, KYC e regulação | kycert',
     description:
       'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
     url: '/blog',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog — compliance, KYC e regulação | kycert',
+    title: 'Blog: compliance, KYC e regulação | kycert',
     description:
       'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
   },
@@ -40,7 +40,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <a class="blog-card" data-cat="Segmentos" href="/blog/seguradoras-susep-onboarding-pld"><span class="cat">Seguradoras</span><h3>Seguros: identificação do segurado e PLD sob a SUSEP</h3><p>Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.</p><div class="meta"><span>19/06/2026</span></div></a>
 <a class="blog-card" data-cat="Segmentos" href="/blog/bets-lei-14790-pld-onboarding"><span class="cat">Apostas / Bets</span><h3>Apostas de quota fixa: o KYC que a regulamentação passou a exigir</h3><p>A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.</p><div class="meta"><span>18/06/2026</span></div></a>
 <a class="blog-card" data-cat="PSAV" href="/blog/resolucao-bcb-520-psav"><span class="cat">PSAV</span><h3>Resolução BCB 520/2025: o que muda para PSAV e como comprovar a avaliação de risco</h3><p>O que a Resolução BCB 520/2025 exige das PSAVs em avaliação de risco e como registrar essa avaliação como evidência auditável antes do prazo de outubro de 2026.</p><div class="meta"><span>12/05/2026</span></div></a>
-<a class="blog-card" data-cat="PLD/FT" href="/blog/comprovar-pld-ft-fiscalizacao-bacen"><span class="cat">PLD/FT</span><h3>Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede</h3><p>Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo — pergunta como você decidiu. Veja o que precisa estar registrado.</p><div class="meta"><span>28/05/2026</span></div></a>
+<a class="blog-card" data-cat="PLD/FT" href="/blog/comprovar-pld-ft-fiscalizacao-bacen"><span class="cat">PLD/FT</span><h3>Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede</h3><p>Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.</p><div class="meta"><span>28/05/2026</span></div></a>
 <a class="blog-card" data-cat="KYB" href="/blog/beneficiario-final-ubo-kyb"><span class="cat">KYB</span><h3>Beneficiário final (UBO): obrigações de KYB e como mapear a cadeia societária</h3><p>O que é o beneficiário final, por que identificá-lo é obrigação de KYB e como mapear a cadeia societária até a pessoa natural que controla a empresa.</p><div class="meta"><span>02/06/2026</span></div></a>
 <a class="blog-card" data-cat="PLD/FT" href="/blog/checklist-prontidao-fiscalizacao"><span class="cat">PLD/FT</span><h3>Checklist de prontidão para fiscalização de PLD/FT</h3><p>Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.</p><div class="meta"><span>05/06/2026</span></div></a>
 <a class="blog-card" data-cat="Câmbio" href="/blog/lei-14286-cambio-cadastro"><span class="cat">Câmbio</span><h3>Câmbio: o que a Lei 14.286/2021 e a Res. BCB 277/2022 exigem no cadastro do cliente</h3><p>O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.</p><div class="meta"><span>09/06/2026</span></div></a></div>

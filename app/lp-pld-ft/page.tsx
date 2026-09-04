@@ -27,7 +27,7 @@ const BODY_HTML = `
   <div class="wrap">
     <span class="eyebrow reveal">PLD-FT &amp; KYC</span>
     <h1 class="reveal reveal-d1">Prova pronta quando a <span class="em">fiscalização pedir.</span></h1>
-    <p class="lead reveal reveal-d2">A kycert registra quem analisou, quando e com qual evidência — em cada etapa do onboarding.</p>
+    <p class="lead reveal reveal-d2">A kycert registra quem analisou, quando e com qual evidência, em cada etapa do onboarding.</p>
     <div class="cta reveal reveal-d3"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div>
   </div>
 </section>
@@ -37,7 +37,7 @@ const BODY_HTML = `
   <div class="wrap-narrow" style="text-align:center">
     <span class="eyebrow reveal" style="justify-content:center">Trilha em tempo real</span>
     <h2 class="reveal reveal-d1" style="margin-left:auto;margin-right:auto">Cada decisão, com autor e data.</h2>
-    <p class="sec-lead reveal reveal-d2" style="margin-left:auto;margin-right:auto">Histórico vivo de consultas, status de risco e a trilha por trás de cada decisão — pronto para apresentar na fiscalização.</p>
+    <p class="sec-lead reveal reveal-d2" style="margin-left:auto;margin-right:auto">Histórico vivo de consultas, status de risco e a trilha por trás de cada decisão, pronto para apresentar na fiscalização.</p>
   </div>
   <div class="wrap-narrow" style="margin-top:44px">
     <div class="panel reveal">
@@ -78,7 +78,7 @@ const BODY_HTML = `
       <div class="split-copy">
         <span class="eyebrow">Pessoa jurídica · KYB</span>
         <h3 style="margin-top:14px">Até o beneficiário final, <span class="serif">com a cadeia inteira registrada.</span></h3>
-        <p>Cadastro PJ, quadro societário e cada participante da estrutura verificado — do sócio direto ao UBO.</p>
+        <p>Cadastro PJ, quadro societário e cada participante da estrutura verificado, do sócio direto ao UBO.</p>
         <div class="flist">
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Cadeia desenhada automaticamente</b><p>Da empresa aos sócios PF e PJ, com participação e função.</p></div></div>
           <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Beneficiário final identificado</b><p>A participação é seguida até o UBO, mesmo em estruturas com holding.</p></div></div>
