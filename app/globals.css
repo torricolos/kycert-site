@@ -383,6 +383,20 @@ footer .bottom .mono{font-family:var(--font-mono);display:inline-flex;align-item
 .article .readalso{margin-top:36px;padding-top:28px;border-top:1px solid var(--border-default)}
 .article .readalso h4{font-family:var(--font-mono);font-size:var(--text-2xs);letter-spacing:.12em;text-transform:uppercase;color:var(--text-tertiary);margin-bottom:14px}
 .article .readalso a{display:block;font-size:16px;font-weight:500;color:var(--text-link);padding:8px 0}
+.article h3{font-size:19px;font-weight:600;letter-spacing:-.01em;line-height:1.3;margin:28px 0 10px;color:var(--text-primary)}
+.article ul,.article ol{margin:0 0 18px;padding-left:22px}
+.article li{font-size:17px;line-height:1.6;color:var(--text-secondary);margin-bottom:8px}
+.article strong{color:var(--text-primary);font-weight:600}
+.article p a,.article li a,.article td a,.article blockquote a{color:var(--text-link);text-decoration:underline;text-underline-offset:2px}
+.article code{font-family:var(--font-mono);font-size:.9em}
+.article blockquote{margin:24px 0;padding:18px 22px;border-left:3px solid var(--signal);background:var(--surface-app);border-radius:0 var(--r-lg) var(--r-lg) 0}
+.article blockquote p{font-size:16px;margin-bottom:8px}
+.article blockquote p:last-child{margin-bottom:0}
+.article .art-table{overflow-x:auto;margin:20px 0 24px;border:1px solid var(--border-default);border-radius:var(--r-lg)}
+.article table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.article th{text-align:left;font-weight:600;color:var(--text-primary);background:var(--surface-app);padding:10px 14px;border-bottom:1px solid var(--border-default)}
+.article td{color:var(--text-secondary);padding:10px 14px;border-bottom:1px solid var(--border-default);vertical-align:top}
+.article tr:last-child td{border-bottom:0}
 
 /* ---------- glossário ---------- */
 .gl-list{display:flex;flex-direction:column}
