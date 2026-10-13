@@ -37,7 +37,7 @@ const HOME_STYLE = `
     --ink:#0E1116;--ink-2:#15191f;--paper:#FFFFFF;--paper-2:#FAFAFB;--green:#1F8A5B;--green-l:#27A870;--green-d:#166644;
     --ink-muted:#3A3D45;--ink-subtle:#6B6E78;--paper-dim:#E7E7EB;--paper-muted:#9A9DA8;
     --bd:rgba(14,17,22,.13);--bd-2:rgba(14,17,22,.19);--bd-dark:rgba(255,255,255,.14);
-    --sans:'Inter Tight',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+    --sans:var(--f-sans),'Inter Tight',system-ui,sans-serif;--serif:var(--f-serif),'Instrument Serif',Georgia,serif;--mono:var(--f-mono),'JetBrains Mono',ui-monospace,monospace;
     --sh-sm:0 1px 2px rgba(14,17,22,.05);
     --sh-md:0 8px 20px -8px rgba(14,17,22,.10),0 2px 6px rgba(14,17,22,.04);
     --sh-lg:0 24px 50px -18px rgba(14,17,22,.16),0 6px 14px rgba(14,17,22,.05);
@@ -127,9 +127,11 @@ const HOME_STYLE = `
   .seal-top{display:inline-flex;gap:9px;align-items:center;white-space:nowrap;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-subtle);background:rgba(255,255,255,.8);border:1px solid var(--paper-dim);padding:7px 15px;border-radius:9999px;box-shadow:var(--sh-sm);margin-bottom:30px}
   .seal-top .gd{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2.4s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,138,91,.45)}70%{box-shadow:0 0 0 7px rgba(31,138,91,0)}100%{box-shadow:0 0 0 0 rgba(31,138,91,0)}}
-  .heroA h1{font-size:88px;line-height:.98;letter-spacing:-.045em;font-weight:900;max-width:15ch}
+  .heroA h1{font-size:88px;line-height:.98;letter-spacing:-.045em;font-weight:900;max-width:10.6em /* = 15ch da Inter Tight (0 = .707em); ch variava no swap da fonte e gerava CLS */}
   .rot{font-family:var(--serif);font-weight:400;font-style:italic;color:var(--green);letter-spacing:-.02em;display:inline-block;position:relative}
   .heroA h1 .rot::after{content:"";position:absolute;left:0;right:5px;bottom:.12em;height:2px;background:var(--green);opacity:.2;border-radius:2px}
+  /* CLS: trava a largura da palavra rotativa na maior (Comprove) em telas estreitas, p/ o h1 nao mudar de altura ao rotacionar */
+  @media(max-width:410px){.heroA h1 .rot{min-width:3.45em}}
   .heroA .lead{font-size:19px;line-height:1.5;color:var(--ink-muted);max-width:50ch;margin:28px 0 34px}
   .glass-field{display:flex;align-items:center;gap:14px;padding:9px 9px 9px 22px;border-radius:9999px;background:rgba(255,255,255,.62);border:1px solid rgba(14,17,22,.08);box-shadow:0 1px 0 rgba(255,255,255,.9) inset,var(--sh-lg);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);width:520px;max-width:90vw}
   .glass-field .ic{color:var(--paper-muted);flex:none}
@@ -580,6 +582,13 @@ const HOME_STYLE = `
     .sc-tab{font-size:13px;padding:8px 13px}
   }
   @media(max-width:400px){.kpi{padding:11px 10px}.kpi .v{font-size:17px}}
+
+  /* seções abaixo da dobra só renderizam perto da viewport */
+  .heroA ~ section{content-visibility:auto}
+  /* alturas (content-box) medidas por seção p/ evitar salto de scroll/âncora; revisar se o layout das seções mudar */
+  .heroA ~ section:nth-of-type(2){contain-intrinsic-size:auto 504px}.heroA ~ section:nth-of-type(3){contain-intrinsic-size:auto 971px}.heroA ~ section:nth-of-type(4){contain-intrinsic-size:auto 1061px}.heroA ~ section:nth-of-type(5){contain-intrinsic-size:auto 778px}.heroA ~ section:nth-of-type(6){contain-intrinsic-size:auto 1106px}.heroA ~ section:nth-of-type(7){contain-intrinsic-size:auto 236px}.heroA ~ section:nth-of-type(8){contain-intrinsic-size:auto 373px}.heroA ~ section:nth-of-type(9){contain-intrinsic-size:auto 482px}.heroA ~ section:nth-of-type(10){contain-intrinsic-size:auto 686px}.heroA ~ section:nth-of-type(11){contain-intrinsic-size:auto 304px}
+  @media(max-width:1100px){.heroA ~ section:nth-of-type(2){contain-intrinsic-size:auto 584px}.heroA ~ section:nth-of-type(3){contain-intrinsic-size:auto 1695px}.heroA ~ section:nth-of-type(4){contain-intrinsic-size:auto 2279px}.heroA ~ section:nth-of-type(5){contain-intrinsic-size:auto 778px}.heroA ~ section:nth-of-type(6){contain-intrinsic-size:auto 1724px}.heroA ~ section:nth-of-type(7){contain-intrinsic-size:auto 236px}.heroA ~ section:nth-of-type(8){contain-intrinsic-size:auto 774px}.heroA ~ section:nth-of-type(9){contain-intrinsic-size:auto 522px}.heroA ~ section:nth-of-type(10){contain-intrinsic-size:auto 686px}.heroA ~ section:nth-of-type(11){contain-intrinsic-size:auto 304px}}
+  @media(max-width:700px){.heroA ~ section:nth-of-type(2){contain-intrinsic-size:auto 898px}.heroA ~ section:nth-of-type(3){contain-intrinsic-size:auto 2157px}.heroA ~ section:nth-of-type(4){contain-intrinsic-size:auto 2670px}.heroA ~ section:nth-of-type(5){contain-intrinsic-size:auto 829px}.heroA ~ section:nth-of-type(6){contain-intrinsic-size:auto 3154px}.heroA ~ section:nth-of-type(7){contain-intrinsic-size:auto 301px}.heroA ~ section:nth-of-type(8){contain-intrinsic-size:auto 799px}.heroA ~ section:nth-of-type(9){contain-intrinsic-size:auto 770px}.heroA ~ section:nth-of-type(10){contain-intrinsic-size:auto 694px}.heroA ~ section:nth-of-type(11){contain-intrinsic-size:auto 314px}}
 
   .hidden{display:none!important}
   /* reveal ao rolar — com rede de segurança no JS (nunca trava em branco) */
