@@ -175,7 +175,7 @@ export default function Page() {
     <>
       <Nav active="solucoes" />
       <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
-      <Script id="hs-form-embed" src="https://js.hsforms.net/forms/embed/51689422.js" strategy="afterInteractive" />
+      <Script id="hs-form-embed" src="https://js.hsforms.net/forms/embed/51689422.js" strategy="lazyOnload" />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
       <Footer />
       <SiteInteractions />
