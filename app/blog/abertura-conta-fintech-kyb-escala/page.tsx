@@ -43,7 +43,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <h2>Onde a kycert entra</h2>
 <p>A kycert junta KYC de PF, KYB de PJ com beneficiário final e enquadramento de risco num onboarding único, conectado ao seu core por API. Cada cliente entra verificado e cada decisão fica registrada numa trilha auditável.</p>
 <div class="art-cta"><p>Veja o onboarding de conta com KYC, KYB e trilha.</p><div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/solucoes/bancos" class="btn btn-ghost btn-lg">Conhecer a solução</a></div></div>
-<div class="readalso"><h4>Leia também</h4><a href="/blog/beneficiario-final-ubo-kyb">Beneficiário final: por que o KYB chega ao UBO →</a><a href="/blog/lei-14286-cambio-cadastro">Câmbio: o que a Lei 14.286 exige no cadastro →</a></div>
+<div class="readalso"><h4>Leia também</h4><a href="/blog/beneficiario-final-ubo-kyb">Beneficiário final: por que o KYB chega ao UBO →</a><a href="/blog/lei-14286-cambio-cadastro">Câmbio: o que a Lei 14.286 exige no cadastro →</a><a href="/blog/o-que-e-kyc">O que é KYC →</a><a href="/blog/contas-laranja-contas-de-passagem">Contas laranja e contas de passagem →</a><a href="/blog/fraude-documental-onboarding">Fraude documental no onboarding →</a></div>
 </article></section>`;
 
 export default function Page() {

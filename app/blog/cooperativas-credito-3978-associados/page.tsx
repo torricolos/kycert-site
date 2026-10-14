@@ -41,7 +41,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <h2>Onde a kycert entra</h2>
 <p>A kycert verifica o associado na adesão, enquadra o risco pela política da cooperativa e controla o vencimento de cada cadastro, disparando a reverificação no prazo. Toda decisão fica registrada como evidência para o BCB.</p>
 <div class="art-cta"><p>Verifique e monitore o quadro de associados com trilha auditável.</p><div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/produto/monitoramento" class="btn btn-ghost btn-lg">Conhecer o monitoramento</a></div></div>
-<div class="readalso"><h4>Leia também</h4><a href="/blog/checklist-prontidao-fiscalizacao">Checklist de prontidão para fiscalização →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a></div>
+<div class="readalso"><h4>Leia também</h4><a href="/blog/checklist-prontidao-fiscalizacao">Checklist de prontidão para fiscalização →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a><a href="/blog/o-que-e-kyc">O que é KYC →</a><a href="/blog/pessoa-exposta-politicamente-pep">Pessoa exposta politicamente (PEP) →</a></div>
 </article></section>`;
 
 export default function Page() {

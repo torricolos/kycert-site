@@ -41,7 +41,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <h2>Onde a kycert entra</h2>
 <p>A kycert estrutura o cadastro do segurado e do contratante PJ, verifica sanções, PEP e situação cadastral, e registra a avaliação de risco com autor e data. A trilha fica pronta para apresentar à SUSEP e ao COAF quando solicitada.</p>
 <div class="art-cta"><p>Estruture o onboarding de segurados com evidência registrada.</p><div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div></div>
-<div class="readalso"><h4>Leia também</h4><a href="/blog/beneficiario-final-ubo-kyb">Beneficiário final: por que o KYB chega ao UBO →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a></div>
+<div class="readalso"><h4>Leia também</h4><a href="/blog/beneficiario-final-ubo-kyb">Beneficiário final: por que o KYB chega ao UBO →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a><a href="/blog/o-que-e-pld-ft">O que é PLD/FT →</a></div>
 </article></section>`;
 
 export default function Page() {
