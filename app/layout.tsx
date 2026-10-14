@@ -76,20 +76,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               src="https://www.googletagmanager.com/gtag/js?id=AW-18330789484"
               strategy="lazyOnload"
             />
-            <Script id="google-tag" strategy="afterInteractive">
-              {`window.dataLayer = window.dataLayer || [];
+            {/* inline no <head>: roda no parse (antes da hidratação), então cliques cedo enfileiram no dataLayer; só o gtag.js é lazyOnload */}
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-18330789484');`}
-            </Script>
-            <Script id="wa-conversion" strategy="afterInteractive">
-              {`document.addEventListener('click', function (e) {
+              gtag('config', 'AW-18330789484');
+              document.addEventListener('click', function (e) {
                 var a = e.target.closest && e.target.closest('a[href*="api.whatsapp.com"], a[href*="wa.me"]');
                 if (a && typeof gtag === 'function') {
                   gtag('event', 'conversion', { 'send_to': 'AW-18330789484/917pCOzorNMcEOzM5qRE' });
                 }
-              });`}
-            </Script>
+              });`,
+              }}
+            />
             <Script id="ms-clarity" strategy="lazyOnload">
               {`(function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
