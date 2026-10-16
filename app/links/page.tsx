@@ -30,7 +30,7 @@ const UTM = 'utm_source=linkinbio&utm_medium=social';
 
 const PAGE_STYLE = `
   .links-page{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:56px 20px 40px;background:var(--surface-app)}
-  .links-word{font-weight:700;font-size:28px;letter-spacing:-.03em}
+  .links-word{font-weight:700;font-size:28px;letter-spacing:-.03em;line-height:inherit}
   .links-word .sig{color:var(--signal)}
   .links-sub{margin-top:10px;font-size:15px;color:var(--text-secondary);text-align:center;max-width:34ch;line-height:1.5}
   .links-list{width:100%;max-width:420px;margin-top:36px;display:flex;flex-direction:column;gap:12px}
@@ -117,7 +117,7 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: PAGE_STYLE }} />
       <div className="links-page">
-        <div className="links-word">kycert<span className="sig">.</span></div>
+        <h1 className="links-word">kycert<span className="sig">.</span></h1>
         <p className="links-sub">Onboarding, KYC, KYB e KYT com trilha auditável para qualquer empresa.</p>
 
         <div className="links-list">

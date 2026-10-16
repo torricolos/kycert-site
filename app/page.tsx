@@ -3,7 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'kycert · Onboarding e trilha auditável para instituições reguladas' },
+  title: { absolute: 'kycert · KYC, KYB e trilha auditável para PLD/FT' },
   description:
     'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
   alternates: { canonical: '/' },
@@ -229,7 +229,7 @@ const HOME_STYLE = `
   footer .social{display:flex;gap:10px;margin-top:18px}
   footer .social a{width:36px;height:36px;border:1px solid var(--bd-2);border-radius:9px;display:flex;align-items:center;justify-content:center;color:var(--ink-muted);transition:.15s}
   footer .social a:hover{color:var(--ink);border-color:var(--ink-subtle)}
-  footer .col h5{color:var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;font-family:var(--mono)}
+  footer .col .fh{font-weight:700;margin-top:1.67em;color:var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;font-family:var(--mono)}
   footer a.fl{color:var(--ink-muted);display:block;margin:9px 0;transition:color .15s}
   footer a.fl:hover{color:var(--ink)}
   footer .foot-legal{margin-top:36px;font-size:12px;color:var(--ink-subtle);font-family:var(--mono);letter-spacing:.02em;line-height:1.7;max-width:760px}
@@ -383,7 +383,7 @@ const HOME_STYLE = `
   .fnode .pin{width:32px;height:32px;border-radius:50%;background:var(--ink);border:2px solid var(--border-on-dark);display:flex;align-items:center;justify-content:center;color:#5b636b;font-family:var(--font-mono);font-size:12px;margin-bottom:18px;transition:border-color .4s,box-shadow .4s,color .4s}
   .fnode.lit .pin{border-color:var(--green-l);color:var(--green-l);box-shadow:0 0 0 5px rgba(39,168,112,.12);animation:nodePop .5s var(--ease-out)}
   @keyframes nodePop{0%{transform:scale(1)}38%{transform:scale(1.2)}100%{transform:scale(1)}}
-  .fnode h4{font-size:16px;font-weight:800;color:#fff;margin-bottom:6px}
+  .fnode h3{font-size:16px;font-weight:800;color:#fff;margin:1.33em 0 6px;letter-spacing:0;line-height:inherit}
   .fnode p{font-size:13px;color:#99a1aa;line-height:1.5;max-width:20ch;min-height:58px}
   .fnode .ev{margin-top:11px;font-family:var(--font-mono);font-size:10.5px;color:var(--green-l);display:inline-flex;align-items:center;gap:6px;opacity:.25;transition:opacity .4s}
   .fnode.lit .ev{opacity:1;animation:evIn .5s var(--ease-out)}
@@ -649,11 +649,11 @@ const HOME_BODY = `
     <div class="flow" id="comoFlow">
       <div class="flow-line"></div>
       <div class="flow-nodes">
-        <div class="fnode"><div class="pin">01</div><div><h4>Convite</h4><p>link enviado com a sua marca</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">02</div><div><h4>Captura</h4><p>documento · leitura (OCR)</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">03</div><div><h4>Verificações</h4><p>bases cruzadas em bloco</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">04</div><div><h4>Risco</h4><p>enquadrado pela sua regra</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">05</div><div><h4>Decisão</h4><p>aprovação com autor e data</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">01</div><div><h3>Convite</h3><p>link enviado com a sua marca</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">02</div><div><h3>Captura</h3><p>documento · leitura (OCR)</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">03</div><div><h3>Verificações</h3><p>bases cruzadas em bloco</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">04</div><div><h3>Risco</h3><p>enquadrado pela sua regra</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">05</div><div><h3>Decisão</h3><p>aprovação com autor e data</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
       </div>
     </div>
     <div class="dproof">

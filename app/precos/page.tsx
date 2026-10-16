@@ -5,18 +5,24 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Preços',
+  title: 'Preços de KYC e KYB por crédito de verificação',
   description:
     'A kycert cobra por créditos de verificação, com plataforma white-label inclusa. Fale com o time para um plano dimensionado ao seu volume.',
   alternates: { canonical: '/precos' },
   openGraph: {
-    title: 'Preços | kycert',
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+    title: 'Preços de KYC e KYB por crédito de verificação | kycert',
     description:
       'A kycert cobra por créditos de verificação, com plataforma white-label inclusa. Fale com o time para um plano dimensionado ao seu volume.',
     url: '/precos',
   },
   twitter: {
-    title: 'Preços | kycert',
+    images: ['https://kycert.com.br/opengraph-image'],
+    card: 'summary_large_image',
+    title: 'Preços de KYC e KYB por crédito de verificação | kycert',
     description:
       'A kycert cobra por créditos de verificação, com plataforma white-label inclusa. Fale com o time para um plano dimensionado ao seu volume.',
   },

@@ -5,26 +5,30 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978',
+  title: 'Cooperativas: KYC de associados e Circular 3.978',
   description:
     'Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.',
   alternates: { canonical: '/blog/cooperativas-credito-3978-associados' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
     type: 'article',
-    title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978 | kycert',
+    title: 'Cooperativas: KYC de associados e Circular 3.978 | kycert',
     description:
       'Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.',
     url: '/blog/cooperativas-credito-3978-associados',
   },
   twitter: {
+    images: ['https://kycert.com.br/opengraph-image'],
     card: 'summary_large_image',
-    title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978 | kycert',
+    title: 'Cooperativas: KYC de associados e Circular 3.978 | kycert',
     description:
       'Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.',
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Cooperativas de crédito: o PLD/FT do quadro de associados","description":"Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/cooperativas-credito-3978-associados","datePublished":"2026-06-22","dateModified":"2026-06-22","image":"https://kycert.com.br/opengraph-image","headline":"Cooperativas de crédito: o PLD/FT do quadro de associados","description":"Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Cooperativas"}];
 
@@ -41,7 +45,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <h2>Onde a kycert entra</h2>
 <p>A kycert verifica o associado na adesão, enquadra o risco pela política da cooperativa e controla o vencimento de cada cadastro, disparando a reverificação no prazo. Toda decisão fica registrada como evidência para o BCB.</p>
 <div class="art-cta"><p>Verifique e monitore o quadro de associados com trilha auditável.</p><div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/produto/monitoramento" class="btn btn-ghost btn-lg">Conhecer o monitoramento</a></div></div>
-<div class="readalso"><h4>Leia também</h4><a href="/blog/checklist-prontidao-fiscalizacao">Checklist de prontidão para fiscalização →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a></div>
+<div class="readalso"><p class="ra-h">Leia também</p><a href="/blog/checklist-prontidao-fiscalizacao">Checklist de prontidão para fiscalização →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a></div>
 </article></section>`;
 
 export default function Page() {

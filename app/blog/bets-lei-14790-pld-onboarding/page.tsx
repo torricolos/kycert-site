@@ -5,26 +5,30 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets',
+  title: 'Bets: o que a Lei 14.790 exige de KYC e PLD',
   description:
     'A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.',
   alternates: { canonical: '/blog/bets-lei-14790-pld-onboarding' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
     type: 'article',
-    title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets | kycert',
+    title: 'Bets: o que a Lei 14.790 exige de KYC e PLD | kycert',
     description:
       'A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.',
     url: '/blog/bets-lei-14790-pld-onboarding',
   },
   twitter: {
+    images: ['https://kycert.com.br/opengraph-image'],
     card: 'summary_large_image',
-    title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets | kycert',
+    title: 'Bets: o que a Lei 14.790 exige de KYC e PLD | kycert',
     description:
       'A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.',
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","description":"A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/bets-lei-14790-pld-onboarding","datePublished":"2026-06-18","dateModified":"2026-06-18","image":"https://kycert.com.br/opengraph-image","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","description":"A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Apostas / Bets"}];
 
@@ -43,7 +47,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <h2>Onde a kycert entra</h2>
 <p>A kycert verifica o apostador no cadastro (documento por OCR, idade, sanções e PEP) e registra cada etapa como evidência auditável; a confirmação biométrica facial está no roadmap. Quando a SPA/MF ou o COAF pedirem a trilha de um cliente, o histórico já está montado, com autor, data e critério da decisão.</p>
 <div class="art-cta"><p>Veja o onboarding de apostadores com trilha auditável.</p><div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div></div>
-<div class="readalso"><h4>Leia também</h4><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a><a href="/blog/checklist-prontidao-fiscalizacao">Checklist de prontidão para fiscalização →</a></div>
+<div class="readalso"><p class="ra-h">Leia também</p><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a><a href="/blog/checklist-prontidao-fiscalizacao">Checklist de prontidão para fiscalização →</a></div>
 </article></section>`;
 
 export default function Page() {

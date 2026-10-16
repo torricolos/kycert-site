@@ -10,7 +10,7 @@ const fontMono = JetBrains_Mono({ subsets: ['latin'], display: 'swap', variable:
 export const metadata: Metadata = {
   metadataBase: new URL('https://kycert.com.br'),
   title: {
-    default: 'kycert · Onboarding, KYC/KYB e trilha auditável para instituições reguladas',
+    default: 'kycert · KYC, KYB e trilha auditável para PLD/FT',
     template: '%s · kycert',
   },
   description:
@@ -27,12 +27,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: '/',
     siteName: 'kycert',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     title: 'kycert · Onboarding, KYC/KYB e trilha auditável para instituições reguladas',
     description:
       'Convite, verificação, decisão e evidência, reunidos num único registro pronto para a fiscalização.',
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['/opengraph-image'],
     title: 'kycert · Onboarding, KYC/KYB e trilha auditável',
     description: 'Onboarding, verificação e trilha auditável para instituições reguladas.',
   },
@@ -43,20 +45,44 @@ export const metadata: Metadata = {
 
 const structuredData = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'kycert',
-  applicationCategory: 'BusinessApplication',
-  operatingSystem: 'Web',
-  description:
-    'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil.',
-  url: 'https://kycert.com.br/',
-  inLanguage: 'pt-BR',
-  offers: { '@type': 'Offer', priceCurrency: 'BRL' },
-  publisher: {
-    '@type': 'Organization',
-    name: 'kycert Tecnologia',
-    url: 'https://kycert.com.br/',
-  },
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://kycert.com.br/#organization',
+      name: 'kycert',
+      legalName: 'kycert Tecnologia',
+      url: 'https://kycert.com.br/',
+      logo: { '@type': 'ImageObject', url: 'https://kycert.com.br/images/logo.png', width: 320, height: 132 },
+      description:
+        'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil.',
+      email: 'contato@kycert.com.br',
+      areaServed: 'BR',
+      contactPoint: [
+        { '@type': 'ContactPoint', contactType: 'sales', email: 'contato@kycert.com.br', availableLanguage: 'pt-BR' },
+      ],
+      sameAs: ['https://www.linkedin.com/company/kycert/', 'https://www.instagram.com/kycert.oficial/'],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://kycert.com.br/#website',
+      url: 'https://kycert.com.br/',
+      name: 'kycert',
+      inLanguage: 'pt-BR',
+      publisher: { '@id': 'https://kycert.com.br/#organization' },
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://kycert.com.br/#software',
+      name: 'kycert',
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      description:
+        'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil.',
+      url: 'https://kycert.com.br/',
+      inLanguage: 'pt-BR',
+      publisher: { '@id': 'https://kycert.com.br/#organization' },
+    },
+  ],
 };
 
 const isProd = process.env.VERCEL_ENV === 'production';

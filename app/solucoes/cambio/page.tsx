@@ -5,17 +5,23 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Solução de KYC e onboarding para corretoras de câmbio',
+  title: 'KYC e onboarding para corretoras de câmbio',
   description:
     'As dores do onboarding de câmbio e como a kycert resolve: cadastro de PJ, quadro societário, PLD/FT e trilha auditável para corretoras e DTVMs.',
   alternates: { canonical: '/solucoes/cambio' },
   openGraph: {
-    title: 'Solução de KYC e onboarding para corretoras de câmbio | kycert',
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+    title: 'KYC e onboarding para corretoras de câmbio | kycert',
     description:
       'As dores do onboarding de câmbio e como a kycert resolve: cadastro de PJ, quadro societário, PLD/FT e trilha auditável para corretoras e DTVMs.',
   },
   twitter: {
-    title: 'Solução de KYC e onboarding para corretoras de câmbio | kycert',
+    images: ['https://kycert.com.br/opengraph-image'],
+    card: 'summary_large_image',
+    title: 'KYC e onboarding para corretoras de câmbio | kycert',
     description:
       'As dores do onboarding de câmbio e como a kycert resolve: cadastro de PJ, quadro societário, PLD/FT e trilha auditável para corretoras e DTVMs.',
   },

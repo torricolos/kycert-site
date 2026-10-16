@@ -10,11 +10,17 @@ export const metadata: Metadata = {
     'Onboarding com KYC, KYB e trilha auditável para PLD/FT: cada decisão registrada com autor, data e evidência, pronta para a fiscalização.',
   alternates: { canonical: '/lp-pld-ft' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
     title: 'PLD-FT com trilha auditável | kycert',
     description:
       'Onboarding com KYC, KYB e trilha auditável para PLD/FT: cada decisão registrada com autor, data e evidência, pronta para a fiscalização.',
   },
   twitter: {
+    images: ['https://kycert.com.br/opengraph-image'],
+    card: 'summary_large_image',
     title: 'PLD-FT com trilha auditável | kycert',
     description:
       'Onboarding com KYC, KYB e trilha auditável para PLD/FT: cada decisão registrada com autor, data e evidência, pronta para a fiscalização.',
@@ -61,11 +67,11 @@ const BODY_HTML = `
     <div class="flow">
       <div class="flow-line"></div>
       <div class="flow-nodes">
-        <div class="fnode"><div class="pin">01</div><div><h4>Convite</h4><p>link enviado com a sua marca</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">02</div><div><h4>Captura</h4><p>documento · leitura (OCR)</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">03</div><div><h4>Verificações</h4><p>bases cruzadas em bloco</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">04</div><div><h4>Risco</h4><p>enquadrado pela sua regra</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
-        <div class="fnode"><div class="pin">05</div><div><h4>Decisão</h4><p>aprovação com autor e data</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">01</div><div><h3>Convite</h3><p>link enviado com a sua marca</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">02</div><div><h3>Captura</h3><p>documento · leitura (OCR)</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">03</div><div><h3>Verificações</h3><p>bases cruzadas em bloco</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">04</div><div><h3>Risco</h3><p>enquadrado pela sua regra</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
+        <div class="fnode"><div class="pin">05</div><div><h3>Decisão</h3><p>aprovação com autor e data</p><span class="ev"><span class="rdot"></span> Registrado</span></div></div>
       </div>
     </div>
   </div>

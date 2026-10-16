@@ -5,24 +5,30 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Verificação de pessoa física (KYC) com trilha auditável',
+  title: 'KYC de pessoa física com trilha auditável',
   description:
     'KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização.',
   alternates: { canonical: '/produto/kyc' },
   openGraph: {
-    title: 'Verificação de pessoa física (KYC) com trilha auditável | kycert',
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+    title: 'KYC de pessoa física com trilha auditável | kycert',
     description:
       'KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização.',
     url: '/produto/kyc',
   },
   twitter: {
-    title: 'Verificação de pessoa física (KYC) com trilha auditável | kycert',
+    images: ['https://kycert.com.br/opengraph-image'],
+    card: 'summary_large_image',
+    title: 'KYC de pessoa física com trilha auditável | kycert',
     description:
       'KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização.',
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Verificação PF · KYC","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização.","offers":{"@type":"Offer","priceCurrency":"BRL"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Verificação PF · KYC","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Verificação PF · KYC"}];
 

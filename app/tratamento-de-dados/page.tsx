@@ -9,10 +9,16 @@ export const metadata: Metadata = {
   description: 'Anexo de tratamento de dados pessoais da kycert: papéis, finalidades e segurança.',
   alternates: { canonical: '/tratamento-de-dados' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
     title: 'Tratamento de Dados | kycert',
     description: 'Anexo de tratamento de dados pessoais da kycert: papéis, finalidades e segurança.',
   },
   twitter: {
+    images: ['https://kycert.com.br/opengraph-image'],
+    card: 'summary_large_image',
     title: 'Tratamento de Dados | kycert',
     description: 'Anexo de tratamento de dados pessoais da kycert: papéis, finalidades e segurança.',
   },

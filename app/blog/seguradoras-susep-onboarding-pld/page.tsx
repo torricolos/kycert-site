@@ -5,26 +5,30 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP',
+  title: 'Seguradoras: onboarding e PLD/FT sob a SUSEP',
   description:
     'Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.',
   alternates: { canonical: '/blog/seguradoras-susep-onboarding-pld' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
     type: 'article',
-    title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP | kycert',
+    title: 'Seguradoras: onboarding e PLD/FT sob a SUSEP | kycert',
     description:
       'Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.',
     url: '/blog/seguradoras-susep-onboarding-pld',
   },
   twitter: {
+    images: ['https://kycert.com.br/opengraph-image'],
     card: 'summary_large_image',
-    title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP | kycert',
+    title: 'Seguradoras: onboarding e PLD/FT sob a SUSEP | kycert',
     description:
       'Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.',
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Seguros: identificação do segurado e PLD sob a SUSEP","description":"Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/seguradoras-susep-onboarding-pld","datePublished":"2026-06-19","dateModified":"2026-06-19","image":"https://kycert.com.br/opengraph-image","headline":"Seguros: identificação do segurado e PLD sob a SUSEP","description":"Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Seguradoras"}];
 
@@ -41,7 +45,7 @@ const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a>
 <h2>Onde a kycert entra</h2>
 <p>A kycert estrutura o cadastro do segurado e do contratante PJ, verifica sanções, PEP e situação cadastral, e registra a avaliação de risco com autor e data. A trilha fica pronta para apresentar à SUSEP e ao COAF quando solicitada.</p>
 <div class="art-cta"><p>Estruture o onboarding de segurados com evidência registrada.</p><div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div></div>
-<div class="readalso"><h4>Leia também</h4><a href="/blog/beneficiario-final-ubo-kyb">Beneficiário final: por que o KYB chega ao UBO →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a></div>
+<div class="readalso"><p class="ra-h">Leia também</p><a href="/blog/beneficiario-final-ubo-kyb">Beneficiário final: por que o KYB chega ao UBO →</a><a href="/blog/comprovar-pld-ft-fiscalizacao-bacen">Como comprovar PLD/FT numa fiscalização →</a></div>
 </article></section>`;
 
 export default function Page() {

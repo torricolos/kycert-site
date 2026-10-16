@@ -5,24 +5,30 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Verificação de pessoa jurídica e beneficiário final (KYB/UBO)',
+  title: 'KYB: verificação de PJ e beneficiário final (UBO)',
   description:
     'KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência.',
   alternates: { canonical: '/produto/kyb' },
   openGraph: {
-    title: 'Verificação de pessoa jurídica e beneficiário final (KYB/UBO) | kycert',
+    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+    title: 'KYB: verificação de PJ e beneficiário final (UBO) | kycert',
     description:
       'KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência.',
     url: '/produto/kyb',
   },
   twitter: {
-    title: 'Verificação de pessoa jurídica e beneficiário final (KYB/UBO) | kycert',
+    images: ['https://kycert.com.br/opengraph-image'],
+    card: 'summary_large_image',
+    title: 'KYB: verificação de PJ e beneficiário final (UBO) | kycert',
     description:
       'KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência.',
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Verificação PJ · KYB","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência.","offers":{"@type":"Offer","priceCurrency":"BRL"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Verificação PJ · KYB","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Verificação PJ · KYB"}];
 
@@ -38,7 +44,7 @@ const BODY_HTML = `
   <div class="split reveal">
     <div class="split-copy">
       <span class="eyebrow">Estrutura societária</span>
-      <h3 style="margin-top:14px">A cadeia inteira, <span class="serif">até quem controla.</span></h3>
+      <h2 style="margin-top:14px">A cadeia inteira, <span class="serif">até quem controla.</span></h2>
       <p>A kycert percorre o quadro societário, segue a participação por holdings intermediárias e verifica cada nó contra as listas restritivas, até chegar à pessoa física que comanda o grupo.</p>
       <div class="flist">
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Cadeia desenhada automaticamente</b><p>Da empresa aos sócios PF e PJ, com participação e função.</p></div></div>
