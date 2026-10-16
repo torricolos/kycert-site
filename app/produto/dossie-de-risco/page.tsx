@@ -5,20 +5,26 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'Dossiê de Risco: veredito, evidência e decisão registrada',
+  title: 'Dossiê de Risco: veredito e decisão registrada',
   description:
-    'O risco de cada cliente consolidado num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e a decisão registrada com autor, data e PDF.',
+    'O risco de cada cliente num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e decisão registrada com autor e data.',
   alternates: { canonical: '/produto/dossie-de-risco' },
   openGraph: {
-    title: 'Dossiê de Risco: veredito, evidência e decisão registrada | kycert',
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+    title: 'Dossiê de Risco: veredito e decisão registrada | kycert',
     description:
-      'O risco de cada cliente consolidado num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e a decisão registrada com autor, data e PDF.',
+      'O risco de cada cliente num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e decisão registrada com autor e data.',
     url: '/produto/dossie-de-risco',
   },
   twitter: {
-    title: 'Dossiê de Risco: veredito, evidência e decisão registrada | kycert',
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+    title: 'Dossiê de Risco: veredito e decisão registrada | kycert',
     description:
-      'O risco de cada cliente consolidado num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e a decisão registrada com autor, data e PDF.',
+      'O risco de cada cliente num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e decisão registrada com autor e data.',
   },
 };
 

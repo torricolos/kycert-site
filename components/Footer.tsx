@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
 
           <div className="col">
-            <h5>Produtos</h5>
+            <p className="fh">Produtos</p>
             <a className="fl" href="/produto/kyc">Verificação PF · KYC</a>
             <a className="fl" href="/produto/kyb">Verificação PJ · KYB</a>
             <a className="fl" href="/produto/dossie-de-risco">Dossiê de Risco</a>
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           <div className="col">
-            <h5>Soluções</h5>
+            <p className="fh">Soluções</p>
             <a className="fl" href="/solucoes/cambio">Câmbio</a>
             <a className="fl" href="/solucoes/psav">PSAV / cripto</a>
             <a className="fl" href="/solucoes/bancos">Bancos & fintechs</a>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div className="col">
-            <h5>Recursos</h5>
+            <p className="fh">Recursos</p>
             <a className="fl" href="/blog">Blog</a>
             <a className="fl" href="/faq">Perguntas frequentes</a>
             <a className="fl" href="/faq#glossario">Glossário</a>
@@ -47,14 +47,14 @@ export default function Footer() {
           </div>
 
           <div className="col">
-            <h5>Empresa</h5>
+            <p className="fh">Empresa</p>
             <a className="fl" href="/seguranca">Segurança</a>
             <a className="fl" href="/conformidade">Conformidade</a>
             <a className="fl" href="mailto:contato@kycert.com.br">Contato</a>
           </div>
 
           <div className="col">
-            <h5>Legal</h5>
+            <p className="fh">Legal</p>
             <a className="fl" href="/termos">Termos de Uso</a>
             <a className="fl" href="/privacidade">Privacidade & LGPD</a>
             <a className="fl" href="/tratamento-de-dados">Tratamento de Dados</a>

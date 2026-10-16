@@ -7,18 +7,24 @@ import SiteInteractions from '@/components/SiteInteractions';
 export const metadata: Metadata = {
   title: 'Dossiê de risco de exemplo',
   description:
-    'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes consultadas e decisão registrada.',
+    'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes e decisão registrada.',
   alternates: { canonical: '/dossie-exemplo' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
     title: 'Dossiê de risco de exemplo | kycert',
     description:
-      'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes consultadas e decisão registrada.',
+      'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes e decisão registrada.',
     url: '/dossie-exemplo',
   },
   twitter: {
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
     title: 'Dossiê de risco de exemplo | kycert',
     description:
-      'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes consultadas e decisão registrada.',
+      'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes e decisão registrada.',
   },
 };
 

@@ -1,0 +1,50 @@
+# kycert
+
+> kycert é uma plataforma brasileira de onboarding, KYC/KYB e trilha auditável de PLD/FT para instituições reguladas. Cada etapa (convite, captura de documento, verificações, enquadramento de risco e decisão) fica registrada como evidência, com autor e data, pronta para uma fiscalização do Banco Central (BACEN). Site: https://kycert.com.br
+
+A kycert atende empresas de vários setores, com foco em mercados regulados: corretoras de câmbio, PSAVs, bancos e fintechs, cooperativas de crédito, consórcios e mercado de capitais, seguradoras e casas de apostas (Bets). Contato: contato@kycert.com.br
+
+## Produtos
+- [Verificação de pessoa física (KYC)](https://kycert.com.br/produto/kyc): documento, biometria, screening de Sanções e PEP e enquadramento de risco.
+- [Verificação de pessoa jurídica (KYB/UBO)](https://kycert.com.br/produto/kyb): cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios.
+- [Dossiê de Risco](https://kycert.com.br/produto/dossie-de-risco): veredito, apontamentos com evidência, cadeia societária e decisão registrada.
+- [Cadastro e OCR de documentos](https://kycert.com.br/produto/ocr): captura de documentos brasileiros com extração estruturada.
+- [Monitoramento contínuo](https://kycert.com.br/produto/monitoramento): reverificação periódica, re-screening de Sanções e PEP e alertas de mudança de risco.
+- [API e webhooks](https://kycert.com.br/produto/api): integração da trilha de verificação ao fluxo do cliente.
+
+## Soluções por setor
+- [Corretoras de câmbio e DTVMs](https://kycert.com.br/solucoes/cambio)
+- [Exchanges e PSAVs (Resolução BCB 520)](https://kycert.com.br/solucoes/psav)
+- [Bancos, instituições de pagamento e fintechs](https://kycert.com.br/solucoes/bancos)
+- [Cooperativas de crédito (Circular BCB 3.978)](https://kycert.com.br/solucoes/cooperativas)
+- [Consórcios e mercado de capitais (BCB e CVM)](https://kycert.com.br/solucoes/mercado-capitais)
+- [Seguradoras e corretoras (SUSEP)](https://kycert.com.br/solucoes/seguradoras)
+- [Casas de apostas (Lei 14.790/2023)](https://kycert.com.br/solucoes/bets)
+
+## Recursos
+- [Perguntas frequentes e glossário de KYC, KYB e PLD/FT](https://kycert.com.br/faq)
+- [Blog de compliance, KYC e regulação](https://kycert.com.br/blog)
+- [Mapa de normas e conformidade regulatória](https://kycert.com.br/conformidade)
+- [Guias e materiais de compliance](https://kycert.com.br/guias)
+- [Dossiê de risco de exemplo (anonimizado)](https://kycert.com.br/dossie-exemplo)
+- [Preços](https://kycert.com.br/precos)
+- [Segurança e proteção de dados](https://kycert.com.br/seguranca)
+
+## Artigos do blog
+- [Como comprovar PLD/FT na fiscalização do BACEN](https://kycert.com.br/blog/comprovar-pld-ft-fiscalizacao-bacen)
+- [Checklist de prontidão para fiscalização de PLD/FT](https://kycert.com.br/blog/checklist-prontidao-fiscalizacao)
+- [Beneficiário final (UBO): o que o KYB exige](https://kycert.com.br/blog/beneficiario-final-ubo-kyb)
+- [Resolução BCB 520/2025 para PSAV](https://kycert.com.br/blog/resolucao-bcb-520-psav)
+- [Lei 14.286 e Res. BCB 277: cadastro no câmbio](https://kycert.com.br/blog/lei-14286-cambio-cadastro)
+- [Bets: o que a Lei 14.790 exige de KYC e PLD](https://kycert.com.br/blog/bets-lei-14790-pld-onboarding)
+- [Cooperativas de crédito e a Circular 3.978](https://kycert.com.br/blog/cooperativas-credito-3978-associados)
+- [Seguradoras: onboarding e PLD/FT sob a SUSEP](https://kycert.com.br/blog/seguradoras-susep-onboarding-pld)
+- [Consórcios e gestoras: onboarding sob BCB e CVM](https://kycert.com.br/blog/consorcios-mercado-capitais-onboarding)
+- [Abertura de conta em fintech: KYC e KYB em escala](https://kycert.com.br/blog/abertura-conta-fintech-kyb-escala)
+
+## Institucional
+- [Termos de Uso](https://kycert.com.br/termos)
+- [Privacidade e LGPD](https://kycert.com.br/privacidade)
+- [Tratamento de dados](https://kycert.com.br/tratamento-de-dados)
+- LinkedIn: https://www.linkedin.com/company/kycert/
+- Instagram: https://www.instagram.com/kycert.oficial/

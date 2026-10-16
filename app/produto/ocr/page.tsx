@@ -10,19 +10,25 @@ export const metadata: Metadata = {
     'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',
   alternates: { canonical: '/produto/ocr' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
     title: 'OCR de documentos e cadastro sem digitação | kycert',
     description:
       'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',
     url: '/produto/ocr',
   },
   twitter: {
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
     title: 'OCR de documentos e cadastro sem digitação | kycert',
     description:
       'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Cadastro & documentos · OCR","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.","offers":{"@type":"Offer","priceCurrency":"BRL"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Cadastro & documentos · OCR","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Cadastro & documentos · OCR"}];
 
@@ -57,7 +63,7 @@ const BODY_HTML = `
     </div>
     <div class="split-copy">
       <span class="eyebrow">Captura no celular</span>
-      <h3 style="margin-top:14px">O cliente fotografa. <span class="serif">A kycert preenche.</span></h3>
+      <h2 style="margin-top:14px">O cliente fotografa. <span class="serif">A kycert preenche.</span></h2>
       <p>O documento é capturado pela câmera, os campos são lidos por OCR e o cadastro chega preenchido; o cliente confirma em vez de transcrever. A imagem original e os dados extraídos ficam anexados ao dossiê.</p>
       <div class="flist">
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Leitura automática</b><p>RG, CNH e comprovantes, com extração dos campos relevantes.</p></div></div>

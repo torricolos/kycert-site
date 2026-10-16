@@ -10,11 +10,17 @@ export const metadata: Metadata = {
     'Cadastro do consorciado e do investidor, com verificação, avaliação de risco e trilha auditável sob a regulação do BCB e da CVM.',
   alternates: { canonical: '/solucoes/mercado-capitais' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
     title: 'KYC e PLD para consórcios e gestoras · BCB e CVM | kycert',
     description:
       'Cadastro do consorciado e do investidor, com verificação, avaliação de risco e trilha auditável sob a regulação do BCB e da CVM.',
   },
   twitter: {
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
     title: 'KYC e PLD para consórcios e gestoras · BCB e CVM | kycert',
     description:
       'Cadastro do consorciado e do investidor, com verificação, avaliação de risco e trilha auditável sob a regulação do BCB e da CVM.',

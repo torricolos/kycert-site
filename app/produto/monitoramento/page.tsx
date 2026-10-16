@@ -10,19 +10,25 @@ export const metadata: Metadata = {
     'Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.',
   alternates: { canonical: '/produto/monitoramento' },
   openGraph: {
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
     title: 'Reverificação periódica e monitoramento contínuo | kycert',
     description:
       'Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.',
     url: '/produto/monitoramento',
   },
   twitter: {
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
     title: 'Reverificação periódica e monitoramento contínuo | kycert',
     description:
       'Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.',
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Monitoramento","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.","offers":{"@type":"Offer","priceCurrency":"BRL"}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Monitoramento","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Monitoramento"}];
 
@@ -38,7 +44,7 @@ const BODY_HTML = `
   <div class="split reveal">
     <div class="split-copy">
       <span class="eyebrow">Ciclo de renovação</span>
-      <h3 style="margin-top:14px">A base inteira no prazo, <span class="serif">sem lembrete manual.</span></h3>
+      <h2 style="margin-top:14px">A base inteira no prazo, <span class="serif">sem lembrete manual.</span></h2>
       <p>A kycert controla o vencimento de cada cadastro, refaz o screening no prazo e avisa quando o perfil de risco muda: cada reverificação registrada no dossiê, com data e resultado.</p>
       <div class="flist">
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Periodicidade por perfil</b><p>Cada tipo de cliente com o seu prazo de reverificação.</p></div></div>
