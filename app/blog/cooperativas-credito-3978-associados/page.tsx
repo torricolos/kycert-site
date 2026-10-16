@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     'Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.',
   alternates: { canonical: '/blog/cooperativas-credito-3978-associados' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+>>>>>>> Stashed changes
     type: 'article',
     title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978 | kycert',
     description:
@@ -17,6 +23,10 @@ export const metadata: Metadata = {
     url: '/blog/cooperativas-credito-3978-associados',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Cooperativas de crédito: KYC do quadro de associados sob a Circular 3.978 | kycert',
     description:
@@ -24,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Cooperativas de crédito: o PLD/FT do quadro de associados","description":"Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/cooperativas-credito-3978-associados","datePublished":"2026-06-22","dateModified":"2026-06-22","image":"https://kycert.com.br/og.png","headline":"Cooperativas de crédito: o PLD/FT do quadro de associados","description":"Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Cooperativas"}];
 

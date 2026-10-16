@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
   alternates: { canonical: '/blog' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+>>>>>>> Stashed changes
     type: 'website',
     title: 'Blog: compliance, KYC e regulação | kycert',
     description:
@@ -17,6 +23,10 @@ export const metadata: Metadata = {
     url: '/blog',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Blog: compliance, KYC e regulação | kycert',
     description:

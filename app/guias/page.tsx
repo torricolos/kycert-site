@@ -10,12 +10,24 @@ export const metadata: Metadata = {
     'Checklist de prontidão para fiscalização e modelo de dossiê anonimizado para times de compliance de instituições reguladas.',
   alternates: { canonical: '/guias' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'Guias e materiais de compliance | kycert',
     description:
       'Checklist de prontidão para fiscalização e modelo de dossiê anonimizado para times de compliance de instituições reguladas.',
     url: '/guias',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'Guias e materiais de compliance | kycert',
     description:
       'Checklist de prontidão para fiscalização e modelo de dossiê anonimizado para times de compliance de instituições reguladas.',

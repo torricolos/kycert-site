@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     'A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.',
   alternates: { canonical: '/blog/bets-lei-14790-pld-onboarding' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+>>>>>>> Stashed changes
     type: 'article',
     title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets | kycert',
     description:
@@ -17,6 +23,10 @@ export const metadata: Metadata = {
     url: '/blog/bets-lei-14790-pld-onboarding',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Apostas: o que a Lei 14.790/2023 exige de KYC e PLD nas Bets | kycert',
     description:
@@ -24,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","description":"A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/bets-lei-14790-pld-onboarding","datePublished":"2026-06-18","dateModified":"2026-06-18","image":"https://kycert.com.br/og.png","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","description":"A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Apostas / Bets"}];
 

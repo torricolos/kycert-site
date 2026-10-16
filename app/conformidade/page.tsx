@@ -10,12 +10,24 @@ export const metadata: Metadata = {
     'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets: o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
   alternates: { canonical: '/conformidade' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'Mapa de normas e conformidade regulatória | kycert',
     description:
       'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets: o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',
     url: '/conformidade',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'Mapa de normas e conformidade regulatória | kycert',
     description:
       'O mapa de normas do BACEN, CVM, SUSEP, SPA/MF, COAF e LGPD que afetam câmbio, PSAVs, bancos, cooperativas, seguradoras, mercado de capitais e bets: o que cada uma pede, onde a kycert entra e qual evidência fica registrada.',

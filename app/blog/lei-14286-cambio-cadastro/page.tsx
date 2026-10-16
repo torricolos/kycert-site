@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     'O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.',
   alternates: { canonical: '/blog/lei-14286-cambio-cadastro' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+>>>>>>> Stashed changes
     type: 'article',
     locale: 'pt_BR',
     url: '/blog/lei-14286-cambio-cadastro',
@@ -19,6 +23,10 @@ export const metadata: Metadata = {
       'O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Lei 14.286/2021 e Res. BCB 277/2022: cadastro de cliente no câmbio | kycert',
     description:
@@ -26,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Câmbio: o que a Lei 14.286/2021 e a Res. BCB 277/2022 exigem no cadastro do cliente","description":"O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/lei-14286-cambio-cadastro","datePublished":"2026-06-09","dateModified":"2026-06-09","image":"https://kycert.com.br/og.png","headline":"Câmbio: o que a Lei 14.286/2021 e a Res. BCB 277/2022 exigem no cadastro do cliente","description":"O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Câmbio"}];
 

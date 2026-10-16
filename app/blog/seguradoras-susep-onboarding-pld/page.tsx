@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     'Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.',
   alternates: { canonical: '/blog/seguradoras-susep-onboarding-pld' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+>>>>>>> Stashed changes
     type: 'article',
     title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP | kycert',
     description:
@@ -17,6 +23,10 @@ export const metadata: Metadata = {
     url: '/blog/seguradoras-susep-onboarding-pld',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Seguradoras: onboarding e PLD/FT sob a regulação da SUSEP | kycert',
     description:
@@ -24,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Seguros: identificação do segurado e PLD sob a SUSEP","description":"Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/seguradoras-susep-onboarding-pld","datePublished":"2026-06-19","dateModified":"2026-06-19","image":"https://kycert.com.br/og.png","headline":"Seguros: identificação do segurado e PLD sob a SUSEP","description":"Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Seguradoras"}];
 

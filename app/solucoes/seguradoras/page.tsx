@@ -10,11 +10,23 @@ export const metadata: Metadata = {
     'Identificação do segurado, contratante PJ e beneficiário final, com avaliação de risco e trilha auditável sob a supervisão da SUSEP.',
   alternates: { canonical: '/solucoes/seguradoras' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'KYC e PLD/FT para seguradoras sob a SUSEP | kycert',
     description:
       'Identificação do segurado, contratante PJ e beneficiário final, com avaliação de risco e trilha auditável sob a supervisão da SUSEP.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'KYC e PLD/FT para seguradoras sob a SUSEP | kycert',
     description:
       'Identificação do segurado, contratante PJ e beneficiário final, com avaliação de risco e trilha auditável sob a supervisão da SUSEP.',

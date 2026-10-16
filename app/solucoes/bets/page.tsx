@@ -10,12 +10,26 @@ export const metadata: Metadata = {
     'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   alternates: { canonical: '/solucoes/bets' },
   openGraph: {
+<<<<<<< Updated upstream
     title: 'KYC e PLD para casas de apostas (Bets) · Lei 14.790/2023 | kycert',
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+    title: 'KYC e PLD para casas de apostas (Bets) | kycert',
+>>>>>>> Stashed changes
     description:
       'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   },
   twitter: {
+<<<<<<< Updated upstream
     title: 'KYC e PLD para casas de apostas (Bets) · Lei 14.790/2023 | kycert',
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+    title: 'KYC e PLD para casas de apostas (Bets) | kycert',
+>>>>>>> Stashed changes
     description:
       'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   },

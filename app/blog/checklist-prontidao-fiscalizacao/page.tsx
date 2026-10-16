@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     'Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.',
   alternates: { canonical: '/blog/checklist-prontidao-fiscalizacao' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+>>>>>>> Stashed changes
     type: 'article',
     locale: 'pt_BR',
     url: '/blog/checklist-prontidao-fiscalizacao',
@@ -19,6 +23,10 @@ export const metadata: Metadata = {
       'Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Checklist de prontidão para fiscalização de PLD/FT | kycert',
     description:
@@ -26,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Checklist de prontidão para fiscalização de PLD/FT","description":"Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/checklist-prontidao-fiscalizacao","datePublished":"2026-06-05","dateModified":"2026-06-05","image":"https://kycert.com.br/og.png","headline":"Checklist de prontidão para fiscalização de PLD/FT","description":"Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"PLD/FT"}];
 

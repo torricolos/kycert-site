@@ -10,12 +10,24 @@ export const metadata: Metadata = {
     'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',
   alternates: { canonical: '/produto/ocr' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'OCR de documentos e cadastro sem digitação | kycert',
     description:
       'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',
     url: '/produto/ocr',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'OCR de documentos e cadastro sem digitação | kycert',
     description:
       'Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência.',

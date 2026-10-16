@@ -10,11 +10,23 @@ export const metadata: Metadata = {
     'As dores de abertura de conta e crédito em escala e como a kycert resolve: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',
   alternates: { canonical: '/solucoes/bancos' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'KYC, KYB e onboarding para bancos e fintechs | kycert',
     description:
       'As dores de abertura de conta e crédito em escala e como a kycert resolve: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'KYC, KYB e onboarding para bancos e fintechs | kycert',
     description:
       'As dores de abertura de conta e crédito em escala e como a kycert resolve: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',

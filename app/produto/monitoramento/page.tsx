@@ -10,12 +10,24 @@ export const metadata: Metadata = {
     'Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.',
   alternates: { canonical: '/produto/monitoramento' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'Reverificação periódica e monitoramento contínuo | kycert',
     description:
       'Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.',
     url: '/produto/monitoramento',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'Reverificação periódica e monitoramento contínuo | kycert',
     description:
       'Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual.',

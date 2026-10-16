@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     'Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.',
   alternates: { canonical: '/blog/comprovar-pld-ft-fiscalizacao-bacen' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+>>>>>>> Stashed changes
     type: 'article',
     locale: 'pt_BR',
     url: '/blog/comprovar-pld-ft-fiscalizacao-bacen',
@@ -19,6 +23,10 @@ export const metadata: Metadata = {
       'Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Fiscalização do BACEN: como comprovar PLD/FT na prática | kycert',
     description:
@@ -26,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede","description":"Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/comprovar-pld-ft-fiscalizacao-bacen","datePublished":"2026-05-28","dateModified":"2026-05-28","image":"https://kycert.com.br/og.png","headline":"Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede","description":"Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"PLD/FT"}];
 

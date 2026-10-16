@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     'Instituições de pagamento abrem conta em minutos e respondem por cada cliente em PLD/FT. Veja como verificar PF e PJ sem travar o onboarding.',
   alternates: { canonical: '/blog/abertura-conta-fintech-kyb-escala' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+>>>>>>> Stashed changes
     type: 'article',
     title: 'Abertura de conta em fintech: KYC, KYB e risco em escala | kycert',
     description:
@@ -17,6 +23,10 @@ export const metadata: Metadata = {
     url: '/blog/abertura-conta-fintech-kyb-escala',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Abertura de conta em fintech: KYC, KYB e risco em escala | kycert',
     description:
@@ -24,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Abertura de conta em escala, com o risco enquadrado","description":"Instituições de pagamento abrem conta em minutos e respondem por cada cliente em PLD/FT. Veja como verificar PF e PJ sem travar o onboarding.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/abertura-conta-fintech-kyb-escala","datePublished":"2026-06-24","dateModified":"2026-06-24","image":"https://kycert.com.br/og.png","headline":"Abertura de conta em escala, com o risco enquadrado","description":"Instituições de pagamento abrem conta em minutos e respondem por cada cliente em PLD/FT. Veja como verificar PF e PJ sem travar o onboarding.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Bancos & fintechs"}];
 

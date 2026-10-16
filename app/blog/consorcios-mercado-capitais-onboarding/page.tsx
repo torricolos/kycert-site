@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     'Administradoras de consórcio (BCB) e gestoras de recursos (CVM) respondem a deveres de identificação e PLD/FT. Veja como estruturar o cadastro do investidor e do consorciado.',
   alternates: { canonical: '/blog/consorcios-mercado-capitais-onboarding' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+>>>>>>> Stashed changes
     type: 'article',
     title: 'Consórcios e gestoras: onboarding sob BCB e CVM | kycert',
     description:
@@ -17,6 +23,10 @@ export const metadata: Metadata = {
     url: '/blog/consorcios-mercado-capitais-onboarding',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Consórcios e gestoras: onboarding sob BCB e CVM | kycert',
     description:
@@ -24,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Consórcios e gestoras: o onboarding que BCB e CVM cobram","description":"Administradoras de consórcio (BCB) e gestoras de recursos (CVM) respondem a deveres de identificação e PLD/FT. Veja como estruturar o cadastro do investidor e do consorciado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/consorcios-mercado-capitais-onboarding","datePublished":"2026-06-26","dateModified":"2026-06-26","image":"https://kycert.com.br/og.png","headline":"Consórcios e gestoras: o onboarding que BCB e CVM cobram","description":"Consórcios (BCB) e gestoras (CVM) têm deveres de identificação e PLD/FT. Veja como estruturar o cadastro do investidor e do consorciado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Mercado de capitais"}];
 

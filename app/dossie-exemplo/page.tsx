@@ -10,12 +10,24 @@ export const metadata: Metadata = {
     'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes consultadas e decisão registrada.',
   alternates: { canonical: '/dossie-exemplo' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'Dossiê de risco de exemplo | kycert',
     description:
       'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes consultadas e decisão registrada.',
     url: '/dossie-exemplo',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'Dossiê de risco de exemplo | kycert',
     description:
       'Veja um dossiê de risco completo e anonimizado: score, apontamentos com evidência, estrutura societária, fontes consultadas e decisão registrada.',

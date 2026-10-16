@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     'O que a Resolução BCB 520/2025 exige das PSAVs em avaliação de risco e como registrar essa avaliação como evidência auditável antes do prazo de outubro de 2026.',
   alternates: { canonical: '/blog/resolucao-bcb-520-psav' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+>>>>>>> Stashed changes
     type: 'article',
     locale: 'pt_BR',
     url: '/blog/resolucao-bcb-520-psav',
@@ -19,6 +23,10 @@ export const metadata: Metadata = {
       'O que a Resolução BCB 520/2025 exige das PSAVs em avaliação de risco e como registrar essa avaliação como evidência auditável antes do prazo de outubro de 2026.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Resolução BCB 520/2025 para PSAV: avaliação de risco na prática | kycert',
     description:
@@ -26,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Resolução BCB 520/2025: o que muda para PSAV e como comprovar a avaliação de risco","description":"O que a Resolução BCB 520/2025 exige das PSAVs em avaliação de risco e como registrar essa avaliação como evidência auditável antes do prazo de outubro de 2026.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/resolucao-bcb-520-psav","datePublished":"2026-05-12","dateModified":"2026-05-12","image":"https://kycert.com.br/og.png","headline":"Resolução BCB 520/2025: o que muda para PSAV e como comprovar a avaliação de risco","description":"O que a Resolução BCB 520/2025 exige das PSAVs em avaliação de risco e como registrar essa avaliação como evidência auditável.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"PSAV"}];
 

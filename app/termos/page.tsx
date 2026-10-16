@@ -9,10 +9,22 @@ export const metadata: Metadata = {
   description: 'Termos de uso da plataforma kycert.',
   alternates: { canonical: '/termos' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    locale: 'pt_BR',
+    siteName: 'kycert',
+    type: 'website',
+>>>>>>> Stashed changes
     title: 'Termos de Uso | kycert',
     description: 'Termos de uso da plataforma kycert.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+    card: 'summary_large_image',
+>>>>>>> Stashed changes
     title: 'Termos de Uso | kycert',
     description: 'Termos de uso da plataforma kycert.',
   },

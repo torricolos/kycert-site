@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: '/',
     images: [
       {
-        url: 'https://kycert.com.br/opengraph-image',
+        url: 'https://kycert.com.br/og.png',
         width: 1200,
         height: 630,
       },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'kycert · Onboarding e trilha auditável para instituições reguladas',
     description:
       'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
   },
 };
 

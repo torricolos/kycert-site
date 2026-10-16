@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     'O que é o beneficiário final, por que identificá-lo é obrigação de KYB e como mapear a cadeia societária até a pessoa natural que controla a empresa.',
   alternates: { canonical: '/blog/beneficiario-final-ubo-kyb' },
   openGraph: {
+<<<<<<< Updated upstream
+=======
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+>>>>>>> Stashed changes
     type: 'article',
     locale: 'pt_BR',
     url: '/blog/beneficiario-final-ubo-kyb',
@@ -19,6 +23,10 @@ export const metadata: Metadata = {
       'O que é o beneficiário final, por que identificá-lo é obrigação de KYB e como mapear a cadeia societária até a pessoa natural que controla a empresa.',
   },
   twitter: {
+<<<<<<< Updated upstream
+=======
+    images: ['https://kycert.com.br/og.png'],
+>>>>>>> Stashed changes
     card: 'summary_large_image',
     title: 'Beneficiário final (UBO): o que o KYB exige e como mapear | kycert',
     description:
@@ -26,7 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+<<<<<<< Updated upstream
 const JSONLD = `{"@context":"https://schema.org","@type":"Article","headline":"Beneficiário final (UBO): obrigações de KYB e como mapear a cadeia societária","description":"O que é o beneficiário final, por que identificá-lo é obrigação de KYB e como mapear a cadeia societária até a pessoa natural que controla a empresa.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert"},"publisher":{"@type":"Organization","name":"kycert Tecnologia"}}`;
+=======
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/beneficiario-final-ubo-kyb","datePublished":"2026-06-02","dateModified":"2026-06-02","image":"https://kycert.com.br/og.png","headline":"Beneficiário final (UBO): obrigações de KYB e como mapear a cadeia societária","description":"O que é o beneficiário final, por que identificá-lo é obrigação de KYB e como mapear a cadeia societária até a pessoa natural que controla a empresa.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+>>>>>>> Stashed changes
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"KYB"}];
 
