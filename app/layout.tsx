@@ -51,6 +51,7 @@ const structuredData = {
       '@id': 'https://kycert.com.br/#organization',
       name: 'kycert',
       legalName: 'kycert Tecnologia',
+      taxID: '68.453.721/0001-90',
       url: 'https://kycert.com.br/',
       logo: { '@type': 'ImageObject', url: 'https://kycert.com.br/images/logo.png', width: 320, height: 132 },
       description:
