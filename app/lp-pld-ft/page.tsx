@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Onboarding com KYC, KYB e trilha auditável para PLD/FT: cada decisão registrada com autor, data e evidência, pronta para a fiscalização.',
   alternates: { canonical: '/lp-pld-ft' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       'Onboarding com KYC, KYB e trilha auditável para PLD/FT: cada decisão registrada com autor, data e evidência, pronta para a fiscalização.',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'PLD-FT com trilha auditável | kycert',
     description:

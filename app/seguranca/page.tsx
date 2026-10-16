@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Como a kycert protege os dados dos seus clientes: LGPD desde o desenho, criptografia, controle de acesso e trilha de auditoria.',
   alternates: { canonical: '/seguranca' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/seguranca',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'Segurança e proteção de dados | kycert',
     description:

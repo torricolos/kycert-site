@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.',
   alternates: { canonical: '/blog/bets-lei-14790-pld-onboarding' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'article',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/blog/bets-lei-14790-pld-onboarding',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'Bets: o que a Lei 14.790 exige de KYC e PLD | kycert',
     description:
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/bets-lei-14790-pld-onboarding","datePublished":"2026-06-18","dateModified":"2026-06-18","image":"https://kycert.com.br/opengraph-image","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","description":"A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/bets-lei-14790-pld-onboarding","datePublished":"2026-06-18","dateModified":"2026-06-18","image":"https://kycert.com.br/og.png","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","description":"A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"Apostas / Bets"}];
 

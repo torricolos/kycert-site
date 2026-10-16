@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização.',
   alternates: { canonical: '/produto/kyc' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/produto/kyc',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'KYC de pessoa física com trilha auditável | kycert',
     description:

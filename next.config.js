@@ -17,6 +17,10 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/og.png',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=86400' }],
+      },
+      {
         source: '/images/:path*',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },

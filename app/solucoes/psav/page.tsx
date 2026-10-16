@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'As dores das prestadoras de ativos virtuais sob o novo regime do BCB e como a kycert resolve: KYC, sanções, PEP e trilha de PLD/FT auditável.',
   alternates: { canonical: '/solucoes/psav' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       'As dores das prestadoras de ativos virtuais sob o novo regime do BCB e como a kycert resolve: KYC, sanções, PEP e trilha de PLD/FT auditável.',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'KYC e avaliação de risco para PSAV (BCB 520) | kycert',
     description:

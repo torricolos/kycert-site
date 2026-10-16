@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Respostas diretas às dúvidas sobre a kycert e um glossário de KYC, KYB, PLD/FT e verificação de identidade para times de compliance de instituições reguladas.',
   alternates: { canonical: '/faq' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/faq',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'FAQ e glossário: KYC, PLD/FT e compliance | kycert',
     description:

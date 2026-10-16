@@ -27,14 +27,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: '/',
     siteName: 'kycert',
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     title: 'kycert · Onboarding, KYC/KYB e trilha auditável para instituições reguladas',
     description:
       'Convite, verificação, decisão e evidência, reunidos num único registro pronto para a fiscalização.',
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/opengraph-image'],
+    images: ['/og.png'],
     title: 'kycert · Onboarding, KYC/KYB e trilha auditável',
     description: 'Onboarding, verificação e trilha auditável para instituições reguladas.',
   },

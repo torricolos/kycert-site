@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Termos de uso da plataforma kycert: condições de acesso, responsabilidades das partes, proteção de dados e regras de utilização.',
   alternates: { canonical: '/termos' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Termos de uso da plataforma kycert: condições de acesso, responsabilidades das partes, proteção de dados e regras de utilização.',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'Termos de Uso | kycert',
     description: 'Termos de uso da plataforma kycert: condições de acesso, responsabilidades das partes, proteção de dados e regras de utilização.',

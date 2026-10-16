@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Integre a trilha de verificação ao seu fluxo com a API da kycert e receba atualizações de status por webhook em tempo real.',
   alternates: { canonical: '/produto/api' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/produto/api',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'API de KYC/KYB e webhooks | kycert',
     description:

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Política de privacidade e tratamento de dados pessoais da kycert conforme a LGPD.',
   alternates: { canonical: '/privacidade' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: 'Política de privacidade e tratamento de dados pessoais da kycert conforme a LGPD.',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'Privacidade & LGPD | kycert',
     description: 'Política de privacidade e tratamento de dados pessoais da kycert conforme a LGPD.',

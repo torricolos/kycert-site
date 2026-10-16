@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.',
   alternates: { canonical: '/blog/comprovar-pld-ft-fiscalizacao-bacen' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     type: 'article',
     locale: 'pt_BR',
     url: '/blog/comprovar-pld-ft-fiscalizacao-bacen',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       'Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'Como comprovar PLD/FT na fiscalização do BACEN | kycert',
     description:
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/comprovar-pld-ft-fiscalizacao-bacen","datePublished":"2026-05-28","dateModified":"2026-05-28","image":"https://kycert.com.br/opengraph-image","headline":"Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede","description":"Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
+const JSONLD = `{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":"https://kycert.com.br/blog/comprovar-pld-ft-fiscalizacao-bacen","datePublished":"2026-05-28","dateModified":"2026-05-28","image":"https://kycert.com.br/og.png","headline":"Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede","description":"Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.","inLanguage":"pt-BR","author":{"@type":"Organization","name":"kycert","url":"https://kycert.com.br/"},"publisher":{"@type":"Organization","name":"kycert","logo":{"@type":"ImageObject","url":"https://kycert.com.br/images/logo.png"}}}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog","path":"/blog"},{"name":"PLD/FT"}];
 

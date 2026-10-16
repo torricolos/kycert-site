@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'O risco de cada cliente num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e decisão registrada com autor e data.',
   alternates: { canonical: '/produto/dossie-de-risco' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/produto/dossie-de-risco',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'Dossiê de Risco: veredito e decisão registrada | kycert',
     description:

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência.',
   alternates: { canonical: '/produto/kyb' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/opengraph-image', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: '/produto/kyb',
   },
   twitter: {
-    images: ['https://kycert.com.br/opengraph-image'],
+    images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
     title: 'KYB: verificação de PJ e beneficiário final (UBO) | kycert',
     description:
