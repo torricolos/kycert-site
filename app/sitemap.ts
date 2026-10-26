@@ -41,9 +41,25 @@ const ROUTES = [
   '/tratamento-de-dados',
 ];
 
+// Última alteração real de conteúdo. Posts do blog usam a data do próprio artigo; as demais páginas, a última revisão do site.
+const DEFAULT_LASTMOD = '2026-10-16';
+const LASTMOD: Record<string, string> = {
+  '/blog': '2026-06-26',
+  '/blog/consorcios-mercado-capitais-onboarding': '2026-06-26',
+  '/blog/abertura-conta-fintech-kyb-escala': '2026-06-24',
+  '/blog/cooperativas-credito-3978-associados': '2026-06-22',
+  '/blog/seguradoras-susep-onboarding-pld': '2026-06-19',
+  '/blog/bets-lei-14790-pld-onboarding': '2026-06-18',
+  '/blog/resolucao-bcb-520-psav': '2026-05-12',
+  '/blog/comprovar-pld-ft-fiscalizacao-bacen': '2026-05-28',
+  '/blog/beneficiario-final-ubo-kyb': '2026-06-02',
+  '/blog/checklist-prontidao-fiscalizacao': '2026-06-05',
+  '/blog/lei-14286-cambio-cadastro': '2026-06-09',
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return ROUTES.map((route) => ({
     url: `${BASE}${route}`,
-    lastModified: new Date('2026-06-27'),
+    lastModified: new Date(LASTMOD[route] ?? DEFAULT_LASTMOD),
   }));
 }
