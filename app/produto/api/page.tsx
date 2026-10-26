@@ -36,7 +36,7 @@ const BODY_HTML = `
 <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin-bottom:16px">Integração</div>
 <h1 style="font-family:var(--font-serif);font-weight:600;font-size:clamp(32px,4.6vw,52px);line-height:1.06;letter-spacing:-.02em">Integre a trilha ao seu fluxo.</h1>
 <p style="font-size:19px;color:var(--text-secondary);line-height:1.55;margin:22px 0 28px;max-width:60ch">Dispare verificações, consulte dossiês e receba o status de cada Run direto no seu sistema. A API da kycert leva a trilha auditável para dentro do seu fluxo de onboarding, sem tela intermediária.</p>
-<div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="https://docs.kycert.com.br" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Ver documentação</a></div>
+<div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="https://docs.kycert.com.br/quickstart" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Ver documentação</a></div>
 </div></section>
 <section style="padding:20px 0 8px"><div class="wrap">
   <div class="split" style="align-items:start">
@@ -49,7 +49,7 @@ const BODY_HTML = `
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Templates</b><p>O template define quais fontes e regras a verificação usa.</p></div></div>
         <div class="fi"><span class="c"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span><div><b>Resultado por webhook</b><p>O evento chega com a decisão e o risk band, assinado por HMAC.</p></div></div>
       </div>
-      <div style="margin-top:24px"><a class="btn btn-primary" href="https://docs.kycert.com.br" target="_blank" rel="noopener">Ver documentação completa →</a></div>
+      <div style="margin-top:24px"><a class="btn btn-primary" href="https://docs.kycert.com.br/quickstart" target="_blank" rel="noopener">Ver documentação completa →</a></div>
     </div>
     <div class="split-media">
       <div class="code-card">
@@ -75,7 +75,7 @@ const BODY_HTML = `
   -H "Content-Type: application/json" \\
   -d '{"template_id":"...","subject":{"type":"pf","doc":"00000000191"}}'
 </pre></div><h2 style="font-size:24px;font-weight:600;letter-spacing:-.02em;margin:36px 0 12px">Onde se aplica</h2><p style="font-size:17px;line-height:1.65;color:var(--text-secondary);margin:0 0 16px">A API é o caminho para bancos e fintechs que embarcam a verificação em fluxos próprios por produto.</p><a href="/solucoes/bancos" style="display:inline-flex;align-items:center;gap:7px;margin:4px 8px 4px 0;padding:9px 15px;border:1px solid var(--border-default);border-radius:var(--r-full);font-size:14px;font-weight:500;color:var(--text-primary)">Bancos &amp; fintechs →</a></div></section>
-<section style="padding:0 0 88px"><div class="wrap"><div class="band reveal"><span class="eyebrow on-dark" style="justify-content:center">kycert</span><h2 class="serif">Leve a trilha para dentro do seu fluxo.</h2><div class="cta" style="margin-top:8px"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-on-dark btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="https://docs.kycert.com.br" target="_blank" rel="noopener" class="btn btn-ghost-dark btn-lg">Ver documentação</a></div></div></div></section>
+<section style="padding:0 0 88px"><div class="wrap"><div class="band reveal"><span class="eyebrow on-dark" style="justify-content:center">kycert</span><h2 class="serif">Leve a trilha para dentro do seu fluxo.</h2><div class="cta" style="margin-top:8px"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-on-dark btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="https://docs.kycert.com.br/quickstart" target="_blank" rel="noopener" class="btn btn-ghost-dark btn-lg">Ver documentação</a></div></div></div></section>
 `;
 
 export default function Page() {

@@ -142,7 +142,7 @@ export default function Nav({ active = '' }: { active?: NavActive }) {
           </div>
 
           <div className="nav-cta">
-            <a className="login" href="https://admin.kycert.com.br">Entrar</a>
+            <a className="login" href="https://admin.kycert.com.br/login" rel="nofollow noopener">Entrar</a>
             <a className="btn btn-primary" href={WA_HREF} target="_blank" rel="noopener">Agendar demo</a>
           </div>
 
@@ -179,7 +179,7 @@ export default function Nav({ active = '' }: { active?: NavActive }) {
         </details>
         <a className="dsingle" href="/conformidade" onClick={() => setOpen(false)}>Conformidade</a>
         <a className="dsingle" href="/precos" onClick={() => setOpen(false)}>Preços</a>
-        <a className="dsingle" href="https://admin.kycert.com.br">Entrar</a>
+        <a className="dsingle" href="https://admin.kycert.com.br/login" rel="nofollow noopener">Entrar</a>
         <a className="btn btn-primary btn-lg ddemo" href={WA_HREF} target="_blank" rel="noopener" onClick={() => setOpen(false)}>Agendar demo</a>
       </div>
     </>
