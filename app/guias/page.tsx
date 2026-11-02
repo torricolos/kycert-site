@@ -38,7 +38,7 @@ const BODY_HTML = `
     <div>
       <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin-bottom:16px">Guias e materiais</div>
       <h1 style="font-family:var(--font-serif);font-weight:600;font-size:clamp(32px,4.4vw,48px);line-height:1.08;letter-spacing:-.02em">Materiais práticos para o seu compliance.</h1>
-      <p style="font-size:18px;color:var(--text-secondary);line-height:1.55;margin:20px 0 32px;max-width:48ch">Conteúdo direto, construído para quem responde ao regulador. Baixe mediante e-mail corporativo.</p>
+      <p style="font-size:18px;color:var(--text-secondary);line-height:1.55;margin:20px 0 32px;max-width:48ch">Conteúdo direto, construído para quem responde ao regulador. Baixe mediante e-mail corporativo. Prefere ler agora? A <a href="/blog/checklist-prontidao-fiscalizacao" style="color:var(--text-link);text-decoration:underline">versão aberta do checklist de fiscalização</a> está no blog, sem cadastro.</p>
       <div style="display:flex;flex-direction:column;gap:14px">
         <div style="display:flex;gap:14px;align-items:flex-start;padding:20px;border:1px solid var(--border-default);border-radius:var(--r-lg);background:var(--surface-canvas)">
           <span style="width:42px;height:42px;border-radius:var(--r);background:var(--signal-bg);border:1px solid var(--signal-bd);color:var(--signal);display:flex;align-items:center;justify-content:center;flex:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>

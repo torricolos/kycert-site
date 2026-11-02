@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Links | kycert' },
   description:
     'Todos os links da kycert em um só lugar: fale com um especialista, conheça a plataforma e acompanhe o conteúdo sobre as Resoluções BCB 519/520/521.',
-  robots: { index: true, follow: true },
+  robots: { index: false, follow: true },
   alternates: { canonical: '/links' },
   openGraph: {
     type: 'website',

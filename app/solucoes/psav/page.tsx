@@ -6,7 +6,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e avaliação de risco para PSAV (BCB 520)',
+  title: 'KYC para PSAV: Resolução BCB 520 e avaliação de risco',
   description:
     'As dores das prestadoras de ativos virtuais sob o novo regime do BCB e como a kycert resolve: KYC, sanções, PEP e trilha de PLD/FT auditável.',
   alternates: { canonical: '/solucoes/psav' },
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'KYC e avaliação de risco para PSAV (BCB 520) | kycert',
+    title: 'KYC para PSAV: Resolução BCB 520 e avaliação de risco | kycert',
     description:
       'As dores das prestadoras de ativos virtuais sob o novo regime do BCB e como a kycert resolve: KYC, sanções, PEP e trilha de PLD/FT auditável.',
   },
   twitter: {
     images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
-    title: 'KYC e avaliação de risco para PSAV (BCB 520) | kycert',
+    title: 'KYC para PSAV: Resolução BCB 520 e avaliação de risco | kycert',
     description:
       'As dores das prestadoras de ativos virtuais sob o novo regime do BCB e como a kycert resolve: KYC, sanções, PEP e trilha de PLD/FT auditável.',
   },
@@ -39,7 +39,7 @@ const BODY_HTML = `
   <div class="hero-grid">
     <div>
       <span class="seg-pill reveal"><span class="dot"></span>Para PSAV / cripto</span>
-      <div class="deadline-chip reveal"><span class="d"></span>Pedido de autorização ao BCB: até 30/10/2026</div>
+      <div class="deadline-chip reveal"><span class="d"></span>Prazo de pedido de autorização ao BCB encerrado em 30/10/2026</div>
       <h1 class="reveal reveal-d1">Você virou instituição supervisionada. <span class="em">O onboarding precisa acompanhar.</span></h1>
       <p class="lead reveal reveal-d2">Com a entrada das prestadoras de ativos virtuais sob autorização e supervisão do Banco Central, o cadastro de cliente passou a ter deveres de PLD/FT. A kycert registra cadastro, risco e decisão de cada cliente numa trilha auditável.</p>
       <div class="cta reveal reveal-d3"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div>
@@ -157,7 +157,7 @@ const BODY_HTML = `
       <div class="norm reveal reveal-d1"><div class="nlaw">Lei nº 14.478/2022</div><p>Define as diretrizes para prestadoras de serviços de ativos virtuais e incluiu as PSAVs no alcance da Lei nº 9.613 (PLD/FT).</p><div class="entra"><b>Onde a kycert entra</b>Identificação, cadastro, verificação, avaliação de risco e evidência da decisão.</div></div>
       <div class="norm reveal reveal-d2"><div class="nlaw">Resolução BCB nº 519/2025</div><p>Disciplina a autorização e a transição para o regime supervisionado.</p><div class="entra"><b>Onde a kycert entra</b>Estrutura e demonstra o processo de onboarding que continua existindo depois da autorização.</div></div>
       <div class="norm reveal reveal-d3"><div class="nlaw">Resolução BCB nº 520/2025</div><p>Estabelece regras de funcionamento das PSAVs, incluindo a documentação da avaliação de risco de clientes e usuários.</p><div class="entra"><b>Onde a kycert entra</b>Registra documentos, consultas, pendências, análise, autoria, data e decisão numa trilha única.</div></div>
-      <div class="norm reveal reveal-d3"><div class="nlaw">Resolução BCB nº 521/2025</div><p>Complementa o regime das PSAVs e fixa o cronograma de adequação: vigência em 02/02/2026 e pedido de autorização até 30/10/2026.</p><div class="entra"><b>Onde a kycert entra</b>Deixa o onboarding e a trilha prontos para apresentar no pedido de autorização, dentro do prazo.</div></div>
+      <div class="norm reveal reveal-d3"><div class="nlaw">Resolução BCB nº 521/2025</div><p>Complementa o regime das PSAVs e fixa o cronograma de adequação: vigência em 02/02/2026 e prazo de pedido de autorização encerrado em 30/10/2026.</p><div class="entra"><b>Onde a kycert entra</b>Deixa o onboarding e a trilha prontos para apresentar no pedido de autorização, dentro do prazo.</div></div>
     </div>
     <div class="norms-ctx">
       <div class="norm-ctx reveal"><div class="nlaw">Lei nº 9.613/98 + COAF</div><p>Deveres de PLD/FT e comunicação. A kycert documenta o onboarding que alimenta esses controles.</p></div>

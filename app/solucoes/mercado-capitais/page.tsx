@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD para consórcios e gestoras · BCB e CVM',
+  title: 'KYC e PLD para consórcios e gestoras (BCB e CVM)',
   description:
     'Cadastro do consorciado e do investidor, com verificação, avaliação de risco e trilha auditável sob a regulação do BCB e da CVM.',
   alternates: { canonical: '/solucoes/mercado-capitais' },
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'KYC e PLD para consórcios e gestoras · BCB e CVM | kycert',
+    title: 'KYC e PLD para consórcios e gestoras (BCB e CVM) | kycert',
     description:
       'Cadastro do consorciado e do investidor, com verificação, avaliação de risco e trilha auditável sob a regulação do BCB e da CVM.',
   },
   twitter: {
     images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
-    title: 'KYC e PLD para consórcios e gestoras · BCB e CVM | kycert',
+    title: 'KYC e PLD para consórcios e gestoras (BCB e CVM) | kycert',
     description:
       'Cadastro do consorciado e do investidor, com verificação, avaliação de risco e trilha auditável sob a regulação do BCB e da CVM.',
   },

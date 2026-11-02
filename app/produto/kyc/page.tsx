@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { ProductJsonLd } from '@/components/ProductJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -28,7 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Verificação PF · KYC","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Verificação PF · KYC"}];
 
@@ -85,7 +85,7 @@ export default function Page() {
   return (
     <>
       <Nav active="produtos" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <ProductJsonLd name={"kycert: Verificação PF · KYC"} description={"KYC de PF com documento, biometria, screening de Sanções e PEP e enquadramento de risco: cada checagem registrada como evidência para a fiscalização."} path="/produto/kyc" />
 
       <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />

@@ -4,7 +4,6 @@ const nextConfig = {
   poweredByHeader: false,
   async redirects() {
     return [
-      { source: '/glossario', destination: '/faq#glossario', permanent: true },
       // www -> apex (301). http -> https é forçado pelo Vercel; o domínio www também deve ser redirecionado no painel de Domains.
       {
         source: '/:path*',

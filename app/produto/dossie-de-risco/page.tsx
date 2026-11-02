@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { ProductJsonLd } from '@/components/ProductJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -264,12 +265,15 @@ const BODY_HTML = `
   <p>Rode uma consulta real na demo e veja o dossiê de risco montado de ponta a ponta.</p>
   <div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-on-dark btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/" class="btn btn-ghost-dark btn-lg">Voltar à plataforma</a></div>
 </div></div></section>
+<section style="padding:8px 0 24px"><div class="wrap-narrow"><figure style="margin:0"><img src="/images/produto/painel-dossie-cliente.jpg" alt="Dossiê do cliente na plataforma kycert: risco Atenção, 3 sócios, 2 apontamentos e 72 fontes consultadas, com o status de cada sócio." width="1770" height="821" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:var(--r-lg);border:1px solid var(--border-default)"><figcaption style="font-size:13px;color:var(--text-tertiary);margin-top:10px">Dossiê do cliente com apontamentos por sócio (dados fictícios).</figcaption></figure></div></section>
+
 `;
 
 export default function Page() {
   return (
     <>
       <Nav active="produtos" />
+      <ProductJsonLd name={"kycert: Dossiê de Risco"} description={"O risco de cada cliente num dossiê: veredito no topo, apontamentos com evidência, cadeia societária e decisão registrada com autor e data."} path="/produto/dossie-de-risco" />
 
       <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />

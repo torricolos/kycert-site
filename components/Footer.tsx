@@ -41,13 +41,14 @@ export default function Footer() {
             <p className="fh">Recursos</p>
             <a className="fl" href="/blog">Blog</a>
             <a className="fl" href="/faq">Perguntas frequentes</a>
-            <a className="fl" href="/faq#glossario">Glossário</a>
+            <a className="fl" href="/glossario">Glossário</a>
             <a className="fl" href="/guias">Guias e materiais</a>
             <a className="fl" href="/dossie-exemplo">Dossiê de exemplo</a>
           </div>
 
           <div className="col">
             <p className="fh">Empresa</p>
+            <a className="fl" href="/sobre">Sobre a kycert</a>
             <a className="fl" href="/seguranca">Segurança</a>
             <a className="fl" href="/conformidade">Conformidade</a>
             <a className="fl" href="mailto:contato@kycert.com.br">Contato</a>

@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD/FT para seguradoras sob a SUSEP',
+  title: 'Software de KYC e PLD/FT para seguradoras (SUSEP)',
   description:
     'Identificação do segurado, contratante PJ e beneficiário final, com avaliação de risco e trilha auditável sob a supervisão da SUSEP.',
   alternates: { canonical: '/solucoes/seguradoras' },
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'KYC e PLD/FT para seguradoras sob a SUSEP | kycert',
+    title: 'Software de KYC e PLD/FT para seguradoras (SUSEP) | kycert',
     description:
       'Identificação do segurado, contratante PJ e beneficiário final, com avaliação de risco e trilha auditável sob a supervisão da SUSEP.',
   },
   twitter: {
     images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
-    title: 'KYC e PLD/FT para seguradoras sob a SUSEP | kycert',
+    title: 'Software de KYC e PLD/FT para seguradoras (SUSEP) | kycert',
     description:
       'Identificação do segurado, contratante PJ e beneficiário final, com avaliação de risco e trilha auditável sob a supervisão da SUSEP.',
   },
