@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD/FT para cooperativas de crédito',
+  title: 'Software de PLD/FT para cooperativas de crédito',
   description:
     'Verificação e monitoramento do quadro de associados sob a Circular BCB 3.978/2020, com trilha auditável para o Banco Central.',
   alternates: { canonical: '/solucoes/cooperativas' },
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'KYC e PLD/FT para cooperativas de crédito | kycert',
+    title: 'Software de PLD/FT para cooperativas de crédito | kycert',
     description:
       'Verificação e monitoramento do quadro de associados sob a Circular BCB 3.978/2020, com trilha auditável para o Banco Central.',
   },
   twitter: {
     images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
-    title: 'KYC e PLD/FT para cooperativas de crédito | kycert',
+    title: 'Software de PLD/FT para cooperativas de crédito | kycert',
     description:
       'Verificação e monitoramento do quadro de associados sob a Circular BCB 3.978/2020, com trilha auditável para o Banco Central.',
   },

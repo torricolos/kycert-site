@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { ProductJsonLd } from '@/components/ProductJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -28,7 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Cadastro & documentos · OCR","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Cadastro & documentos · OCR"}];
 
@@ -81,7 +81,7 @@ export default function Page() {
   return (
     <>
       <Nav active="produtos" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <ProductJsonLd name={"kycert: Cadastro & documentos · OCR"} description={"Captura de documentos brasileiros com OCR, extração estruturada e validação automática, anexados ao dossiê do cliente como evidência."} path="/produto/ocr" />
 
       <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />

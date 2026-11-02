@@ -96,3 +96,7 @@ Pra customizar, edite o objeto `metadata` no `layout.tsx`.
 - Todas as cores via CSS variables → mudança de tema é instantânea sem re-render.
 - Fonts carregadas via `@import` no globals.css (não via `next/font`) para compatibilidade com `@font-face` warm-up no Vercel Edge.
 - Smooth scroll global via `html { scroll-behavior: smooth }` para links âncora (#produto, #seguranca).
+
+## Conteúdo (blog e glossário)
+
+Posts e termos são dados, não páginas: `content/blog/*.ts` e `content/glossario/*.ts`, renderizados por `app/blog/[slug]` e `app/glossario/[termo]`. Guia de escrita, calendário (`datePublished` futuro agenda o post) e checklist em `docs/editorial-guidelines.md`. Valide com `node scripts/check-content.mjs`; gere OG com `scripts/make-og.mjs` e diagramas com `scripts/make-diagrams.mjs`. Plano de backlinks em `docs/seo-autoridade-backlinks.md`.

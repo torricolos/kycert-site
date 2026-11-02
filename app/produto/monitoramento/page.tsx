@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { ProductJsonLd } from '@/components/ProductJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -28,7 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Monitoramento","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Monitoramento"}];
 
@@ -71,7 +71,7 @@ export default function Page() {
   return (
     <>
       <Nav active="produtos" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <ProductJsonLd name={"kycert: Monitoramento"} description={"Reverificação agendada, re-screening de Sanções e PEP e alertas de mudança no perfil de risco do cliente, sem retrabalho manual."} path="/produto/monitoramento" />
 
       <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />

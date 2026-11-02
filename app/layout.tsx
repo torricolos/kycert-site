@@ -10,7 +10,7 @@ const fontMono = JetBrains_Mono({ subsets: ['latin'], display: 'swap', variable:
 export const metadata: Metadata = {
   metadataBase: new URL('https://kycert.com.br'),
   title: {
-    default: 'kycert · KYC, KYB e trilha auditável para PLD/FT',
+    default: 'Plataforma de KYC, KYB e PLD/FT para instituições reguladas | kycert',
     template: '%s · kycert',
   },
   description:
@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'kycert Tecnologia' }],
   robots: { index: true, follow: true },
+  // Defina no Vercel: NEXT_PUBLIC_GSC_VERIFICATION (Google Search Console) e NEXT_PUBLIC_BING_VERIFICATION (Bing Webmaster).
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION,
+    other: process.env.NEXT_PUBLIC_BING_VERIFICATION ? { 'msvalidate.01': process.env.NEXT_PUBLIC_BING_VERIFICATION } : undefined,
+  },
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
@@ -50,7 +55,7 @@ const structuredData = {
       '@type': 'Organization',
       '@id': 'https://kycert.com.br/#organization',
       name: 'kycert',
-      legalName: 'kycert Tecnologia',
+      legalName: 'KYCERT DESENVOLVIMENTO LTDA',
       taxID: '68.453.721/0001-90',
       url: 'https://kycert.com.br/',
       logo: { '@type': 'ImageObject', url: 'https://kycert.com.br/images/logo.png', width: 320, height: 132 },

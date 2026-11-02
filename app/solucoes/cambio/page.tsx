@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e onboarding para corretoras de câmbio',
+  title: 'Software de PLD e KYC para corretora de câmbio',
   description:
     'As dores do onboarding de câmbio e como a kycert resolve: cadastro de PJ, quadro societário, PLD/FT e trilha auditável para corretoras e DTVMs.',
   alternates: { canonical: '/solucoes/cambio' },
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'KYC e onboarding para corretoras de câmbio | kycert',
+    title: 'Software de PLD e KYC para corretora de câmbio | kycert',
     description:
       'As dores do onboarding de câmbio e como a kycert resolve: cadastro de PJ, quadro societário, PLD/FT e trilha auditável para corretoras e DTVMs.',
   },
   twitter: {
     images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
-    title: 'KYC e onboarding para corretoras de câmbio | kycert',
+    title: 'Software de PLD e KYC para corretora de câmbio | kycert',
     description:
       'As dores do onboarding de câmbio e como a kycert resolve: cadastro de PJ, quadro societário, PLD/FT e trilha auditável para corretoras e DTVMs.',
   },

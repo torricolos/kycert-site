@@ -3,7 +3,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: { absolute: 'kycert · KYC, KYB e trilha auditável para PLD/FT' },
+  title: { absolute: 'Plataforma de KYC, KYB e PLD/FT para instituições reguladas | kycert' },
   description:
     'Plataforma de onboarding, KYC/KYB e trilha auditável para instituições reguladas no Brasil. Comprove cada decisão de risco numa fiscalização do BACEN.',
   alternates: { canonical: '/' },
@@ -597,10 +597,13 @@ const HOME_STYLE = `
   @media(max-width:374px){.heroA ~ section:nth-of-type(2){contain-intrinsic-size:auto 995px}.heroA ~ section:nth-of-type(3){contain-intrinsic-size:auto 2246px}.heroA ~ section:nth-of-type(4){contain-intrinsic-size:auto 2787px}.heroA ~ section:nth-of-type(5){contain-intrinsic-size:auto 838px}.heroA ~ section:nth-of-type(6){contain-intrinsic-size:auto 3196px}.heroA ~ section:nth-of-type(7){contain-intrinsic-size:auto 301px}.heroA ~ section:nth-of-type(8){contain-intrinsic-size:auto 799px}.heroA ~ section:nth-of-type(9){contain-intrinsic-size:auto 842px}.heroA ~ section:nth-of-type(10){contain-intrinsic-size:auto 749px}.heroA ~ section:nth-of-type(11){contain-intrinsic-size:auto 340px}}
 
   .hidden{display:none!important}
-  /* reveal ao rolar — com rede de segurança no JS (nunca trava em branco) */
-  .rv{opacity:0;transform:translateY(18px);transition:opacity .6s cubic-bezier(.2,.6,.2,1),transform .6s cubic-bezier(.2,.6,.2,1)}
-  .rv.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+  /* reveal ao rolar: só CSS, sobre conteúdo já presente no HTML. Nenhum texto fica em opacity:0 (crawlers e snapshot inicial enxergam tudo); sem suporte a scroll-driven animation, a seção simplesmente aparece. */
+  @keyframes rvIn{from{opacity:.55;transform:translateY(16px)}to{opacity:1;transform:none}}
+  @supports (animation-timeline:view()){
+    @media(prefers-reduced-motion:no-preference){
+      .sec,.band,.stmt,.validate,.darkflow,.cta{animation:rvIn linear both;animation-timeline:view();animation-range:entry 0% entry 40%}
+    }
+  }
 `;
 
 const HOME_BODY = `
@@ -853,6 +856,7 @@ const HOME_BODY = `
       </div>
     </div>
   </div>
+  <figure style="margin:36px 0 0"><img src="/images/produto/painel-dossie-cliente.jpg" alt="Dossiê do cliente na plataforma kycert: risco Atenção, 3 sócios, 2 apontamentos e 72 fontes consultadas, com o status de cada sócio." width="1770" height="821" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--bd)"><figcaption style="font-size:13px;color:var(--ink-subtle);margin-top:10px">Dossiê do cliente com apontamentos por sócio (dados fictícios). <a href="/dossie-exemplo" style="color:var(--green)">Ver o dossiê de exemplo completo</a></figcaption></figure>
 </section>
 
 <!-- ===== ONDE A KYCERT ENTRA (casos de uso) ===== -->
@@ -1077,18 +1081,6 @@ const HOME_SCRIPT = `
       t.innerHTML=html+html;
     }
   })();
-
-  // reveal on scroll (robusto: nunca deixa conteúdo preso invisível)
-  const revEls=[...document.querySelectorAll('.sec,.band,.stmt,.validate,.darkflow,.cta')];
-  revEls.forEach(el=>el.classList.add('rv'));
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0,rootMargin:'0px 0px -8% 0px'});
-  revEls.forEach(el=>io.observe(el));
-  function revealSafety(){const h=window.innerHeight||document.documentElement.clientHeight;for(const el of revEls){const r=el.getBoundingClientRect();if(r.top<h*0.92&&r.bottom>0){el.classList.add('in');io.unobserve(el);}}}
-  window.addEventListener('scroll',revealSafety,{passive:true});
-  window.addEventListener('resize',revealSafety);
-  window.addEventListener('load',revealSafety);
-  revealSafety();
-  setTimeout(revealSafety,400);setTimeout(()=>revEls.forEach(el=>el.classList.add('in')),2500);
 
   // showcase tabs
   document.querySelectorAll('.sc-tab').forEach(tab=>{

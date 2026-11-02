@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
+import { ProductJsonLd } from '@/components/ProductJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
@@ -28,7 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"SoftwareApplication","name":"kycert: Verificação PJ · KYB","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência."}`;
 
 const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Verificação PJ · KYB"}];
 
@@ -40,6 +40,8 @@ const BODY_HTML = `
 <p style="font-size:19px;color:var(--text-secondary);line-height:1.55;margin:22px 0 28px;max-width:60ch">Cadastro PJ sem digitação manual, estrutura societária mapeada até o UBO e screening de cada sócio. A kycert monta a cadeia de controle e guarda o status de cada nó, para você comprovar que conhece quem está por trás da empresa.</p>
 <div class="cta"><a href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+agendar+uma+demo+da+kycert.&amp;type=phone_number&amp;app_absent=0" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Agendar demo</a><a href="/dossie-exemplo" class="btn btn-ghost btn-lg">Ver dossiê de exemplo</a></div>
 </div></section>
+<section style="padding:8px 0 24px"><div class="wrap-narrow"><figure style="margin:0"><img src="/images/produto/estrutura-societaria-ubo.jpg" alt="Estrutura societária no KYB da kycert, da empresa analisada ao beneficiário final em três níveis, com o resultado da checagem de cada pessoa." width="825" height="558" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:var(--r-lg);border:1px solid var(--border-default)"><figcaption style="font-size:13px;color:var(--text-tertiary);margin-top:10px">Cadeia societária até o beneficiário final (dados fictícios).</figcaption></figure></div></section>
+
 <section style="padding:8px 0 8px"><div class="wrap">
   <div class="split reveal">
     <div class="split-copy">
@@ -72,7 +74,7 @@ export default function Page() {
   return (
     <>
       <Nav active="produtos" />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
+      <ProductJsonLd name={"kycert: Verificação PJ · KYB"} description={"KYB com cadastro PJ automatizado, árvore societária até o beneficiário final e screening dos sócios: a cadeia inteira registrada como evidência."} path="/produto/kyb" />
 
       <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />

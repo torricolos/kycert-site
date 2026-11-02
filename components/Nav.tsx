@@ -51,7 +51,7 @@ const RECURSOS = [
   { href: '/faq', mt: 'Perguntas frequentes', md: 'Dúvidas de compliance e glossário', icon: (
     <><circle cx="12" cy="12" r="9" /><path d="M9.2 9.3a2.8 2.8 0 0 1 5.4 1c0 1.9-2.8 2.5-2.8 2.5" /><path d="M12 17h.01" /></>
   ) },
-  { href: '/faq#glossario', mt: 'Glossário', md: 'KYC, PLD/FT, UBO, PEP e mais', icon: <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z" /> },
+  { href: '/glossario', mt: 'Glossário', md: 'KYC, PLD/FT, UBO, PEP e mais', icon: <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z" /> },
   { href: '/guias', mt: 'Guias e materiais', md: 'Checklists e materiais práticos', icon: <path d="M14 3v5h5M7 3h8l5 5v13H7z" /> },
   { href: '/dossie-exemplo', mt: 'Dossiê de exemplo', md: 'Veja um dossiê de risco completo', icon: <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z" /> },
 ];

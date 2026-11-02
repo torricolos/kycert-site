@@ -2,67 +2,110 @@ import type { Metadata } from 'next';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
-import SiteInteractions from '@/components/SiteInteractions';
+import { publishedPosts } from '@/lib/blog';
+import { readingMinutes } from '@/lib/posts';
+import { BASE, DEFAULT_OG, formatDateBR, jsonLd } from '@/lib/site';
+
+export const revalidate = 3600;
+
+const TITLE = 'Blog de compliance, KYC e PLD/FT';
+const DESC =
+  'Artigos práticos sobre KYC, KYB, PLD/FT, Circular BCB 3.978 e regulação do BACEN e da CVM, com checklist e como evidenciar na fiscalização.';
 
 export const metadata: Metadata = {
-  title: 'Blog: compliance, KYC e regulação',
-  description:
-    'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
+  title: TITLE,
+  description: DESC,
   alternates: { canonical: '/blog' },
   openGraph: {
-    images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
+    images: [{ url: DEFAULT_OG, width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'Blog: compliance, KYC e regulação | kycert',
-    description:
-      'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
+    title: `${TITLE} | kycert`,
+    description: DESC,
     url: '/blog',
   },
-  twitter: {
-    images: ['https://kycert.com.br/og.png'],
-    card: 'summary_large_image',
-    title: 'Blog: compliance, KYC e regulação | kycert',
-    description:
-      'Artigos sobre KYC, KYB, PLD/FT e regulação do BACEN para corretoras de câmbio, PSAVs e fintechs.',
-  },
+  twitter: { images: [DEFAULT_OG], card: 'summary_large_image', title: `${TITLE} | kycert`, description: DESC },
 };
 
-const JSONLD = `{"@context":"https://schema.org","@type":"Blog","name":"Blog kycert","inLanguage":"pt-BR","blogPost":[{"@type":"BlogPosting","headline":"Consórcios e gestoras: o onboarding que BCB e CVM cobram","url":"https://kycert.com.br/blog/consorcios-mercado-capitais-onboarding"},{"@type":"BlogPosting","headline":"Abertura de conta em fintech: KYC, KYB e risco em escala","url":"https://kycert.com.br/blog/abertura-conta-fintech-kyb-escala"},{"@type":"BlogPosting","headline":"Cooperativas de crédito: o PLD/FT do quadro de associados","url":"https://kycert.com.br/blog/cooperativas-credito-3978-associados"},{"@type":"BlogPosting","headline":"Seguros: identificação do segurado e PLD sob a SUSEP","url":"https://kycert.com.br/blog/seguradoras-susep-onboarding-pld"},{"@type":"BlogPosting","headline":"Apostas de quota fixa: o KYC que a regulamentação passou a exigir","url":"https://kycert.com.br/blog/bets-lei-14790-pld-onboarding"},{"@type":"BlogPosting","headline":"Resolução BCB 520/2025: o que muda para PSAV e como comprovar a avaliação de risco","url":"https://kycert.com.br/blog/resolucao-bcb-520-psav"},{"@type":"BlogPosting","headline":"Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede","url":"https://kycert.com.br/blog/comprovar-pld-ft-fiscalizacao-bacen"},{"@type":"BlogPosting","headline":"Beneficiário final (UBO): obrigações de KYB e como mapear a cadeia societária","url":"https://kycert.com.br/blog/beneficiario-final-ubo-kyb"},{"@type":"BlogPosting","headline":"Checklist de prontidão para fiscalização de PLD/FT","url":"https://kycert.com.br/blog/checklist-prontidao-fiscalizacao"},{"@type":"BlogPosting","headline":"Câmbio: o que a Lei 14.286/2021 e a Res. BCB 277/2022 exigem no cadastro do cliente","url":"https://kycert.com.br/blog/lei-14286-cambio-cadastro"}]}`;
+const FILTERS = ['PSAV', 'PLD/FT', 'KYB', 'Câmbio', 'Segmentos'];
 
-const BREADCRUMB_ITEMS = [{"name":"Início","path":"/"},{"name":"Blog"}];
-
-const BODY_HTML = `<nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span style="color:var(--text-secondary)">Blog</span></div></nav>
-<section style="padding:48px 0 80px"><div class="wrap sec-head">
-<span class="eyebrow">Blog</span>
-<h1 class="as-h2 reveal" style="margin-top:14px">Regulação, compliance e onboarding, sem rodeio.</h1>
-<p class="sec-lead reveal">Conteúdo prático sobre KYC, KYB, PLD/FT e as normas do BACEN que afetam a sua operação.</p>
-<div class="blog-filters"><button class="bf active" data-f="todos">Todos</button><button class="bf" data-f="PSAV">PSAV</button><button class="bf" data-f="PLD/FT">PLD/FT</button><button class="bf" data-f="KYB">KYB</button><button class="bf" data-f="Câmbio">Câmbio</button><button class="bf" data-f="Segmentos">Segmentos</button></div>
-<div class="blog-hub"><a class="blog-card" data-cat="Segmentos" href="/blog/consorcios-mercado-capitais-onboarding"><span class="cat">Mercado de capitais</span><h2>Consórcios e gestoras: o onboarding que BCB e CVM cobram</h2><p>Administradoras de consórcio (BCB) e gestoras de recursos (CVM) respondem a deveres de identificação e PLD/FT. Veja como estruturar o cadastro do investidor e do consorciado.</p><div class="meta"><span>26/06/2026</span></div></a>
-<a class="blog-card" data-cat="Segmentos" href="/blog/abertura-conta-fintech-kyb-escala"><span class="cat">Bancos &amp; fintechs</span><h2>Abertura de conta em escala, com o risco enquadrado</h2><p>Instituições de pagamento abrem conta em volume e respondem por cada cliente em PLD/FT. Veja como verificar PF e PJ sem travar o onboarding.</p><div class="meta"><span>24/06/2026</span></div></a>
-<a class="blog-card" data-cat="Segmentos" href="/blog/cooperativas-credito-3978-associados"><span class="cat">Cooperativas</span><h2>Cooperativas de crédito: o PLD/FT do quadro de associados</h2><p>Cooperativas de crédito respondem aos mesmos deveres de PLD/FT das demais instituições do SFN. Veja como verificar e monitorar o quadro de associados.</p><div class="meta"><span>22/06/2026</span></div></a>
-<a class="blog-card" data-cat="Segmentos" href="/blog/seguradoras-susep-onboarding-pld"><span class="cat">Seguradoras</span><h2>Seguros: identificação do segurado e PLD sob a SUSEP</h2><p>Seguradoras e corretoras respondem a deveres de PLD/FT supervisionados pela SUSEP. Veja como estruturar o cadastro e a trilha de decisão do segurado.</p><div class="meta"><span>19/06/2026</span></div></a>
-<a class="blog-card" data-cat="Segmentos" href="/blog/bets-lei-14790-pld-onboarding"><span class="cat">Apostas / Bets</span><h2>Apostas de quota fixa: o KYC que a regulamentação passou a exigir</h2><p>A regulamentação das apostas de quota fixa trouxe deveres de identificação do apostador e de PLD/FT. Veja o que muda no onboarding das casas de apostas.</p><div class="meta"><span>18/06/2026</span></div></a>
-<a class="blog-card" data-cat="PSAV" href="/blog/resolucao-bcb-520-psav"><span class="cat">PSAV</span><h2>Resolução BCB 520/2025: o que muda para PSAV e como comprovar a avaliação de risco</h2><p>O que a Resolução BCB 520/2025 exige das PSAVs em avaliação de risco e como registrar essa avaliação como evidência auditável.</p><div class="meta"><span>12/05/2026</span></div></a>
-<a class="blog-card" data-cat="PLD/FT" href="/blog/comprovar-pld-ft-fiscalizacao-bacen"><span class="cat">PLD/FT</span><h2>Como comprovar PLD/FT numa fiscalização do BACEN: o que o regulador pede</h2><p>Numa fiscalização de PLD/FT, o BACEN não pergunta só se o cliente é limpo; pergunta como você decidiu. Veja o que precisa estar registrado.</p><div class="meta"><span>28/05/2026</span></div></a>
-<a class="blog-card" data-cat="KYB" href="/blog/beneficiario-final-ubo-kyb"><span class="cat">KYB</span><h2>Beneficiário final (UBO): obrigações de KYB e como mapear a cadeia societária</h2><p>O que é o beneficiário final, por que identificá-lo é obrigação de KYB e como mapear a cadeia societária até a pessoa natural que controla a empresa.</p><div class="meta"><span>02/06/2026</span></div></a>
-<a class="blog-card" data-cat="PLD/FT" href="/blog/checklist-prontidao-fiscalizacao"><span class="cat">PLD/FT</span><h2>Checklist de prontidão para fiscalização de PLD/FT</h2><p>Os pontos que precisam estar registrados antes de uma fiscalização de PLD/FT. Checklist prático para times de compliance de instituições reguladas.</p><div class="meta"><span>05/06/2026</span></div></a>
-<a class="blog-card" data-cat="Câmbio" href="/blog/lei-14286-cambio-cadastro"><span class="cat">Câmbio</span><h2>Câmbio: o que a Lei 14.286/2021 e a Res. BCB 277/2022 exigem no cadastro do cliente</h2><p>O que o novo marco cambial e a Resolução BCB 277/2022 exigem no cadastro e na verificação de clientes de corretoras de câmbio.</p><div class="meta"><span>09/06/2026</span></div></a></div>
-</div></section>`;
-
-const EXTRA_SCRIPT = `document.querySelectorAll('.bf').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.bf').forEach(function(x){x.classList.remove('active')});b.classList.add('active');var f=b.getAttribute('data-f');document.querySelectorAll('.blog-card').forEach(function(c){c.style.display=(f==='todos'||c.getAttribute('data-cat')===f)?'':'none'});});});`;
+const FILTER_SCRIPT = `document.querySelectorAll('.bf').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.bf').forEach(function(x){x.classList.remove('active')});b.classList.add('active');var f=b.getAttribute('data-f');document.querySelectorAll('.blog-card').forEach(function(c){c.style.display=(f==='todos'||c.getAttribute('data-cat')===f)?'':'none'});});});`;
 
 export default function Page() {
+  const posts = publishedPosts();
+  const blogLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': `${BASE}/blog#blog`,
+    name: 'Blog kycert',
+    url: `${BASE}/blog`,
+    inLanguage: 'pt-BR',
+    publisher: { '@id': `${BASE}/#organization` },
+    blogPost: posts.map((p) => ({
+      '@type': 'BlogPosting',
+      headline: p.title,
+      url: `${BASE}/blog/${p.slug}`,
+      datePublished: p.datePublished,
+      dateModified: p.dateModified,
+    })),
+  };
+
   return (
     <>
       <Nav active="recursos" />
+      <BreadcrumbJsonLd items={[{ name: 'Início', path: '/' }, { name: 'Blog' }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogLd) }} />
 
-      <BreadcrumbJsonLd items={BREADCRUMB_ITEMS} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSONLD }} />
-      <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
+      <nav className="crumbs">
+        <div className="wrap">
+          <a href="/">Início</a>
+          <span className="sep">/</span>
+          <span style={{ color: 'var(--text-secondary)' }}>Blog</span>
+        </div>
+      </nav>
+
+      <section style={{ padding: '48px 0 80px' }}>
+        <div className="wrap sec-head">
+          <span className="eyebrow">Blog</span>
+          <h1 className="as-h2" style={{ marginTop: 14 }}>
+            Regulação, compliance e onboarding, sem rodeio.
+          </h1>
+          <p className="sec-lead">
+            Guias com a norma citada, checklist e o que guardar para a fiscalização. Procurando uma sigla? Veja o{' '}
+            <a href="/glossario" style={{ color: 'var(--text-link)' }}>
+              glossário de KYC, KYB e PLD/FT
+            </a>
+            .
+          </p>
+          <div className="blog-filters">
+            <button className="bf active" data-f="todos">
+              Todos
+            </button>
+            {FILTERS.map((f) => (
+              <button key={f} className="bf" data-f={f}>
+                {f}
+              </button>
+            ))}
+          </div>
+          <div className="blog-hub">
+            {posts.map((p) => (
+              <a key={p.slug} className="blog-card" data-cat={p.category} href={`/blog/${p.slug}`}>
+                <span className="cat">{p.eyebrow}</span>
+                <h2>{p.title}</h2>
+                <p>{p.excerpt}</p>
+                <div className="meta">
+                  <span>{formatDateBR(p.datePublished)}</span>
+                  <span>{readingMinutes(p)} min de leitura</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
-      <SiteInteractions />
-      <script dangerouslySetInnerHTML={{ __html: EXTRA_SCRIPT }} />
+      <script dangerouslySetInnerHTML={{ __html: FILTER_SCRIPT }} />
     </>
   );
 }

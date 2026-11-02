@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC, KYB e onboarding para bancos e fintechs',
+  title: 'Software de KYC, KYB e PLD para bancos e fintechs',
   description:
     'Abertura de conta e crédito em escala: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',
   alternates: { canonical: '/solucoes/bancos' },
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'KYC, KYB e onboarding para bancos e fintechs | kycert',
+    title: 'Software de KYC, KYB e PLD para bancos e fintechs | kycert',
     description:
       'Abertura de conta e crédito em escala: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',
   },
   twitter: {
     images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
-    title: 'KYC, KYB e onboarding para bancos e fintechs | kycert',
+    title: 'Software de KYC, KYB e PLD para bancos e fintechs | kycert',
     description:
       'Abertura de conta e crédito em escala: KYC, KYB, enquadramento de risco e trilha auditável para instituições de pagamento e crédito.',
   },

@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/BreadcrumbJsonLd';
 import SiteInteractions from '@/components/SiteInteractions';
 
 export const metadata: Metadata = {
-  title: 'KYC e PLD para casas de apostas (Bets)',
+  title: 'KYC e PLD para casas de apostas (Lei 14.790)',
   description:
     'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   alternates: { canonical: '/solucoes/bets' },
@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'kycert',
     type: 'website',
-    title: 'KYC e PLD para casas de apostas (Bets) | kycert',
+    title: 'KYC e PLD para casas de apostas (Lei 14.790) | kycert',
     description:
       'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   },
   twitter: {
     images: ['https://kycert.com.br/og.png'],
     card: 'summary_large_image',
-    title: 'KYC e PLD para casas de apostas (Bets) | kycert',
+    title: 'KYC e PLD para casas de apostas (Lei 14.790) | kycert',
     description:
       'Identificação do apostador, idade, sanções, PEP e PLD/FT para casas de apostas reguladas pela SPA/MF sob a Lei 14.790/2023.',
   },
