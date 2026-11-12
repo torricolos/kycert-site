@@ -2,7 +2,7 @@
 
 > kycert é uma plataforma brasileira de onboarding, KYC/KYB e trilha auditável de PLD/FT para instituições reguladas. Cada etapa (convite, captura de documento, verificações, enquadramento de risco e decisão) fica registrada como evidência, com autor e data, pronta para uma fiscalização do Banco Central (BACEN). Site: https://kycert.com.br
 
-A kycert atende empresas de vários setores, com foco em mercados regulados: corretoras de câmbio, PSAVs, bancos e fintechs, cooperativas de crédito, consórcios e mercado de capitais, seguradoras e casas de apostas (Bets). Contato: contato@kycert.com.br
+A kycert atende empresas de vários setores, com foco em mercados regulados: corretoras de câmbio, PSAVs, bancos e fintechs, cooperativas de crédito, consórcios e mercado de capitais, e seguradoras. Contato: contato@kycert.com.br
 
 ## Produtos
 - [Verificação de pessoa física (KYC)](https://kycert.com.br/produto/kyc): documento, biometria, screening de Sanções e PEP e enquadramento de risco.
@@ -19,7 +19,6 @@ A kycert atende empresas de vários setores, com foco em mercados regulados: cor
 - [Cooperativas de crédito (Circular BCB 3.978)](https://kycert.com.br/solucoes/cooperativas)
 - [Consórcios e mercado de capitais (BCB e CVM)](https://kycert.com.br/solucoes/mercado-capitais)
 - [Seguradoras e corretoras (SUSEP)](https://kycert.com.br/solucoes/seguradoras)
-- [Casas de apostas (Lei 14.790/2023)](https://kycert.com.br/solucoes/bets)
 
 ## Recursos
 - [Perguntas frequentes e glossário de KYC, KYB e PLD/FT](https://kycert.com.br/faq)
@@ -36,7 +35,6 @@ A kycert atende empresas de vários setores, com foco em mercados regulados: cor
 - [Beneficiário final (UBO): o que o KYB exige](https://kycert.com.br/blog/beneficiario-final-ubo-kyb)
 - [Resolução BCB 520/2025 para PSAV](https://kycert.com.br/blog/resolucao-bcb-520-psav)
 - [Lei 14.286 e Res. BCB 277: cadastro no câmbio](https://kycert.com.br/blog/lei-14286-cambio-cadastro)
-- [Bets: o que a Lei 14.790 exige de KYC e PLD](https://kycert.com.br/blog/bets-lei-14790-pld-onboarding)
 - [Cooperativas de crédito e a Circular 3.978](https://kycert.com.br/blog/cooperativas-credito-3978-associados)
 - [Seguradoras: onboarding e PLD/FT sob a SUSEP](https://kycert.com.br/blog/seguradoras-susep-onboarding-pld)
 - [Consórcios e gestoras: onboarding sob BCB e CVM](https://kycert.com.br/blog/consorcios-mercado-capitais-onboarding)

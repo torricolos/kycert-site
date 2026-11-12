@@ -41,9 +41,6 @@ const SOLUCOES = [
     <><path d="M23 6l-9.5 9.5-5-5L1 18" /><path d="M17 6h6v6" /></>
   ) },
   { href: '/solucoes/seguradoras', mt: 'Seguradoras', md: 'PLD/FT sob a SUSEP', color: 'var(--module-marketing)', icon: <path d="M12 2a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9zM12 11v9a2 2 0 0 0 4 0" /> },
-  { href: '/solucoes/bets', mt: 'Apostas / Bets', badge: 'Novo', md: 'Lei 14.790/2023 · SPA/MF', color: 'var(--signal)', icon: (
-    <><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1.5" /></>
-  ) },
 ];
 
 const RECURSOS = [

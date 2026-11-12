@@ -7,7 +7,7 @@ import SiteInteractions from '@/components/SiteInteractions';
 export const metadata: Metadata = {
   title: 'Mapa de normas e conformidade regulatória',
   description:
-    'Mapa de normas do BACEN, CVM, SUSEP, COAF e LGPD para câmbio, PSAVs, bancos, seguradoras e bets: o que cada uma pede e a evidência registrada.',
+    'Mapa de normas do BACEN, CVM, SUSEP, COAF e LGPD para câmbio, PSAVs, bancos, e seguradoras: o que cada uma pede e a evidência registrada.',
   alternates: { canonical: '/conformidade' },
   openGraph: {
     images: [{ url: 'https://kycert.com.br/og.png', width: 1200, height: 630, alt: 'kycert: comprove cada cliente, cada decisão.' }],
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Mapa de normas e conformidade regulatória | kycert',
     description:
-      'Mapa de normas do BACEN, CVM, SUSEP, COAF e LGPD para câmbio, PSAVs, bancos, seguradoras e bets: o que cada uma pede e a evidência registrada.',
+      'Mapa de normas do BACEN, CVM, SUSEP, COAF e LGPD para câmbio, PSAVs, bancos, e seguradoras: o que cada uma pede e a evidência registrada.',
     url: '/conformidade',
   },
   twitter: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mapa de normas e conformidade regulatória | kycert',
     description:
-      'Mapa de normas do BACEN, CVM, SUSEP, COAF e LGPD para câmbio, PSAVs, bancos, seguradoras e bets: o que cada uma pede e a evidência registrada.',
+      'Mapa de normas do BACEN, CVM, SUSEP, COAF e LGPD para câmbio, PSAVs, bancos, e seguradoras: o que cada uma pede e a evidência registrada.',
   },
 };
 
@@ -68,7 +68,6 @@ const BODY_HTML = `
     <button data-seg="cooperativas">Cooperativas</button>
     <button data-seg="capitais">Consórcios &amp; capitais</button>
     <button data-seg="seguradoras">Seguradoras</button>
-    <button data-seg="bets">Apostas / Bets</button>
     <button data-seg="demais">Demais segmentos</button>
   </div>
 
@@ -105,14 +104,6 @@ const BODY_HTML = `
         <div class="ev"><div class="cl"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Evidência</div><p>Ficha do segurado com a decisão registrada, pronta para a SUSEP.</p></div>
       </div>
     </div>
-    <div class="cmap-row" data-seg="bets">
-      <div class="top"><div><div class="law">Lei 14.790/2023 · Portaria SPA/MF 722/2024 (cadastro) e 827/2024 (PLD/FT)</div><div class="fr">Apostas (Bets)</div></div><div class="tags"><span class="tg">Bets</span></div></div>
-      <div class="cmap-cols">
-        <div><div class="cl">O que pede</div><p>Identificar o apostador, confirmar a idade e cumprir os deveres de PLD/FT.</p></div>
-        <div><div class="cl">Onde a kycert entra</div><p>KYC do apostador com idade, sanções e PEP antes da primeira aposta.</p></div>
-        <div class="ev"><div class="cl"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Evidência</div><p>Trilha do cadastro do apostador, pronta para a SPA/MF.</p></div>
-      </div>
-    </div>
     <div class="cmap-row" data-seg="cambio psav banco cooperativas demais">
       <div class="top"><div><div class="law">Circular BCB 3.978/2020 · Lei 9.613/98 + COAF</div><div class="fr">PLD/FT</div></div><div class="tags"><span class="tg">Câmbio</span><span class="tg">PSAV</span><span class="tg">Bancos</span><span class="tg">Cooperativas</span><span class="tg">Demais</span></div></div>
       <div class="cmap-cols">
@@ -121,7 +112,7 @@ const BODY_HTML = `
         <div class="ev"><div class="cl"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Evidência</div><p>Trilha por cliente com fontes, data e responsável de cada decisão.</p></div>
       </div>
     </div>
-    <div class="cmap-row" data-seg="cambio psav banco cooperativas capitais seguradoras bets demais">
+    <div class="cmap-row" data-seg="cambio psav banco cooperativas capitais seguradoras demais">
       <div class="top"><div><div class="law">LGPD · Lei 13.709/18</div><div class="fr">Proteção de dados</div></div><div class="tags"><span class="tg">Todos</span></div></div>
       <div class="cmap-cols">
         <div><div class="cl">O que pede</div><p>Tratar dados com finalidade, base legal, controle de acesso e registro.</p></div>

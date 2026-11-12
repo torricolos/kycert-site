@@ -6,7 +6,6 @@ import p02 from '@/content/blog/comprovar-pld-ft-fiscalizacao-bacen';
 import p03 from '@/content/blog/beneficiario-final-ubo-kyb';
 import p04 from '@/content/blog/checklist-prontidao-fiscalizacao';
 import p05 from '@/content/blog/lei-14286-cambio-cadastro';
-import p06 from '@/content/blog/bets-lei-14790-pld-onboarding';
 import p07 from '@/content/blog/seguradoras-susep-onboarding-pld';
 import p08 from '@/content/blog/cooperativas-credito-3978-associados';
 import p09 from '@/content/blog/abertura-conta-fintech-kyb-escala';
@@ -19,7 +18,7 @@ import n04 from '@/content/blog/abordagem-baseada-em-risco-abr-exemplo-pratico';
 import n05 from '@/content/blog/resolucao-cvm-50-pld-ft';
 import n06 from '@/content/blog/kyb-para-psav-exchanges';
 
-export const ALL_POSTS: Post[] = [p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, n01, n02, n03, n04, n05, n06];
+export const ALL_POSTS: Post[] = [p01, p02, p03, p04, p05, p07, p08, p09, p10, n01, n02, n03, n04, n05, n06];
 
 /** Posts já publicados, do mais recente para o mais antigo. */
 export function publishedPosts(today?: string): Post[] {

@@ -4,6 +4,9 @@ const nextConfig = {
   poweredByHeader: false,
   async redirects() {
     return [
+      // Páginas de bets removidas do site.
+      { source: '/solucoes/bets', destination: '/', permanent: true },
+      { source: '/blog/bets-lei-14790-pld-onboarding', destination: '/blog', permanent: true },
       // www -> apex (301). http -> https é forçado pelo Vercel; o domínio www também deve ser redirecionado no painel de Domains.
       {
         source: '/:path*',

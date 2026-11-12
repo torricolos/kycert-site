@@ -34,7 +34,6 @@ export default function Footer() {
             <a className="fl" href="/solucoes/cooperativas">Cooperativas de crédito</a>
             <a className="fl" href="/solucoes/mercado-capitais">Mercado de capitais</a>
             <a className="fl" href="/solucoes/seguradoras">Seguradoras</a>
-            <a className="fl" href="/solucoes/bets">Apostas / Bets</a>
           </div>
 
           <div className="col">
@@ -63,7 +62,7 @@ export default function Footer() {
         </div>
 
         <div className="foot-legal">
-          A kycert não substitui assessoria jurídica nem dispensa os demais deveres regulatórios previstos na legislação vigente. KYCERT DESENVOLVIMENTO LTDA · CNPJ 68.453.721/0001-90 · São Paulo · Brasil · Privacidade & LGPD.
+          KYCERT DESENVOLVIMENTO LTDA · CNPJ 68.453.721/0001-90 · São Paulo · Brasil · Privacidade & LGPD.
         </div>
 
         <div className="bottom">
