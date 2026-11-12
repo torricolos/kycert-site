@@ -46,7 +46,7 @@ const term: Term = {
     },
     {
       q: 'Quem é obrigado a fazer KYC no Brasil?',
-      a: 'As instituições sujeitas à Lei 9.613/1998 e às normas do seu regulador, como bancos, câmbio, PSAVs, corretoras, seguradoras e bets, cada uma conforme a regra aplicável ao seu setor.',
+      a: 'As instituições sujeitas à Lei 9.613/1998 e às normas do seu regulador, como bancos, câmbio, PSAVs, corretoras, e seguradoras, cada uma conforme a regra aplicável ao seu setor.',
     },
   ],
   relatedTerms: ['kyb', 'pep', 'abr', 'cdd-edd', 'pld-ft'],

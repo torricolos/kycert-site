@@ -81,7 +81,7 @@ export default function Page() {
             Convite com a marca do cliente, captura e leitura de documentos, <a href="/produto/kyc">verificação de pessoa física (KYC)</a>,{' '}
             <a href="/produto/kyb">verificação de pessoa jurídica com beneficiário final (KYB)</a>, enquadramento de risco pela regra da própria instituição e{' '}
             <a href="/produto/dossie-de-risco">Dossiê de Risco</a> com a decisão registrada. Atendemos corretoras de câmbio, PSAVs, bancos e fintechs,
-            cooperativas, consórcios, mercado de capitais, seguradoras e casas de apostas.
+            cooperativas, consórcios, mercado de capitais, e seguradoras.
           </p>
 
           <h2 id="quem-escreve">Quem escreve</h2>

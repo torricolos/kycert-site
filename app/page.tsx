@@ -915,14 +915,6 @@ const HOME_BODY = `
       <div class="regs"><span><span class="k">&rarr;</span>Circular SUSEP 612/2020</span><span><span class="k">&rarr;</span>Lei 9.613/98 + COAF</span></div>
       <span class="go">Ver página <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
-    <a class="uc" href="/solucoes/bets">
-      <span class="tag">Apostas / Bets</span>
-      <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
-      <h3>Casas de apostas (Bets)</h3>
-      <p>Identifique o apostador, confirme a idade e registre a decisão como evidência.</p>
-      <div class="regs"><span><span class="k">&rarr;</span>Lei 14.790/2023</span><span><span class="k">&rarr;</span>Portarias SPA/MF 722 e 827/2024</span></div>
-      <span class="go">Ver página <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-    </a>
     <a class="uc" href="https://api.whatsapp.com/send/?phone=5511977656630&amp;text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista+da+kycert+sobre+o+meu+segmento.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">
       <span class="tag">Outros segmentos</span>
       <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>

@@ -16,7 +16,7 @@ const term: Term = {
 <p>PLD/FT reúne tudo o que uma instituição faz para não ser veículo de crime financeiro. A lavagem de dinheiro é o processo de dar aparência lícita a recursos de origem criminosa. O financiamento do terrorismo é o fornecimento de recursos a atividades terroristas, mesmo de origem lícita. Na prática, o programa de PLD/FT é a soma de governança, conhecimento do cliente, monitoramento, comunicação e registro.</p>
 
 <h2>Base normativa e como se aplica no Brasil</h2>
-<p>A Lei 9.613/1998 tipifica o crime de lavagem, define as pessoas sujeitas às obrigações e cria o COAF. Cada regulador detalha o programa para o seu setor: a Circular BCB 3.978/2020 para instituições autorizadas pelo Banco Central, com a Carta Circular BCB 4.001/2020 listando operações com indício de lavagem; a Resolução CVM 50/2021 no mercado de capitais; a Circular SUSEP 612/2020 em seguros; a Lei 14.790/2023 para apostas; e as Resoluções BCB 519, 520 e 521/2025 para prestadoras de serviços de ativos virtuais. A <a href="/glossario/abr">abordagem baseada em risco</a> organiza todo o programa.</p>
+<p>A Lei 9.613/1998 tipifica o crime de lavagem, define as pessoas sujeitas às obrigações e cria o COAF. Cada regulador detalha o programa para o seu setor: a Circular BCB 3.978/2020 para instituições autorizadas pelo Banco Central, com a Carta Circular BCB 4.001/2020 listando operações com indício de lavagem; a Resolução CVM 50/2021 no mercado de capitais; a Circular SUSEP 612/2020 em seguros; e as Resoluções BCB 519, 520 e 521/2025 para prestadoras de serviços de ativos virtuais. A <a href="/glossario/abr">abordagem baseada em risco</a> organiza todo o programa.</p>
 
 <h2>Como funciona na prática</h2>
 <ul>

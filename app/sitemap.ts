@@ -28,7 +28,6 @@ const PAGES: Record<string, string> = {
   '/solucoes/cooperativas': '2026-11-02',
   '/solucoes/mercado-capitais': '2026-11-02',
   '/solucoes/seguradoras': '2026-11-02',
-  '/solucoes/bets': '2026-11-02',
   '/sobre': '2026-11-02',
   '/faq': '2026-11-02',
   '/guias': '2026-11-02',

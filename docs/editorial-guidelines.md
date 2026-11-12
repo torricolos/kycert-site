@@ -30,7 +30,7 @@ Use `<h3>` dentro das seções quando ajudar. Cada `<h2>` precisa ser único e d
 
 - Hoje é **02/11/2026**. Nada de datas passadas apresentadas como futuras. Exemplo: o prazo de 30/10/2026 para pedido de autorização das PSAVs (Res. BCB 519/520/521) **já passou**; trate como "prazo encerrado em 30/10/2026" e oriente a conferir a situação atual no BCB.
 - Cite artigo, inciso ou percentual **somente se tiver certeza**. Na dúvida, cite a norma pelo número/ano e pelo tema ("a Circular 3.978 trata da avaliação interna de risco") sem inventar numeração. Liste no seu relatório final cada citação de artigo ou número que você incluiu, para validação humana.
-- Normas seguras de citar pelo nome: Lei 9.613/1998; Lei 14.286/2021; Resolução BCB 277/2022; Lei 14.478/2022; Resoluções BCB 519, 520 e 521/2025; Circular BCB 3.978/2020; Carta Circular BCB 4.001/2020; Resolução CVM 50/2021; Circular SUSEP 612/2020; Lei 14.790/2023; Resolução COAF 40/2021; IN RFB 2.119/2022; Resolução BCB 1/2020 (Pix).
+- Normas seguras de citar pelo nome: Lei 9.613/1998; Lei 14.286/2021; Resolução BCB 277/2022; Lei 14.478/2022; Resoluções BCB 519, 520 e 521/2025; Circular BCB 3.978/2020; Carta Circular BCB 4.001/2020; Resolução CVM 50/2021; Circular SUSEP 612/2020; Resolução COAF 40/2021; IN RFB 2.119/2022; Resolução BCB 1/2020 (Pix).
 - Não prometa o que a kycert não faz. Antes de descrever a plataforma, leia `app/produto/*/page.tsx`, `app/solucoes/*/page.tsx`, `app/page.tsx` e `public/llms.txt`. A kycert faz: convite white-label, captura e OCR de documentos, KYC PF, KYB PJ com cadeia societária até o beneficiário final, screening de sanções e PEP, enquadramento de risco pela regra do cliente, Dossiê de Risco exportável em PDF, decisão registrada com autor e data, reverificação periódica (monitoramento contínuo) e API/webhooks. Ela **não** é um motor de monitoramento transacional (KYT) em tempo real: no tema KYT, explique o conceito e diga que a kycert fornece o perfil de risco do KYC que alimenta o monitoramento. Sem números de clientes, sem certificações que não existem (ISO 27001 e SOC 2 estão "em processo"), sem estatísticas inventadas, sem depoimentos.
 - Norma não é aconselhamento jurídico. O template já exibe o aviso; não repita.
 - Não cite concorrentes pelo nome.
@@ -52,7 +52,7 @@ Use `<h3>` dentro das seções quando ajudar. Cada `<h2>` precisa ser único e d
 URLs válidas:
 
 - Produto: `/produto/kyc`, `/produto/kyb`, `/produto/dossie-de-risco`, `/produto/ocr`, `/produto/monitoramento`, `/produto/api`
-- Soluções: `/solucoes/cambio`, `/solucoes/psav`, `/solucoes/bancos`, `/solucoes/cooperativas`, `/solucoes/mercado-capitais`, `/solucoes/seguradoras`, `/solucoes/bets`
+- Soluções: `/solucoes/cambio`, `/solucoes/psav`, `/solucoes/bancos`, `/solucoes/cooperativas`, `/solucoes/mercado-capitais`, `/solucoes/seguradoras`
 - Outras: `/precos`, `/dossie-exemplo`, `/conformidade`, `/guias`, `/faq`, `/seguranca`, `/sobre`, `/glossario`
 - Glossário: `/glossario/kyc`, `/glossario/kyb`, `/glossario/kyt`, `/glossario/pep`, `/glossario/ubo`, `/glossario/abr`, `/glossario/pld-ft`, `/glossario/cdd-edd`
 - Posts: ver slugs em `lib/blog.ts` (linke só slugs existentes).
