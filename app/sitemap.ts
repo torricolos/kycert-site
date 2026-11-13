@@ -35,9 +35,10 @@ const PAGES: Record<string, string> = {
   '/precos': '2026-09-04',
   '/seguranca': '2026-09-04',
   '/dossie-exemplo': '2026-07-24',
-  '/termos': '2026-08-07',
-  '/privacidade': '2026-08-07',
-  '/tratamento-de-dados': '2026-08-07',
+  '/termos': '2026-11-13',
+  '/privacidade': '2026-11-13',
+  '/tratamento-de-dados': '2026-11-13',
+  '/exclusao-de-dados': '2026-11-13',
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

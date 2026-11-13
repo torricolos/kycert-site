@@ -44,5 +44,6 @@ A kycert atende empresas de vários setores, com foco em mercados regulados: cor
 - [Termos de Uso](https://kycert.com.br/termos)
 - [Privacidade e LGPD](https://kycert.com.br/privacidade)
 - [Tratamento de dados](https://kycert.com.br/tratamento-de-dados)
+- [Exclusão de dados](https://kycert.com.br/exclusao-de-dados)
 - LinkedIn: https://www.linkedin.com/company/kycert/
 - Instagram: https://www.instagram.com/kycert.oficial/
