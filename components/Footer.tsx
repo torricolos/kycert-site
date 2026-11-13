@@ -58,6 +58,7 @@ export default function Footer() {
             <a className="fl" href="/termos">Termos de Uso</a>
             <a className="fl" href="/privacidade">Privacidade & LGPD</a>
             <a className="fl" href="/tratamento-de-dados">Tratamento de Dados</a>
+            <a className="fl" href="/exclusao-de-dados">Exclusão de Dados</a>
           </div>
         </div>
 

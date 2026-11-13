@@ -30,7 +30,7 @@ const BODY_HTML = `
 <nav class="crumbs"><div class="wrap"><a href="/">Início</a><span class="sep">/</span><span>Legal</span><span class="sep">/</span><span style="color:var(--text-secondary)">Tratamento de Dados</span></div></nav>
 <section style="padding:36px 24px 80px"><article class="article">
 <div class="art-eyebrow">Legal</div><h1>Anexo de Tratamento de Dados Pessoais da kycert</h1>
-<div class="art-meta"><span>Última atualização: 27 de maio de 2026</span></div>
+<div class="art-meta"><span>Última atualização: 13 de novembro de 2026</span></div>
 <p>Este Anexo complementa os Termos de Uso da Plataforma kycert e se aplica quando a kycert tratar dados pessoais em nome do Cliente para execução dos serviços contratados.</p>
 <p>A plataforma kycert é operada por KYCERT DESENVOLVIMENTO LTDA, inscrita no CNPJ nº 68.453.721/0001-90, doravante denominada simplesmente "kycert".</p>
 <h2>1. Papéis das partes</h2>
@@ -38,31 +38,35 @@ const BODY_HTML = `
 <p>1.2. A kycert atua como operadora desses dados, tratando-os conforme as instruções do Cliente, os Termos de Uso, a Política de Privacidade e LGPD, esta contratação e as funcionalidades utilizadas na plataforma.</p>
 <h2>2. Finalidade do tratamento</h2>
 <p>2.1. A kycert tratará dados pessoais para prestar os serviços contratados, incluindo validação cadastral, verificação de identidade, análise documental, apoio a KYC/KYB, onboarding digital, prevenção a fraudes, integrações, logs, suporte, segurança e operação da plataforma.</p>
-<p>2.2. A kycert não utilizará os dados tratados em nome do Cliente para finalidade incompatível com a prestação dos serviços, salvo quando necessário para cumprimento de obrigação legal, exercício regular de direitos, segurança, prevenção a fraudes ou outra hipótese permitida pela LGPD.</p>
+<p>2.2. A kycert não utilizará os dados tratados em nome do Cliente para finalidade incompatível com a prestação dos serviços, salvo quando necessário para cumprimento de obrigação legal, exercício regular de direitos, segurança, prevenção a fraudes ou outra hipótese permitida pela LGPD. Em qualquer caso, é vedado à kycert usar esses dados para treinar modelos, enriquecer bases, fazer benchmarking ou oferecê-los a terceiros, ressalvados dados efetivamente anonimizados ou agregados, que não permitam identificar titulares nem o Cliente. Dados recebidos pela integração com o WhatsApp Business Platform (Meta) são tratados apenas para prestar o serviço ao Cliente.</p>
 <h2>3. Obrigações da kycert</h2>
 <p>3.1. A kycert compromete-se a:</p>
-<p>tratar dados pessoais conforme as instruções do Cliente e a legislação aplicável;</p>
-<p>adotar medidas técnicas e administrativas razoáveis de segurança;</p>
-<p>limitar o acesso aos dados a pessoas e fornecedores que precisem acessá-los para execução dos serviços;</p>
-<p>apoiar o Cliente, quando razoavelmente possível, no atendimento a solicitações de titulares relacionadas aos dados tratados na plataforma;</p>
-<p>manter registros técnicos, logs e trilhas de auditoria quando aplicável;</p>
-<p>comunicar o Cliente em prazo de até 72 (setenta e duas) horas após a confirmação de incidente de segurança que possa gerar risco relevante aos titulares ou ao Cliente;</p>
-<p>eliminar, anonimizar ou manter dados após o encerramento da contratação conforme os Termos de Uso, a Política de Privacidade e LGPD e a legislação aplicável.</p>
+<ul>
+<li>tratar dados pessoais conforme as instruções do Cliente e a legislação aplicável;</li>
+<li>adotar medidas técnicas e administrativas razoáveis de segurança;</li>
+<li>limitar o acesso aos dados a pessoas e fornecedores que precisem acessá-los para execução dos serviços;</li>
+<li>apoiar o Cliente, quando razoavelmente possível, no atendimento a solicitações de titulares relacionadas aos dados tratados na plataforma;</li>
+<li>manter registros técnicos, logs e trilhas de auditoria quando aplicável;</li>
+<li>comunicar o Cliente em até 24 (vinte e quatro) horas a partir da ciência de incidente de segurança que afete dados pessoais tratados em seu nome, nos termos do item 12.5 dos Termos de Uso: a comunicação inicial traz as informações disponíveis, sem depender de investigação concluída, e é complementada à medida da apuração; o prazo conta da identificação de ocorrência concreta que afete ou possa ter afetado esses dados, ainda que a classificação interna não esteja concluída, e não de alertas genéricos sem indício de afetação de dados pessoais;</li>
+<li>eliminar, anonimizar ou manter dados após o encerramento da contratação conforme os Termos de Uso, a Política de Privacidade e LGPD e a legislação aplicável.</li>
+</ul>
 <h2>4. Obrigações do Cliente</h2>
 <p>4.1. O Cliente compromete-se a:</p>
-<p>garantir que possui base legal adequada para tratar os dados enviados à plataforma;</p>
-<p>informar os titulares quando necessário;</p>
-<p>usar a plataforma para finalidades lícitas e compatíveis com sua contratação;</p>
-<p>revisar resultados antes de tomar decisões relevantes;</p>
-<p>manter seus próprios controles de segurança, governança, compliance e gestão de acessos.</p>
+<ul>
+<li>garantir que possui base legal adequada para tratar os dados enviados à plataforma;</li>
+<li>informar os titulares quando necessário;</li>
+<li>usar a plataforma para finalidades lícitas e compatíveis com sua contratação;</li>
+<li>revisar resultados antes de tomar decisões relevantes;</li>
+<li>manter seus próprios controles de segurança, governança, compliance e gestão de acessos.</li>
+</ul>
 <h2>5. Suboperadores e terceiros</h2>
-<p>5.1. A kycert poderá utilizar fornecedores, APIs, bureaus, provedores de OCR, infraestrutura, mensageria, webhooks, suporte e outras integrações necessárias à execução dos serviços.</p>
-<p>5.2. A kycert mantém lista atualizada dos principais fornecedores e suboperadores utilizados na prestação dos serviços, disponível para consulta mediante solicitação ou em página pública. A kycert exige obrigações de proteção de dados compatíveis dos seus suboperadores e comunicará alterações materiais com antecedência razoável.</p>
+<p>5.1. A kycert poderá utilizar fornecedores, APIs, bureaus, provedores de OCR, infraestrutura, mensageria, webhooks, suporte e outras integrações necessárias à execução dos serviços, incluindo a Meta, quando o Cliente conectar sua conta ao WhatsApp Business Platform, conforme a Política de Privacidade.</p>
+<p>5.2. A kycert mantém lista interna atualizada dos suboperadores que tratam dados pessoais em nome do Cliente, disponibilizada ao Cliente mediante solicitação. A kycert exige obrigações de proteção de dados compatíveis dos seus suboperadores e comunicará alterações materiais com antecedência razoável.</p>
 <h2>6. Transferência internacional</h2>
 <p>6.1. Quando houver transferência internacional de dados pessoais, a kycert buscará adotar mecanismos compatíveis com a LGPD, incluindo contratos com provedores, cláusulas-padrão, garantias adequadas ou outros mecanismos legalmente aceitos.</p>
 <h2>7. Encerramento</h2>
-<p>7.1. Após o encerramento da contratação, o Cliente poderá solicitar a exportação dos dados inseridos na plataforma quando tecnicamente disponível e aplicável ao plano contratado.</p>
-<p>7.2. Após o prazo de até 30 (trinta) dias, os dados poderão ser excluídos, anonimizados ou mantidos apenas quando houver obrigação legal, regulatória, contratual, necessidade de auditoria, segurança, prevenção a fraudes, cobrança ou exercício regular de direitos.</p>
+<p>7.1. Após o encerramento da contratação, o Cliente poderá solicitar, em até 30 (trinta) dias, a exportação dos dados inseridos na plataforma, quando tecnicamente disponível e aplicável ao plano contratado.</p>
+<p>7.2. Durante esses 30 (trinta) dias, os dados ficam preservados para permitir a exportação. Após esse período, a eliminação ou anonimização dos dados seguirá as instruções do Cliente e os procedimentos de encerramento da kycert, nos prazos da política de retenção efetivamente adotada, ressalvados os que precisem ser mantidos por obrigação legal, regulatória ou contratual, necessidade de auditoria, segurança, prevenção a fraudes, cobrança ou exercício regular de direitos. Cópias de segurança são eliminadas no ciclo regular de rotação e ficam isoladas e sem uso até lá.</p>
 <h2>8. Cooperação com autoridades</h2>
 <p>8.1. A kycert cooperará com o Cliente em eventuais investigações conduzidas pela ANPD ou outras autoridades competentes relacionadas a dados tratados na qualidade de operadora, fornecendo as informações necessárias dentro do que estiver razoavelmente sob seu controle.</p>
 <h2>9. Evidências e auditoria documental</h2>
@@ -70,6 +74,7 @@ const BODY_HTML = `
 <h2>10. Prevalência e sobrevivência</h2>
 <p>10.1. Em caso de conflito entre este Anexo e a proposta comercial, prevalecerão as condições comerciais da proposta apenas quanto a preço, plano, escopo, vigência e pagamento.</p>
 <p>10.2. As obrigações deste Anexo sobrevivem ao término da contratação enquanto houver dados pessoais sob custódia da kycert ou obrigação legal de retenção.</p>
+<p>10.3. Quando houver contrato específico com o Cliente que regule o tratamento de dados pessoais de forma diferente ou fixe a versão deste Anexo aplicável a ele, prevalecerá o contrato.</p>
 </article></section>
 `;
 
